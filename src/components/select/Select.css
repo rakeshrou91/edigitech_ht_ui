@@ -1,0 +1,15 @@
+.MenuItem{
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding:12px;
+    color:#413E3E;
+
+}
+.MenuItem:hover{
+    background-color: #ddd;
+}
+.formcontrol{
+   width:14%;
+}
