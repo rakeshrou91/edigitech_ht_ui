@@ -14,8 +14,9 @@ export  function Currency() {
   };
 
   return (
-    <>
-        <InputLabel id="demo-simple-select-label">Currency</InputLabel>
+   
+      <FormControl className="formcontrol">
+        <InputLabel id="demo-simple-select-label">Select Currency</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
@@ -181,7 +182,8 @@ export  function Currency() {
           <MenuItem className="MenuItem" value={156}>New Belarusian Ruble</MenuItem> 
         
         </Select>
-    </>
+      </FormControl>
+   
   );
 }
 export  function Department() {
@@ -192,8 +194,8 @@ export  function Department() {
   };
 
   return (
-    <Box sx={{ minWidth: 120 }}>
-      <FormControl className="formcontrol">
+   
+      <FormControl className="formcontrol1">
         <InputLabel id="demo-simple-select-label">Department</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -228,7 +230,7 @@ export  function Department() {
           <MenuItem className="MenuItem" value={24}>Vascular</MenuItem>
         </Select>
       </FormControl>
-    </Box>
+  
   );
 }
 export  function Destination() {
@@ -239,9 +241,9 @@ export  function Destination() {
   };
 
   return (
-    <Box sx={{ minWidth: 120 }}>
-      <FormControl className="formcontrol">
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+    
+      <FormControl className="formcontrol1">
+        <InputLabel id="demo-simple-select-label">Destination</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
@@ -256,6 +258,6 @@ export  function Destination() {
           <MenuItem className="MenuItem" value={5}>Kenya</MenuItem>
         </Select>
       </FormControl>
-    </Box>
+   
   );
 }

@@ -3,11 +3,10 @@ import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
 import {Card } from "@material-ui/core";
 import './Home.css';
 import '../../App.css';
-import { Container } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { ReactVideo } from "reactjs-media";
 import Image from 'react-bootstrap/Image';
-import {Currency,Department} from '../select/Select';
+import {Currency,Department,Destination} from '../select/Select';
 
 
 export default function Home() {
@@ -112,30 +111,21 @@ export default function Home() {
                        Conversion Check
                   </div>
                   <p>Enquire the best for your medical travel</p>
-                  {/* <tr><td><Currency></Currency></td><td><Currency></Currency></td></tr>
-                  <div className="textrow" > 
-                    <td><Currency></Currency></td>
-                    <div className="textcolumn"> <Currency></Currency></div>
-                    <div className="textcolumn"> <Currency></Currency></div>
-                  </div> */}
-                  <TextField className="textfieldamount" id="outlined-basic" label="Outlined" variant="outlined" />
-                  <TextField disabled className="textfieldamountdisabled" id="outlined-basic" label="Outlined" variant="outlined" />
-               </Card>
-               <Card style={cardstyle}>
-                <div className="textrow">
-                   <div className="textcolumn">
-                   <Currency></Currency> 
-                   </div>
-                   <div className="textcolumn">
-                   <Currency></Currency> 
-                   </div>
-                </div>
-              
+                  
+               </Card><br/>
+                <Card className="currency" style={{boxShadow:'none'}}>
+                 <br/>
+                 <div className="selectbox">
+                 <Currency ></Currency>&nbsp;&nbsp; &nbsp;<TextField className="textfieldamount" id="outlined-basic" label="Amount" variant="outlined" /> &nbsp;&nbsp; <Currency ></Currency>
+                 </div> <br/><br/>
+                 <TextField disabled className="textfieldamountdisabled" id="outlined-basic" label="Amount" variant="outlined" />
+                 &nbsp; &nbsp;<button  class="link-button1" href="#"><b>Convert</b></button>
+               
               
                </Card>
         </Grid>
       </Paper>
-
+      <br/>
       <br/>
       <br/>
       <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center'}}>
@@ -213,7 +203,7 @@ export default function Home() {
 
           </Card>
         </Grid>
-      </Paper>
+      </Paper><br/><br/><br/><br/>
        <div><br/></div>
       <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center'}}>
         <Grid>
@@ -232,10 +222,10 @@ export default function Home() {
           </Card>
         </Grid>
 
-      </Paper>
+      </Paper><br/><br/><br/><br/>
       <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center'}}>
         <Grid>
-          <Card className="reactoutsection" style={{cardstyle}}>
+          <Card className="reactoutsection" style={{cardstyle,boxShadow:'none'}}>
               <div class="rt1-section-title">
                        Help Us To Find You<br/> The Best
                        </div><br/><br/>
@@ -245,56 +235,21 @@ export default function Home() {
           </Card>
 
         </Grid>
-      </Paper>
+      </Paper><br/><br/>
       <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center'}}>
         <Grid>
           <Card className="card" style={cardstyle}>
-          <Card className="Card1" style={{width:'80%',height:'80%',textAlign: 'center',justifyContent: 'center',boxShadow:'5px 10px 8px #888888 ',margin:'auto 10%'}}>
-                <Currency></Currency> <Department></Department>
-{/*                  
-                 <select name="from currency" id="currency" placeholder ="Select Department" style={{margin:'2% 2%',width:'400px',height:"50px",textAlign: 'center',justifyContent: 'center'}} >
-                 <option value="Anaesthesia">Anaesthesia</option>
-                 <option value="Cardiology">Cardiology</option>
-                 <option value="Cosmetic Surgery">Cosmetic Surgery</option>
-                 <option value="Dentist">Dentist</option>
-                 <option value="ENT Specialist">ENT Specialist</option>
-                 <option value="Gastroenterology">Gastroenterology</option>
-                 <option value="General Physician">General Physician</option>
-                 <option value="General Surgeon">General Surgeon</option>
-                 <option value="Gynecology">Gynecology</option>
-                 <option value="Hematology">Hematology</option>
-                 <option value="Hepatology">Hepatology</option>
-                 <option value="Nephrology">Nephrology</option>
-                 <option value="Neurology">Neurology</option>
-                 <option value="Neurosurgery">Neurosurgery</option>
-                 <option value="Oncology">Oncology</option>
-                 <option value="Orthopaedics">Orthopaedics</option>
-                 <option value="Pediatrics">Pediatrics</option>
-                 <option value="Pulmonology">Pulmonology</option>
-                 <option value="Radiology">Radiology</option>
-                 <option value="Spinal">Spinal</option>
-                 <option value="Surgery">Surgery</option>
-                 <option value="Transplantation">Transplantation</option>
-                 <option value="Urology">Urology</option>
-                 <option value="Vascular">Vascular</option>
-                  </select> */}
-           &nbsp;  &nbsp;
-
-          <select class="form-control" id="to_currency_id" name="to_currency" required="" style={{width:"400px",height:"50px",textAlign: 'center',justifyContent: 'center'}}>
-          <option value="India">India</option>
-          <option value="UAE">UAE</option>
-          <option value="Dubai">Dubai</option>
-          <option value="Nigeria">Nigeria</option>
-          <option value="Kenya">Kenya</option>
-
-          </select> &nbsp;  &nbsp;
-         <br/>
-        <div className="row">
-         <button  class="link-button1" style={{width:"10%",height:'18%',textAlign: 'center',justifyContent: 'center'}}><b>Search Facility </b></button>&nbsp;&nbsp;
-         <button  class="link-button1" style={{width:"10%",height:'18%',textAlign: 'center',justifyContent: 'center'}}><b>Search Doctor</b></button> 
-        </div>
-         <br/><br/><br/>
+          <Card className="Card1" style={{textAlign: 'center',justifyContent: 'center',boxShadow:'5px 10px 8px #888888 '}}>
+               <br/><br/> <Department></Department> &nbsp; &nbsp; &nbsp; &nbsp; <Destination></Destination>
+         
+               <br/><br/>
+               <div className="deptbutton">
+                    <button  class="link-button1" style={{textAlign: 'center',justifyContent: 'center'}}><b>Search Facility </b></button>&nbsp;&nbsp;
+                    <button  class="link-button1" style={{textAlign: 'center',justifyContent: 'center'}}><b>Search Doctor</b></button> 
+               </div>
+          <br/>
           </Card>
+          <br/><br/>
           </Card>
         </Grid>
 

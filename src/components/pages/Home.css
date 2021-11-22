@@ -10,21 +10,24 @@
   text-transform: capitalize;    
   
 }
+.deptbutton{
+  margin-right: -70%;
+}
 .img{
   background-size: cover;
   height: 100%;
   width:100%;
   background-position:center;
-  background-size:cover;
+
 }
 .textrow{
   text-align: center;
-  margin-left: 10%;
+  flex-direction: column;
+  margin-left: -50%;
 }
 .textcolumn{
-  padding:10px;
-  display: inline;
-  padding:10px;
+  display: column;
+  padding:5px;
 
 }
 .rowicon{
@@ -192,22 +195,23 @@ opacity: 1;
   background-image: url(/src/images/dotbg.png);
   background-size: cover;
   justify-content:center;
-  flex-direction: row;
+  flex-direction: column;
 }
 .card{
   color: 'skyblue';
   justify-content:'center';
   align-items: 'center';
   background-position: center;
-  background-repeat: no-repeat;
+ 
 }
-.card1{
+.Card1{
   color: 'skyblue';
-  background-image: url();
   justify-content:'center';
   align-items: 'center';
   background-position: center;
-  background-repeat: no-repeat;
+  width:70%;
+  margin:auto 15%;
+  
 }
 
 .row{
@@ -233,12 +237,14 @@ opacity: 1;
   border: 1px solid none;
   background-color: #004D61;
   color: #fff;
+  
   cursor: pointer;
   display: inline-block;
   flex-direction: column;
   font-family: "Codec cold",sans-serif;
   font-size: 16px;
   font-weight: 600;
+  
   height: 58px;
   justify-content: center;
   letter-spacing: .4px;
@@ -269,7 +275,7 @@ opacity: 1;
   font-family: "Codec cold",sans-serif;
   font-size: 16px;
   font-weight: 600;
-  height: 58px;
+  height: 56px;
   justify-content: center;
   letter-spacing: .4px;
   line-height: 1;
@@ -490,7 +496,7 @@ margin-bottom: 16px;
     padding-top: 2rem;
 
   }
-
+ 
   .footer-input {
     width: 100%;
   }
@@ -577,14 +583,7 @@ margin-bottom: 16px;
     justify-content:center;
    
   }
-  .card1{
-    display: flex;
-    flex-direction: column;
-   
-    position: relative;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
+ 
   .reactvideo{
     margin-left: -0%;
     width:auto;
@@ -710,6 +709,41 @@ margin-bottom: 16px;
     background-color: #004D61;
 
   }
+  .Card1{
+    text-align: center;
+    justify-content: center;
+   
+    flex-direction: column;
+    width:500px;
+    height:200px;
+    margin-left: -0%;
+ 
+  }
+  .deptbutton{
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -60%;
+    
+  }
+
+  .selectbox{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width:980px;
+    margin-left: -60%;
+   
+ 
+  }
+  .link-button1{
+    text-align: center;
+    justify-content: center;
+    height:auto;
+    width:auto;
+    font-size: auto;
+  }
   .footer {
     text-align: center;
     justify-content: center;
@@ -728,6 +762,14 @@ margin-bottom: 16px;
     text-align: center;
     justify-content: center;
     
+  }
+  .currency{
+    text-align: center;
+    justify-content: center;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+  
   }
   
   
