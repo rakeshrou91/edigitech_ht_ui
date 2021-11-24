@@ -31,14 +31,7 @@
   
 }
 
-.home {
-  background-image: url('./images/banner1.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
+
 
 .aboutus,
 .affiliateprogram,
@@ -55,22 +48,31 @@
 {
   background-image: url('./images/bredcump.png'); 
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  font-size: 60px;
-  width: 100%;
-  height:600;
+ 
+  
+  height:500px;
   margin-top: -8%;
 }
 
-.services {
+/* .home {
   background-image: url('./images/banner1.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
+/* .services {
+  background-image: url('./images/banner1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+} */
 
 .products {
   /* background-image: url('./images/img-3.jpg'); */

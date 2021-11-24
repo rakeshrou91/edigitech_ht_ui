@@ -1,6 +1,6 @@
 .dropdown-menu {
-  background: red;
-  width: 190px;
+  background: #dc3545;
+  width: 160px;
   position: absolute;
   top: 85px;
   list-style: none;
@@ -8,12 +8,13 @@
 }
 
 .dropdown-menu li {
-  background: #004D61;
+  background: #fff;
   cursor: pointer;
 }
 
 .dropdown-menu li:hover {
-  background: red;
+  background: #f5142b;
+  color:#fff;
 }
 
 .dropdown-menu.clicked {
@@ -25,8 +26,12 @@
   height: 100%;
   width: 100%;
   text-decoration: none;
-  color: #fff;
-  padding: 12px;
+  color: #413E3E;
+  padding: 8px;
+  font-size:16px;
+}
+.dropdown-link:hover{
+  color:#fff;
 }
 
 @media screen and (max-width: 960px) {

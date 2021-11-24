@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
 import {Card } from "@material-ui/core";
 import './Home.css';
@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { ReactVideo } from "reactjs-media";
 import Image from 'react-bootstrap/Image';
 import {Currency,Department,Destination} from '../select/Select';
+const Footer = React.lazy(() => import('./UI/footer'));
 
 
 export default function Home() {
@@ -14,8 +15,10 @@ export default function Home() {
   const paperStyle={padding:20,height:800,width :'100%',margin:"24% 0%",boxShadow:"none",justifyContent:'center',textAlign: 'center'}
   return (
     <>
-  
-      <Image className="img" src={process.env.PUBLIC_URL + "/banner1.png"} />
+    <h1  className='services'>
+      
+    </h1>
+      {/* <Image className="img" src={process.env.PUBLIC_URL + "/banner1.png"} /> */}
       <div className="mtimg">
        <Image src={process.env.PUBLIC_URL + "/mt.png"} rounded  />
       <h4 style={{color:'#413E3E'}}>Looking for a stress-free medical journey? </h4>
@@ -39,7 +42,7 @@ export default function Home() {
 
                 </Grid>
       </Paper>
-      <Paper style={{boxShadow:"none",justifyContent:'center',textAlign: 'center',marginTop:"-50%"}}>
+      <Paper style={{boxShadow:"none",justifyContent:'center',textAlign: 'center',marginTop:"-55%"}}>
          <Grid >
          <Card className="card" style={cardstyle}>
                    <div className="rt1-section-title">
@@ -144,7 +147,7 @@ export default function Home() {
                   <button  class="button-hover">Hyderabad</button> <space/><space/>
                   <button  class="button-hover">Ahmedabad</button> <space/><space/><br/>
 
-                  <div class="row">
+                  <div class="row1">
                    <div class="column1">
                       <img  src={process.env.PUBLIC_URL + "/11.jpg"}  style={{height:'100%',width:"100%"}} />
                    </div>
@@ -156,7 +159,7 @@ export default function Home() {
                    </div>
                   
                  </div>
-                 <div class="row">
+                 <div class="row1">
 
                    <div class="column1">
                       <img  src={process.env.PUBLIC_URL + "/14.jpg"} style={{height:'100%',width:"100%"}} />
@@ -190,7 +193,7 @@ export default function Home() {
           </Card>
         </Grid>
       </Paper>
-      <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center'}}>
+      <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center',marginTop:'6%'}}>
         <Grid>
           <Card className="reactoutsection" style={cardstyle}>
           <div class="rt1-section-title">
@@ -223,7 +226,7 @@ export default function Home() {
         </Grid>
 
       </Paper><br/><br/><br/><br/>
-      <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center'}}>
+      <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center',marginTop:'4%'}}>
         <Grid>
           <Card className="reactoutsection" style={{cardstyle,boxShadow:'none'}}>
               <div class="rt1-section-title">
@@ -236,7 +239,7 @@ export default function Home() {
 
         </Grid>
       </Paper><br/><br/>
-      <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center'}}>
+      <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center',marginTop:'4%'}}>
         <Grid>
           <Card className="card" style={cardstyle}>
           <Card className="Card1" style={{textAlign: 'center',justifyContent: 'center',boxShadow:'5px 10px 8px #888888 '}}>
@@ -258,7 +261,7 @@ export default function Home() {
       <br/>
       <br/>
       <br/>
-      <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center',height:'100%'}} >
+      {/* <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center',height:'100%'}} >
         <Grid>
            <Card className="card" style={{boxShadow:'none',height:'700px' }}>
            <div className='footer-container'>
@@ -308,8 +311,9 @@ export default function Home() {
            </Card>
         </Grid>
 
-      </Paper>
-      <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center'}}>
+      </Paper> */}
+
+      {/* <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center'}}>
         <Grid>
           <Card classsName="card" style={cardstyle}>
              <div className="footer">
@@ -332,8 +336,10 @@ export default function Home() {
             </div>
           </Card>
         </Grid>
-      </Paper>
-
+      </Paper> */}
+       <Suspense fallback={<div>Loading...</div>}>
+      <Footer/>
+    </Suspense>
 
              
     </>

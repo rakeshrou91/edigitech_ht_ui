@@ -1,0 +1,53 @@
+
+.heading h2{
+    font-size: 70px;
+    margin-left:-30%;
+    margin-top: 19%;
+    padding:24px;
+}
+.heading a{ 
+     text-decoration: none;
+     color: #fff;
+     margin-left: -24%;
+     
+}
+
+.container1 span{
+   color:#5BD1D7;
+   text-align: center;
+   justify-content: center;
+   display:flex;
+   flex-direction:column;
+   margin-left: 16%;
+}
+.container1{
+    background-color: none;
+    text-align:center;
+    justify-content: center;
+}
+.container1 p{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding:20px;
+    flex-direction:column;
+}
+@media screen and (max-width: 960px) {
+    .heading h2{
+       text-align: center;
+      
+       justify-content: center;
+       flex-direction: row;
+       margin-right: 5%;
+    }
+    .heading a{ 
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-right: 40px;
+        
+    }
+    
+}
+

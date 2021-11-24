@@ -13,7 +13,7 @@ function Navbar() {
   const [dropdown1, setDropdown1] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
   const [colorChange, setColorchange] = useState(false);
-  
+  const [colorChange1, setColorchange1] = useState(false);
 
 
  
@@ -28,8 +28,20 @@ function Navbar() {
    
     }
  };
+ const changeNavbaritemColor = () =>{
+  if(window.scrollY >= 80){
+    setColorchange1(true);
+
+   
+  }
+  else{
+    setColorchange1(false);
+ 
+  }
+};
  
  window.addEventListener('scroll', changeNavbarColor);
+ window.addEventListener('scroll', changeNavbaritemColor);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -95,12 +107,12 @@ function Navbar() {
     <>
       <nav className={colorChange ? 'navbar  colorChange':''}>
         <div><br/>
-         <a href="/Support"  style={{textDecoration:'none', color:'#413E3E',marginLeft:'10%'}}><i class="fas fa-headset"></i> Support</a>&nbsp;&nbsp;
-         <a href="/Support" style={{textDecoration:'none', color:'#413E3E',margin:'auto '}}><i class="fas fa-envelope"></i> info@ehealthflex.com</a>
+         <a href="/Support"  className="upnavitemsupport"><i class="fas fa-headset"></i> Support</a>&nbsp;&nbsp;
+         <a href="/Support" className="upnavitememail"><i class="fas fa-envelope"></i> info@ehealthflex.com</a>
         
       
-         <a href="/Support" style={{textDecoration:'none', color:'#413E3E',marginLeft:'50%'}}><i class="fas fa-user-circle"></i> Sign in</a>&nbsp;&nbsp;&nbsp;&nbsp;
-         <a href="/Support" style={{textDecoration:'none', color:'#413E3E',margin:'auto '}}><i class="fas fa-user-plus"></i> Register</a>
+         <a href="/Support"  className="upnavitemsignin"><i class="fas fa-user-circle"></i> Sign in</a>&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="/Support"  className="upnavitemregister"><i class="fas fa-user-plus"></i> Register</a>
         </div>
       </nav>
       
@@ -114,7 +126,7 @@ function Navbar() {
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
-            <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
+            <Link to='/home' className={colorChange1 ? 'nav-links colorChange1':'nav-links'} onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
@@ -125,7 +137,7 @@ function Navbar() {
           >
             <Link
               to='/aboutus'
-              className='nav-links'
+              className={colorChange1 ? 'nav-links colorChange1':'nav-links'}
               onClick={closeMobileMenu}
             >
               About us <i className='fas fa-caret-down' />
@@ -139,7 +151,7 @@ function Navbar() {
           >
             <Link
               to='/services'
-              className='nav-links'
+              className={colorChange1 ? 'nav-links colorChange1':'nav-links'}
               onClick={closeMobileMenu}
             >
               Tourism Package <i className='fas fa-caret-down' />
@@ -150,7 +162,7 @@ function Navbar() {
           <li className='nav-item'>
             <Link
               to='/products'
-              className='nav-links'
+              className={colorChange1 ? 'nav-links colorChange1':'nav-links'}
               onClick={closeMobileMenu}
             >
               Find a Medic
@@ -163,7 +175,7 @@ function Navbar() {
           >
             <Link
               to='/services'
-              className='nav-links'
+              className={colorChange1 ? 'nav-links colorChange1':'nav-links'}
               onClick={closeMobileMenu}
             >
               Blog <i className='fas fa-caret-down' />

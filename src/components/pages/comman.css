@@ -1,0 +1,227 @@
+ /* Helpcenter css*/
+ .helpheading h2{
+    font-size: 70px;
+    margin-left:-60%;
+    margin-top: 30%;
+    padding:24px;
+}
+.helpheading a{ 
+     text-decoration: none;
+     color: #fff;
+     margin-left: -54%;
+     
+}
+.row{
+    
+    width:40%;
+    margin-left: 32%;
+    text-align: center;
+    justify-content: center;
+
+}
+.column{
+    text-align: center;
+    padding: auto;
+}
+.column h2{ 
+    color:#413E3E;
+    text-align: row;
+}
+.avatar{
+  height:160%;
+  width:160%;
+
+}
+.avatar:hover{
+    transform: rotate(360deg);
+}
+.section3{
+    background-color: #f4eafe;
+    height: 300px;
+    text-align: center;
+    padding-top: 80px;
+
+}
+.section3 button{
+    background-color: #5BD1D7;
+    height:44px;
+    width:12%;
+    color:#fff;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-top: 50px;
+    cursor: pointer;
+}
+button:hover{ 
+    background-color: red;
+    color: #fff;
+ 
+}
+.section3 div{
+    font-size:40px;
+    font-weight: bold;
+}
+ /* Standard css*/
+ .standardheading h2{
+    font-size: 70px;
+    padding:24px;
+    margin-left:-28%;
+    margin-top: 22%;
+ }
+ .standardheading a{
+    text-decoration: none;
+     color: #fff;
+     margin-left: -24%;
+ }
+/* compare css*/
+ .compareheading h2{
+    font-size: 70px;
+    padding:24px;
+    margin-left:-32%;
+    margin-top: 22%;
+ }
+ .compareheading a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: -26%;
+ }
+ /* blog css*/
+ .blogheading h2{
+    font-size: 70px;
+    padding:24px;
+    margin-left:-114%;
+    margin-top: 44%;
+ }
+ .blogheading a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: -106%;
+ }
+ /* blog01 css*/
+ .blog01heading h2{
+    font-size: 70px;
+    padding:24px;
+    margin-left:-154%;
+    margin-top: 50%;
+ }
+ .blog01heading a{
+    text-decoration: none;
+     color: #fff;
+     margin-left: -140%;
+ }
+ /* blog02 css*/
+ .blog2heading h2{
+    font-size: 70px;
+    padding:24px;
+    margin-left:-66%;
+    margin-top: 34%;
+ }
+ .blog2heading a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: -60%;
+}
+
+
+@media screen and (max-width: 960px) {
+     /* Helpcenter css*/
+     .helpheading h2{
+     text-align: center;
+     justify-content: center;
+     display: flex;
+     flex-direction:row;
+     margin-right: -40%;
+     margin-top: 10%;
+
+    }
+    .helpheading a{ 
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-right: 40px;
+    }
+    /* Standard css*/
+    .standardheading h2{
+        text-align: center;
+        justify-content: center;
+        font-size: auto;
+        flex-direction:column;
+      
+        margin-top: 10%;
+     }
+     .standardheading a{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-right: 40px;
+     }
+     /* compare css*/
+     .compareheading h2{
+        text-align: center;
+        justify-content: center;
+        flex-direction:column;
+        display:grid;
+        margin-right: 29px;
+        margin-top: 10%;
+     }
+     .compareheading a{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-right: 40px;
+     }
+     /* blog css*/
+     .blogheading h2{
+        text-align: center;
+        justify-content: center;
+        flex-direction:column;
+        display:grid;
+        margin-right: -39%;
+        margin-top: 10%;
+     }
+     .blogheading a{
+         text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-right:-10%;
+     }
+     /* blog01 css*/
+     .blog01heading h2{
+        text-align: center;
+        justify-content: center;
+        flex-direction:column;
+        display:grid;
+        margin-right: -39%;
+        margin-top: 10%;
+     }
+    .blog01heading a{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-right:-10%;
+    }
+    /* blog02 css*/
+   .blog2heading h2{
+    text-align: center;
+        justify-content: center;
+        flex-direction:column;
+        display:grid;
+        margin-right: -46%;
+        margin-top: 10%;
+  }
+ .blog2heading a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-right:-10%;
+ }
+
+
+}

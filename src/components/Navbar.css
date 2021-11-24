@@ -10,6 +10,27 @@
   top: 0;
  
 }
+
+.upnavitemsupport{
+  text-decoration: none;
+  color:#413E3E;
+  margin-left:10%;
+ 
+}
+.upnavitememail{
+  text-decoration: none;
+  color:#413E3E;
+}
+.upnavitemsignin{
+  text-decoration: none;
+  color:#d9e0fd;
+  margin-left: 50%;
+}
+.upnavitemregister{
+  text-decoration: none;
+  color:#d9e0fd;
+  
+}
 .navbar-container {
   display: flex;
   justify-content: center;
@@ -20,10 +41,10 @@
 .navbar.colorChange{
   background-color: #fff;
   position:fixed;
- 
+  color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
-  height:10%;
+  height:auto;
   
   
 }
@@ -59,17 +80,23 @@
   display: flex;
   align-items: center;
   height: 60px;
-}
-
-.nav-links {
-  color: #004D61;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
   
 }
 
-.nav-links:hover {
 
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size:14px;
+  
+  
+}
+.nav-links.colorChange1 {
+  color:#004D61;
+}
+
+.nav-links:hover {
   color: red;
   transition: all 0.2s ease-out;
 }
@@ -174,5 +201,21 @@
 
   button {
     display: none;
+  }
+  .upnavitemsupport{
+   
+    color:#fff;
+  
+   
+  }
+  .upnavitememail{
+    color:#fff;
+   
+  }
+  .upnavitemsignin{
+    color:#fff;
+  }
+  .upnavitemregister{
+    color:#fff;
   }
 }
