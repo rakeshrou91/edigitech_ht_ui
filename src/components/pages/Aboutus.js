@@ -13,7 +13,7 @@ export default function Aboutus() {
     <div className='aboutus'>
         <div className="aboutusheading">
              <h2 > About us</h2>
-             <a href="/Support"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;About us</a> &nbsp;&nbsp;
+             <a href="/"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;About us</a> &nbsp;&nbsp;
             
       </div>
     </div>
@@ -28,7 +28,7 @@ export default function Aboutus() {
           <Image className="img" src={process.env.PUBLIC_URL + "/abt_vec_2.png"} rounded  />
        </div>
        <div class="wrapper">
-          <p className="para">
+          <p className="para" style={{textAlign:'initial'}}>
        We have specialists from various sectors in healthcare, exceptionally gifted experts who are notable for their 
        commitment to the field of medical science. We are here to serve and guide you all through your medical excursion. We
        will investigate every possibility in giving you what you are longing for and what you have longed for. Our entire 
@@ -49,9 +49,9 @@ export default function Aboutus() {
       </div>
       
         </Card>
-        <Card className="card">
-        <span className="span1">HOW WE'RE DIFFERENT</span>
-        <div className="style1">
+        <Card className="card" >
+        <span className="span1" style={{textAlign:'initial'}}>HOW WE'RE DIFFERENT</span>
+        <div className="style1" >
      
 
         Why Book <br/>With Us?
@@ -60,15 +60,37 @@ export default function Aboutus() {
           <Image className="img1" src={process.env.PUBLIC_URL + "/abt_vec_1.png"} rounded  />
        </div>
        <div class="wrapper">
-          <p className="para1">
+          <p className="para1" style={{textAlign:'initial'}}>
           There are a lot of questions arising when we think about medical tourism. Medical and tourism both are different terms that seem a bit befuddling. There is an association between the duo which can be a complex one to understand. Yet, it isn't so intricate. Medical tourism simply means to travel to avail the best facilities in healthcare anywhere around the globe. We help you to make your journey easier and to find the best and cost-effective treatment options in India. Medical tourism is generally preferred by patients from poor and developing countries. Therefore, we are here to help you out in finding the top doctors and hospitals. We act as a platform where you can connect with highly skilled and top-class doctors. We also provide accommodation assistance and travel assistance. Language interpreters, local SIM availability for the medical tourists are few highlights of our offerings. You will get what you merit. i.e, the best treatment anyplace you need and in spending that accommodates your pocket.
 
        </p>
       </div>
-      
+         
+        </Card>
+       
+      </Grid>
+    </Paper>
+    <Paper className="iconpaper" style={{boxShadow:'none'}}>
+      <Grid>
+        <Card className="singleicon" style={{borderRadius:"14px"}}>
+            <Image src={process.env.PUBLIC_URL + "/box-icon-1.png"} rounded  />
+            <h3>100+ Hotels</h3>
+            <p>Pick from a wide array of an ever-growing list of hotels in popular destinations (Over 14 million hotel rooms).</p>
+        </Card>
+        <Card className="singleicon" style={{borderRadius:"14px"}}>
+            <Image src={process.env.PUBLIC_URL + "/box-icon-2.png"} rounded  />
+            
+            <h3>World Wide Tour Operators</h3>
+            <p>The six continents are open for the adventures of a lifetime. Go anywhere, any place, anytime..</p> 
+        </Card>
+        <Card className="singleicon" style={{borderRadius:"14px"}}>
+            <Image className="iconimg" src={process.env.PUBLIC_URL + "/box-icon-3.png"} rounded  />
+            <h3>Access To 1000+ Hospitals</h3>
+           <p> Giving you access to the world's most prestigious and efficient Healthcare delivery centers.</p>
         </Card>
       </Grid>
     </Paper>
+   
     <Suspense fallback={<div>Loading...</div>}>
       <Aboutussignup/>
     </Suspense>

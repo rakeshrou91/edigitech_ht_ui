@@ -185,13 +185,13 @@ function Navbar() {
          
          
           <li>
-            <Link
-              to='/sign-up'
+            {/* <Link
+              to='/contact-us'
               className='nav-links-mobile'
               onClick={closeMobileMenu}
             >
               CONTACT US
-            </Link>
+            </Link> */}
           </li>
         </ul>
         <Button />

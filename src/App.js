@@ -43,6 +43,8 @@ function App() {
         <Route path='/blog1' component={Blog01} />
         <Route path='/blog2' component={Blog02} />
         <Route path='/blog3' component={Blog03} />
+
+        <Route path='/contact-us' component={ContactUs} />
         {/* <Route path='/services' component={Services} />
         <Route path='/products' component={Products} />
         <Route path='/contact-us' component={ContactUs} />

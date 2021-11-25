@@ -11,7 +11,7 @@ export default function HelpCenter() {
     <div className='help'>
       <div className="helpheading">
              <h2 > Help Center</h2>
-             <a href="/Support"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;Help Center</a> &nbsp;&nbsp;
+             <a href="/"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;Help Center</a> &nbsp;&nbsp;
             
       </div>
   
@@ -32,25 +32,25 @@ export default function HelpCenter() {
         <Card>
           <div className="row">
              <div className="column">
-               <Avatar className="avatar" src={process.env.PUBLIC_URL + "help-icon-1.png"}  style={{height:160,width:160}}/> <br/>
+               <Avatar  src={process.env.PUBLIC_URL + "help-icon-1.png"}  style={{height:160,width:160}}/> <br/>
                 <h2>Account Overview</h2><br/>
                
                
              </div>
              <div className="column">
-              <Avatar className="avatar" src={process.env.PUBLIC_URL + "help-icon-2.png"}  style={{height:160,width:160}}/><br/> 
+              <Avatar src={process.env.PUBLIC_URL + "help-icon-2.png"}  style={{height:160,width:160}}/><br/> 
               <h2>FAQ</h2><br/>
              
               
              </div>
              <div className="column">
-               <Avatar className="avatar" src={process.env.PUBLIC_URL + "help-icon-2.png"}  style={{height:160,width:160}}/> <br/>
+               <Avatar src={process.env.PUBLIC_URL + "help-icon-2.png"}  style={{height:160,width:160}}/> <br/>
                <h2 >Contact Us</h2><br/>
              
               
              </div>
              <div className="column">
-              <Avatar className="avatar" src={process.env.PUBLIC_URL + "help-icon-4.png"}  style={{height:160,width:160}}/><br/> 
+              <Avatar src={process.env.PUBLIC_URL + "help-icon-4.png"}  style={{height:160,width:160}}/><br/> 
               <h2> Meet The Team</h2><br/>
            
              </div>
@@ -65,6 +65,13 @@ export default function HelpCenter() {
                 <div>    Didn't find what You were looking for?</div>
                 <button>SUBMIT YOUR QUERY</button>
           </div>
+        </Card>
+      </Grid>
+    </Paper>
+    <Paper>
+      <Grid>
+        <Card className="contents">
+          
         </Card>
       </Grid>
     </Paper>

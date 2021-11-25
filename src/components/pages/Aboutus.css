@@ -5,6 +5,50 @@
     margin-top: 39%;
     padding:24px;
 }
+.iconpaper{
+    width:auto;
+    margin-top: -30%;
+    box-shadow: none;
+}
+.iconimg:hover{
+    animation: spin 2s infinite; 
+}
+.iconimg {
+    margin: 0;
+  }
+.singleicon{
+    position: relative;
+    z-index: 1;
+   
+   
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-right: 30px;
+     padding-bottom: 24px;
+    padding-left: 30px; 
+    border: 1px solid rgba(50, 50, 50, .5);
+    border-radius: 20px;
+    background-color: white;
+    
+    margin-left: 12%;
+    width:400px;
+    height:200px;
+}
+.singleicon:hover{
+    border-color: #007bff;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.singleicon h3{
+   padding:24px;
+   margin-top: -26%;
+   margin-left: 22%;
+    text-align: initial;
+    
+}
+.singleicon p{
+    text-align: initial;
+    margin-left: 28%;
+}
 .aboutusheading a{ 
      text-decoration: none;
      color: #fff;
@@ -21,6 +65,7 @@
     border-radius: 22px;
     color:#fff;
     text-align: center;
+    margin-bottom: 80px;
 }
 .container h1,h4{
     margin-top: 2%;
@@ -165,9 +210,17 @@
         color:#fff;
         text-align: center;
     }
+    .iconpaper{
+        width:auto;
+        margin-top: 10%;
+        box-shadow: none;
+    }
     .span1{
         text-align: center;
-        margin-right: 12%;
+        justify-content: center;
+        margin-left:50%;
+        display:flex;
+        flex-direction:row;
     }
     .style1{
         text-align: center;
@@ -203,7 +256,7 @@
         justify-content: center;
       }
     .para{ 
-        text-align: center;
+        text-align: initial;
         justify-content: center;
         display: block;
         font-size:auto;
@@ -213,7 +266,7 @@
         margin-top: 2%;
     }
     .para1{
-        text-align: center;
+        text-align: initial;
         justify-content: center;
         display: block;
         font-size:auto;

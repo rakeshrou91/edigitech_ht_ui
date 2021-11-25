@@ -11,7 +11,7 @@ export default function Premiumpackage() {
     
       <div className="standardheading">
              <h2 > Premium Package</h2>
-             <a href="/Support"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;Premium Package</a> &nbsp;&nbsp;
+             <a href="/"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;Premium Package</a> &nbsp;&nbsp;
             
       </div>
  
