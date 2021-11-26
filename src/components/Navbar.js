@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Button } from './Button';
+import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+
 import Dropdown from './Dropdown';
 import Dropdown1 from './Dropdown1';
 import Dropdown2 from './Dropdown2';
@@ -194,7 +195,7 @@ function Navbar() {
             </Link> */}
           </li>
         </ul>
-        <Button />
+        <a href="/contact-us" className="btn">Contact us</a>
         </div>
       </nav>
     </>

@@ -554,6 +554,13 @@ margin-bottom: 16px;
     justify-content: center;
     flex-direction: column;
   }
+  .column1{
+   display:column;
+   margin-left: 800px;
+   width:600px;
+   height:400px;
+    
+  }
   .columnicon span{
    
     color:#fff;

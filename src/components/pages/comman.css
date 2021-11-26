@@ -129,6 +129,51 @@ button:hover{
     margin-left: -60%;
     font-size: 16px;
 }
+.blogcard{
+   height:640px;
+   width:400px;
+   position: relative;
+    margin-bottom: 30px;
+    padding: 8px;
+    -webkit-transition: all .34s ease-in-out;
+    transition: all .34s ease-in-out;
+    border: 1px solid rgba(15, 54, 97, .2);
+
+}
+.gridrow{
+   display: inline-flex;
+   width: auto;
+   height: auto;
+   padding-left: 40px;
+   margin-left: 40px;
+}
+.gridColumn{
+   padding-right: 22px;
+}
+.blogcard span{
+   font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 30px 0 20px;
+    -webkit-transition: all .24s ease-in-out;
+    transition: all .24s ease-in-out;
+    word-break: break-word;
+    color: #000;
+
+}
+.blogcard p{
+   font-size: 15px;
+    line-height: 26px;
+    color: #3d446f;
+}
+.blogcard span:hover{
+   color: #004D61;
+}
+.blogcard:hover{
+   cursor: pointer;
+   box-shadow: 10px 10px 11px rgba(33,33,33,.2);
+   border: 1px solid #496cfe;
+}
  /*Contact us css*/
 .contactusheading h2{
    font-size: 70px;
@@ -170,23 +215,162 @@ button:hover{
    margin-left: 52%;
     width: 600px;
     height: 400px;
-    
+    margin-top: -60%;
 }
 .input{
-   display: block;
+    display: block;
     width: 40%;
     height:80px;
-    
-   
-   
     font-weight: 400;
-   
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
+    padding-top: 30px;
+   
+}
+.textfeild{
+   width: 40%;
+   height:80px;
+   font-weight: 400;
+   color: #495057;
+   background-color: #fff;
+   padding-top: 30px;
+   margin-top: 20px;
+   
+}
+.btnsubmit{
+  
+    color: #fff;
+    border: none;
+    background-color: #5BD1D7 ;
+    height:64px;
+    width:120px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+.addresssection{
+   width:340px;
+   height:300px;
+   border-radius: 40px;
+   box-shadow: 10px 10px 11px rgba(33,33,33,.2); 
+   margin-bottom: 30px;
+   margin-top:90px;
+   
+   text-align:center;
+   margin-left: 50%;
+   
+   
+}
+.addresssection span{
+   color:#413E3E;
+   font-size: 24px;
+   font-weight: 600;
+   line-height:90px;
+  
+}
+.addresssection p{
+   color:#413E3E;
+   font-size: 16px;
+    line-height: 26px;
+    padding-top: 1px;
+    text-align: center;
+    justify-content: center;
+   
+}
+.row1{
+   margin-left: -180px;
+   width: 100%;
+   height: auto;
+
+}
+.contcolumn{
+   padding-right: 18px;
  
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.avatar1{
+   margin-left: 120px;
+   padding-top: 18px;
+   
+}
+.contavatar{ 
+  padding-top: 18px;
+  margin-left: 110px;
+}
+
+.socialicon{
+  
+   text-decoration: none;
+   color: #413E3E;
+   
+}
+
+.addresssection:hover{
+   border-color: #496cfe;
+   border: 1px solid #496cfe;
+}
+.textsection{
+   text-align:center;
+   justify-content: center;
+   display: flex;
+   flex-direction:column;
+   margin-top: 60px;
+   margin-bottom: 90px;
+}
+.textsection span{
+   font-size: 18px;
+   display: block;
+   margin: 0 0 0;
+   text-transform: uppercase;
+   color: #5BD1D7;
+   
+}
+.textsection h1{
+   font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+    color: #004D61;
+}
+.textsection p{
+   font-size: 16px;
+    line-height: 26px;
+}
+.brands{
+   margin-bottom: 100px;
+}
+.brands ul{
+  
+    display: flex;
+ 
+    list-style: none;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left:25%;
+}
+.brands li{
+    max-width: 25%;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    text-align: center;
+    border-right: 1px solid rgba(3, 64, 131, .2);
+    border-bottom: 1px solid rgba(3, 64, 131, .2);
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.brands li:last-child{
+   border-right: none;
 }
 
 @media screen and (max-width: 960px) {
@@ -273,36 +457,67 @@ button:hover{
     }
     /* blog02 css*/
    .blog2heading h2{
-    text-align: center;
-        justify-content: center;
-        flex-direction:column;
-        display:grid;
-        margin-right: -46%;
-        margin-top: 10%;
+      margin-top: 10%;
+     margin-left: 1%;
+     display: left;
   }
  .blog2heading a{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-right:-10%;
+   display: flex;
+   
+   flex-direction: row;
+   margin-left: 6%;
  }
   /*Contact us css*/
  .contactusheading h2{
-     text-align: center;
-        justify-content: center;
-        flex-direction:column;
-        display:grid;
-        margin-right: -46%;
-        margin-top: 10%;
-
+    
+     margin-top: 10%;
+     margin-left: 1%;
+     display: left;
 }
 .contactusheading a{
-   text-align: center;
+  
    display: flex;
-   justify-content: center;
+   
    flex-direction: row;
-   margin-right:-10%;
+   margin-left: 6%;
+}
+.contactussection{
+   margin-top: 100px;
+   height:100%;
+   margin-left:1%;
+
+}
+
+.sectionimg1{
+ width:0%;
+ height:0%;
+}
+.addresssection{
+  margin-top: 100px;
+ 
+  
+}
+.addresssection span{
+  font-size: auto;
+  
+}
+.addresssection p{
+   font-size: auto;
+}
+.row1{
+  
+   display:grid;
+   height: auto;
+
+}
+.brands ul{
+  
+ display:inline-table;
+ margin-left: 4%;
+ width:100%;
+}
+.brands li{
+   border: none;
 }
 
 

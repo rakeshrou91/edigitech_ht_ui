@@ -15,6 +15,34 @@ export default function Blog() {
       </div>
       
     </div>
+    <Paper>
+      <Grid >
+        <div className="gridrow">
+          <div className="gridColumn">
+          <Card className="blogcard">
+             <span>Elements of a Strong Corporate Travel Program</span>
+             <p>This article will give you the basic points to consider when putting together or revamping your corporate travel.</p>
+          </Card>
+          </div>
+          <div className="gridColumn">
+          <Card className="blogcard">
+             <span>Closer To Truth:Is Time Travel Possible?</span>
+             <p>This article will give you the basic points to consider when putting together or revamping your corporate travel.</p>
+          </Card>
+          </div>
+          <div className="gridColumn">
+          <Card className="blogcard">
+             <span>Travel Risk Management and Foreseeable Risk</span>
+             <p>This article will give you the basic points to consider when putting together or revamping your corporate travel.</p>
+          </Card>
+          </div>
+        
+       
+        </div>
+        
+       
+      </Grid>
+    </Paper>
     <Suspense fallback={<div>Loading...</div>}>
       <Footer/>
     </Suspense>

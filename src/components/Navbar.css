@@ -1,3 +1,31 @@
+.btn {
+  background: rgb(89, 189, 184) ;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size:12px;
+  outline: medium none; 
+  border:none;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 8px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 7pc;
+  height: 2pc;
+  box-shadow: 4pc;
+ 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+  background-color: red;
+ 
+ 
+  color: #fff;
+ 
+ 
+}
 .navbar {
   background: transparent;
   height: 68px;

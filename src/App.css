@@ -120,9 +120,20 @@
   font-size: 100px;
 }
 @media screen and (max-width: 960px) {
-  .aboutus{
-    justify-self: center;
-    text-align: center;
-  
+  .aboutus,
+  .affiliateprogram,
+  .services,
+  .help,
+  .howitworks,
+  .standard,
+  .premium,
+  .compare,
+  .blog,
+  .blog1,
+  .blog2,
+  .blog3,
+  .contact-us
+  {
+    width: auto;
   }
 }
