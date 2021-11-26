@@ -81,7 +81,7 @@ export default function ContactUs() {
            </Card>
            <Card className="brands" style={{boxShadow:'none'}}>
              <ul >
-                   <li><Image  className="img11" src={process.env.PUBLIC_URL + "/brands-1.png"} /></li>
+                   <li><Image  src={process.env.PUBLIC_URL + "/brands-1.png"} /></li>
                    <li><Image src={process.env.PUBLIC_URL + "/brands-2.png"} /></li>
                    <li><Image src={process.env.PUBLIC_URL + "/brands-3.png"} /></li>
                    <li><Image src={process.env.PUBLIC_URL + "/brands-4.png"} /></li>

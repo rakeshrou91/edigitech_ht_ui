@@ -14,7 +14,6 @@
   width: 7pc;
   height: 2pc;
   box-shadow: 4pc;
- 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -245,5 +244,15 @@
   }
   .upnavitemregister{
     color:#fff;
+  }
+  .btn{
+    color:transparent;
+    background-color: transparent;
+    box-shadow:none;
+  }
+  .btn:hover{
+    color:transparent;
+    background-color: transparent;
+    box-shadow:none;
   }
 }

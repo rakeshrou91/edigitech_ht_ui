@@ -2,6 +2,7 @@ import React , { Suspense }from 'react';
 import './comman.css';
 import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
 import {Card } from "@material-ui/core";
+const Blogprevnext = React.lazy(() => import('./UI/blogprevnext'));
 const Footer = React.lazy(() => import('./UI/footer'));
 
 export default function Blog01() {
@@ -14,7 +15,15 @@ export default function Blog01() {
             
       </div>
     </div>
+    <Paper>
+       <Grid>
+         <Card>
+           
+         </Card>
+       </Grid>
+    </Paper>
     <Suspense fallback={<div>Loading...</div>}>
+      <Blogprevnext/>
       <Footer/>
     </Suspense>
     </>

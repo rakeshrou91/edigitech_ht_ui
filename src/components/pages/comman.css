@@ -103,6 +103,136 @@ button:hover{
     font-size: 16px;
     font-size: 16px;
  }
+ .blogfooter{
+   margin-top: 24px;
+   padding-top: 24px;
+   color:#413E3E;
+   cursor: pointer;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 8px;
+   border-top: 1px solid rgba(15, 54, 97, .2);
+}
+.nextprev{
+   color: #fff;
+    padding-top: 10px;
+    width:8%; 
+    height:44px;
+    background-color: #004D61;
+    font-weight: bold;
+    font-size:23px;
+    margin-top: 26px;
+    margin-right: 20px;
+    margin-bottom: 20%;
+    box-shadow: 20px 20px 11px rgba(33,33,33,.2);
+   
+   
+}
+.nextprev1{
+  
+   background-color:#004D61;
+   padding-top: 10px;
+   width:8%; 
+   height:44px;
+   color: #fff;
+   font-weight: bold;
+   font-size:23px;
+   margin-top: 26px;
+   margin-right: 20px;
+   margin-bottom: 20%;
+   box-shadow: 20px 20px 11px rgba(33,33,33,.2);
+}
+.nextprev1 a{
+   text-decoration: none;
+   color: #fff;
+
+   font-family: 'sans-serifs';
+}
+.nextprev a{
+   text-decoration: none;
+   color: #004D61;
+   font-family: 'sans-serifs';
+}
+.aactive{
+   text-decoration: none;
+   
+   font-family: 'sans-serifs';
+}
+.nextprev:hover{ 
+   background-color:#004D61;
+  
+}
+.nextprev a:hover{
+   color: #fff;
+   
+}
+.blogcard{
+   height:auto;
+   width:400px;
+   position: relative;
+   margin-bottom: 30px;
+   padding: 8px;
+   margin-left: 25%;
+   padding-bottom: 45px;
+   padding-right: 20px;
+   padding-left: 20px;
+    -webkit-transition: all .34s ease-in-out;
+    transition: all .34s ease-in-out;
+    border: 1px solid rgba(15, 54, 97, .2);
+
+}
+.blogcard a{
+   color: #3d446f;
+   padding-right: 34px;
+   padding-left: 30px;
+}
+.blogcard a:hover{ 
+   color: #496cfe;
+}
+.blogimg{ 
+   width: 360px;
+}
+
+.gridrow{
+   display: inline-flex;
+   width: auto;
+   height: auto;
+   padding-left: 40px;
+   margin-left: 40px;
+}
+.gridColumn{
+   padding-right: 22px;
+}
+.blogcard span{
+   padding-top: 40%;
+   font-size: 30px;
+    font-weight: 600;
+    padding-top: 90%;
+    margin-top: 20px;
+    line-height: 40px;
+   
+    -webkit-transition: all .24s ease-in-out;
+    transition: all .24s ease-in-out;
+    word-break: break-word;
+    color: #000;
+   
+
+}
+.blogcard p{
+   font-size: 15px;
+    line-height: 26px;
+    padding-top:20px;
+    color: #3d446f;
+}
+.blogcard span:hover{
+   color: #004D61;
+}
+.blogcard:hover{
+   cursor: pointer;
+   box-shadow: 10px 10px 11px rgba(33,33,33,.2);
+   border: 1px solid #496cfe;
+}
  /* blog01 css*/
  .blog01heading h2{
     font-size: 70px;
@@ -116,6 +246,7 @@ button:hover{
      margin-left: -140%;
      font-size: 16px;
  }
+ 
  /* blog02 css*/
  .blog2heading h2{
     font-size: 70px;
@@ -129,51 +260,7 @@ button:hover{
     margin-left: -60%;
     font-size: 16px;
 }
-.blogcard{
-   height:640px;
-   width:400px;
-   position: relative;
-    margin-bottom: 30px;
-    padding: 8px;
-    -webkit-transition: all .34s ease-in-out;
-    transition: all .34s ease-in-out;
-    border: 1px solid rgba(15, 54, 97, .2);
 
-}
-.gridrow{
-   display: inline-flex;
-   width: auto;
-   height: auto;
-   padding-left: 40px;
-   margin-left: 40px;
-}
-.gridColumn{
-   padding-right: 22px;
-}
-.blogcard span{
-   font-size: 30px;
-    font-weight: 600;
-    line-height: 40px;
-    margin: 30px 0 20px;
-    -webkit-transition: all .24s ease-in-out;
-    transition: all .24s ease-in-out;
-    word-break: break-word;
-    color: #000;
-
-}
-.blogcard p{
-   font-size: 15px;
-    line-height: 26px;
-    color: #3d446f;
-}
-.blogcard span:hover{
-   color: #004D61;
-}
-.blogcard:hover{
-   cursor: pointer;
-   box-shadow: 10px 10px 11px rgba(33,33,33,.2);
-   border: 1px solid #496cfe;
-}
  /*Contact us css*/
 .contactusheading h2{
    font-size: 70px;
@@ -337,6 +424,7 @@ button:hover{
    font-size: 16px;
     line-height: 26px;
 }
+
 .brands{
    margin-bottom: 100px;
 }
@@ -438,6 +526,16 @@ button:hover{
         justify-content: center;
         flex-direction: row;
         margin-right:-10%;
+     }
+     .blogcard{
+        
+        flex-direction:column;
+        display:inline-table;
+        
+        margin-left: -11%;
+        width:auto;
+       
+
      }
      /* blog01 css*/
      .blog01heading h2{
