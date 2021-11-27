@@ -1,7 +1,13 @@
 import React , { Suspense }from 'react';
 import './comman.css';
-import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
+import Input from '@mui/material/Input';
+import {Grid,Paper,Avatar,TextField,Link} from '@material-ui/core';
 import {Card } from "@material-ui/core";
+import Image from 'react-bootstrap/Image';
+
+const Blogfeedback = React.lazy(() => import('./UI/blogfeedback'));
+const Blog02comment = React.lazy(() => import('./UI/blog02comment'));
+const Blog02card = React.lazy(() => import('./UI/blog02card'));
 const Footer = React.lazy(() => import('./UI/footer'));
 
 export default function Blog02() {
@@ -14,6 +20,15 @@ export default function Blog02() {
             
       </div>
     </div>
+  
+     <Suspense fallback={<div>Loading...</div>}>
+      <Blog02card/>
+      <Blog02comment/>
+      <Blogfeedback/>
+   
+    </Suspense>
+
+  
     <Suspense fallback={<div>Loading...</div>}>
       <Footer/>
     </Suspense>

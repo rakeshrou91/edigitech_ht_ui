@@ -147,7 +147,7 @@ export default function Home() {
                   <button  class="button-hover">Hyderabad</button> <space/><space/>
                   <button  class="button-hover">Ahmedabad</button> <space/><space/><br/>
 
-                  <div class="row1">
+                  <div class="row1" style={{marginLeft:"1%"}}>
                    <div class="column1">
                       <img  src={process.env.PUBLIC_URL + "/11.jpg"}  style={{height:'100%',width:"100%"}} />
                    </div>
@@ -159,7 +159,7 @@ export default function Home() {
                    </div>
                   
                  </div>
-                 <div class="row1">
+                 <div class="row1"style={{marginLeft:"1%"}}>
 
                    <div class="column1">
                       <img  src={process.env.PUBLIC_URL + "/14.jpg"} style={{height:'100%',width:"100%"}} />
