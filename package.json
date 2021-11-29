@@ -20,6 +20,7 @@
     "react-icons": "^4.3.1",
     "react-media": "^1.10.0",
     "react-player": "^2.9.0",
+    "react-popup-alert": "^2.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "reactjs-media": "^2.1.4",

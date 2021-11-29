@@ -1,6 +1,7 @@
 import React from 'react'
 import '../comman.css';
 import Image from 'react-bootstrap/Image';
+import {SiIndeed} from 'react-icons/si';
 import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
 import {Card } from "@material-ui/core";
 const blog02card = () => {
@@ -48,6 +49,7 @@ const blog02card = () => {
                  <td><i class="fab fa-facebook "  ></i> </td>
                  <td><i class="fab fa-twitter"></i></td>
                  <td><i class="fab fa-google-plus"></i></td>
+                 <td><i><SiIndeed/></i></td>
                
              </footer>
         </Card>

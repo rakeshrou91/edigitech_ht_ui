@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-
+import Alert from 'react-popup-alert';
 import Dropdown from './Dropdown';
 import Dropdown1 from './Dropdown1';
 import Dropdown2 from './Dropdown2';
@@ -17,7 +17,27 @@ function Navbar() {
   const [colorChange1, setColorchange1] = useState(false);
 
 
- 
+  const [alert, setAlert] = React.useState({
+    type: 'error',
+    text: 'This is a alert message',
+    show: false
+  })
+
+  function onCloseAlert() {
+    setAlert({
+      type: '',
+      text: '',
+      show: false
+    })
+  }
+
+  function onShowAlert(type) {
+    setAlert({
+      type: type,
+      text: 'Demo alert',
+      show: true
+    })
+  }
   const changeNavbarColor = () =>{
     if(window.scrollY >= 80){
       setColorchange(true);
@@ -103,12 +123,12 @@ function Navbar() {
     
     }
   };
-
+  
   return (
     <>
       <nav className={colorChange ? 'navbar  colorChange':''}>
         <div><br/>
-         <a href="/Support"  className="upnavitemsupport"><i class="fas fa-headset"></i> Support</a>&nbsp;&nbsp;
+         <a onClick={onShowAlert} className="upnavitemsupport"><i class="fas fa-headset"></i> Support</a>&nbsp;&nbsp;
          <a href="/Support" className="upnavitememail"><i class="fas fa-envelope"></i> info@ehealthflex.com</a>
         
       
@@ -116,7 +136,20 @@ function Navbar() {
          <a href="/Support"  className="upnavitemregister"><i class="fas fa-user-plus"></i> Register</a>
         </div>
       </nav>
-      
+      <Alert
+        header={'Header'}
+        btnText={'Close'}
+        text={alert.text}
+        type={alert.type}
+        show={alert.show}
+        onClosePress={onCloseAlert}
+        pressCloseOnOutsideClick={true}
+        showBorderBottom={true}
+        alertStyles={{}}
+        headerStyles={{}}
+        textStyles={{}}
+        buttonStyles={{}}
+      />
       <nav className={colorChange ? 'navbar  colorChange':'navbar'}>
           <div className='navbar-container'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>

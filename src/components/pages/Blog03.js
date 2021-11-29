@@ -1,8 +1,9 @@
 import React , { Suspense }from 'react';
 import './comman.css';
+
 import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
-import {Card } from "@material-ui/core";
-const Blog01card =React.lazy(() => import('./UI/blog01card'));
+
+const Blog03author = React.lazy(() => import('./UI/blog03author'));
 const Blog01sidecard = React.lazy(() => import('./UI/blog01sidecard'));
 const Blogfeedback = React.lazy(() => import('./UI/blogfeedback'));
 const Blog02comment = React.lazy(() => import('./UI/blog02comment'));
@@ -19,20 +20,32 @@ export default function Blog03() {
             
       </div>
     </div>
-    <Card className="blog03card">
-    <tr>
-      <td>
-      <Suspense fallback={<div>Loading...</div>}>
-         <Blog02card/>
-      </Suspense>
-      </td>
-      <td>
-      <Suspense fallback={<div>Loading...</div>}>
-         <Blog01sidecard/>
-      </Suspense>
-      </td>
-    </tr>
-    </Card>
+    <Paper className="blog03paper " style={{boxShadow:"none"}} >
+      
+       <Grid container spacing={5} >
+          <Grid item xs={10}>
+       
+          <Suspense fallback={<div>Loading...</div>}>
+              <Blog02card/>
+              <Blog03author/>
+              <Blog02comment/>
+              <Blogfeedback/>
+          </Suspense>
+          </Grid>
+         <Grid item xs={2}>
+          <Suspense fallback={<div>Loading...</div>}>
+             <Blog01sidecard/>
+          </Suspense>
+         </Grid>
+ 
+       </Grid>
+      
+       <Suspense fallback={<div>Loading...</div>}>
+             
+         
+          </Suspense>
+      
+    </Paper>
     
     
 
