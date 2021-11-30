@@ -798,7 +798,8 @@ button:hover{
 }
 .comparestandard{
   width:70%;
-
+  margin-left:40%;
+  
   
 }
 .comparestandard img{
@@ -852,8 +853,9 @@ button:hover{
     width:100%;
    
 }
-.comparecardset td{
-    padding-right: 10px;
+.comparecardset td:last-child{
+ 
+  margin-right:10%;
 }
  /*Contact us css*/
 .contactusheading h2{
@@ -1102,13 +1104,14 @@ button:hover{
 .standardpackage div{
    margin-top: 44px;
    font-size: 15px;
-    padding: 30px 50px;
+    padding: 30px 10px;
     color: #878484;
     border-top: 1px solid;
     border-bottom: 1px solid;
-    margin-left:22%;
+    margin-left:52%;
     margin-right: 20%;
     margin-bottom: 40px;
+    width:30%;
     
 }
 .standardpackage div h2{
@@ -1116,27 +1119,403 @@ button:hover{
    font-size: 24px;
    padding-top: 5px;
    color: #496cfe;
+
 }
 .standardpackage span{
    font-size: 12px;
    color: #878484;
+ 
 }
 .standardpackage div a{
   
-   padding: 12px 39px;
+   padding: 14px 39px;
    border-radius: 999px;
    color: #fff;
+  
+   z-index: 1;
+   color: #fff;
+   border: none;
+   background-color: #5BD1D7;
+   text-decoration: none;
+   margin-left: 36%;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 24px;
+}
+.standardpackbutton{
    position: relative;
     z-index: 1;
-    color: #fff;
-    border: none;
-    background-color: #5BD1D7;
-   text-decoration: none;
-    margin-left: 20%;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
+    padding: 18px;
+    -webkit-transition: all .24s ease-in-out;
+    transition: all .24s ease-in-out;
+    border: 1px solid rgba(13, 21, 75, .15);
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+    box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+    margin-bottom: 40px;
+    margin-right: 12%;
+    margin-left: 12%;
+    height:80px;
+    margin-top: 6%;
+    width:auto;
 }
+.standardpackbutton li a:first{
+   background-color: #004D61;
+}
+.standardpackbutton:hover{
+   border-color: #496cfe;
+}
+.standardpackbutton li:active{
+  
+   background-color: #004D61;
+}
+.standardpackbutton li a:active{
+   color: #fff;
+}
+.standardpackbutton li{
+   font-size: 14px;
+   cursor: pointer;
+    display: inline-block;
+    padding: 14px 30px;
+    -webkit-transition: all .24s ease-in-out;
+    transition: all .24s ease-in-out;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 14px;
+    margin-left: 15px;
+    
+    border: 1px solid rgba(42, 56, 76, .15);
+    border-radius: 22px;
+    background-color: white;
+    -webkit-box-shadow: 0 5px 10px 0 rgb(55 94 246 / 20%);
+    box-shadow: 0 5px 10px 0 rgb(55 94 246 / 20%);
+    
+}
+.standardpackbutton a{
+   text-decoration: none;
+   color: #4f4f4f;
+}
+.standardpackbutton a :focus{
+   color:#2ecc71;
+}
+.classcard{
+   padding:40px 50px;
+   background-color: #2ecc71;
+   margin-top: 40px;
+}
+.classcard span{
+   font-size: bold;
+}
+.standardhotelcard{
+   position: relative;
+   z-index: 1;
+   padding: 18px;
+   padding-bottom: 2%;
+   -webkit-transition: all .24s ease-in-out;
+   transition: all .24s ease-in-out;
+   border: 1px solid rgba(13, 21, 75, .15);
+   background-color: #fff;
+   -webkit-box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   margin-bottom: 10%;
+   margin-right: 12%;
+   margin-left: 12%;
+   height:auto;
+   margin-top: 6%;
+   width:auto;
+}
+
+.standardhotelcard:hover{
+  border-color: #496cfe;
+}
+.standardhotelcard span{
+   font-size: 20px;
+   font-weight: 600;
+   padding-top: 15%;
+   margin-bottom: 30px;
+}
+.standardhotelcard p{
+   font-size: 16px;
+    line-height: 26px;
+    margin-top: 3%;
+}
+.standardoverviewcard{
+   position: relative;
+   z-index: 1;
+   padding: 18px;
+   padding-bottom: 2%;
+   -webkit-transition: all .24s ease-in-out;
+   transition: all .24s ease-in-out;
+   border: 1px solid rgba(13, 21, 75, .15);
+   background-color: #fff;
+   -webkit-box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   margin-bottom: 10%;
+   margin-right: 12%;
+   margin-left: 12%;
+   height:auto;
+   margin-top: 6%;
+   width:auto;
+}
+.standardoverviewcard:hover{
+   border-color: #496cfe;
+ }
+ .standardoverviewcard h4{
+   background: #496cfe;
+   font-size: 14px;
+   position: relative;
+    display: inline-block;
+    padding: 10px 40px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+ }
+ .standardoverviewcard ul{
+   list-style-type: none;
+ }
+ .standardoverviewcard li{
+   display: list-item;
+   padding-top: 10px;
+ }
+ .standardoverviewcard1{
+   position: relative;
+   z-index: 1;
+   padding: 12px;
+   padding-bottom: 2%;
+   -webkit-transition: all .24s ease-in-out;
+   transition: all .24s ease-in-out;
+   border: 1px solid rgba(13, 21, 75, .15);
+   background-color: #fff;
+   -webkit-box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   margin-bottom: 10%;
+   margin-right: 12%;
+   margin-left: 12%;
+   height:auto;
+   margin-top:-8%;
+   width:auto;
+ }
+ .standardoverviewcard1 h3{
+   font-size: 19px;
+   font-weight: 600;
+   color: #000;
+   padding-top: 20px;
+   padding-bottom: 20px;
+
+ }
+ .standardoverviewcard1 span{
+   font-size: 16px;
+   font-weight: 600;
+   color: #000;
+  
+ }
+ .standardoverviewcard1 p{
+   font-size: 16px;
+   line-height: 26px;
+   margin-top: 0;
+   margin-bottom: 1rem;
+   padding-top: 10px;
+ }
+ .standardoverviewcard1 li{
+   font-size: 14px;
+   cursor: pointer;
+   display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 20px;
+    margin-left: 30px;
+  
+ }
+ .standardoverviewcard1 img{
+   display:inline;
+   margin-left: -90%;
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   font-size: 45px;
+    line-height: 53px;
+    margin-top: 10px;
+    border: 1px dotted rgba(73, 108, 254, .702);
+    background: #fff;
+ }
+ .standardoverviewcard1 h2{
+   font-size: 13px;
+  margin-left: 1px;
+  font-weight: 700;
+  color: #333;
+  margin-top: -50px;
+  padding-right: 33px;
+ }
+ .standardoverviewcard1 h4{
+   font-size: 18px;
+   font-weight: 500;
+   margin-left: 50px;
+   color: #496cfe;
+   padding-right: 33px;
+  }
+  .standardpolicies{
+   position: relative;
+   z-index: 1;
+   padding: 18px;
+   padding-bottom: 2%;
+   -webkit-transition: all .24s ease-in-out;
+   transition: all .24s ease-in-out;
+   border: 1px solid rgba(13, 21, 75, .15);
+   background-color: #fff;
+   -webkit-box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   margin-bottom: 10%;
+   margin-right: 12%;
+   margin-left: 12%;
+   height:auto;
+   margin-top: 6%;
+   width:auto;
+  }
+  .standardpolicies h3{
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 35px;
+   margin-left: 1%;
+   margin-top: -0%;
+  }
+  .standardpolicies li{
+   font-size: 16px;
+   cursor: pointer;
+   display: inline-block;
+    text-align: center;
+  
+    margin-right: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+  .standardpolicies img{
+    margin-left: -100%;
+  }
+  .standardpolicies h4{
+   font-size: 16px;
+   font-weight: 600;
+   color: #000;
+   margin-left: -66%;
+   margin-top: -3%;
+ }
+ .standardpolicies h5{
+   font-size: 16px;
+   font-weight: 600;
+   color: #000;
+   margin-left: -79%;
+   margin-top: -3%;
+ }
+ .standardpolicies div{
+  margin-left: -50%;
+  margin-top: 10px;
+ }
+ 
+ .standardpolicies p{
+   font-size: 13px;
+   color: #333;
+   margin-left: 2%; 
+   display:inline-block;
+ }
+ .standardpolicies span{
+   font-size: 13px;
+   color: #333;
+   margin-left:-39%; 
+   padding-top: 10px;
+   display:inline-block;
+ }
+ .standardpolicies div span{
+   font-size: 13px;
+   color: #333;
+   margin-left:-14%; 
+   padding-top: 10px;
+   display:inline-block;
+ }
+ .standardpolicies div li {
+   display:inline-block;
+   width:auto;
+   margin-left:10px;
+ }
+ .standardpolicies div ul {
+   
+   margin-left:120px;
+   margin-top: -4%;
+ }
+ .standardpolicies p i{
+   color:#496cfe;
+ }
+ .standardpolicies div li img:hover{
+   -webkit-transform: scale(0.0);
+   transform: scale(1.1);
+ }
+ .standardcancel{
+   position: relative;
+   z-index: 1;
+   padding: 18px;
+   padding-bottom: 2%;
+   -webkit-transition: all .24s ease-in-out;
+   transition: all .24s ease-in-out;
+   border: 1px solid rgba(13, 21, 75, .15);
+   background-color: #fff;
+   -webkit-box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   margin-bottom: 10%;
+   margin-right: 12%;
+   margin-left: 12%;
+   height:auto;
+   margin-top: -8%;
+   width:auto;
+ }
+ .standardcancel span{
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 30px;
+ }
+ .standardcancel h3{
+   font-size: 16px;
+   margin-top: 19px;
+   margin-bottom: 30px;
+   text-transform: uppercase;
+   color: #000;
+ }
+ .standardcancel h4{
+   font-size: 15px;
+   font-weight: 600;
+   color: #000;
+   padding-bottom: 10px;
+ }
+ .standardcancel p{
+   font-size: 16px;
+   line-height: 26px;
+ }
+ .standardreviews div{
+  
+   padding-left: 30px;
+   padding-top: 30px;
+  
+   border: 1px dashed #496cfe;
+   border-radius: 0.25rem;
+   width:20%;
+   height:40%;
+
+ }
+ .standardreviews div img{
+   border-radius: 50%;
+
+ }
+ .standardreviews span{
+   font-size: 13px;
+   color: #878484;
+   margin-top: 50%;
+ }
 @media screen and (max-width: 960px) {
      /* Helpcenter css*/
      .helpheading h2{

@@ -44,7 +44,7 @@ export default function TourismPackage() {
               <td>
                 <Card className="comparestandard">
                  <Image src={process.env.PUBLIC_URL + "/vol11.jpg"}/><br/><br/>
-                   <span>Standard</span>
+                   <span>Premium</span>
                    <ul>
                      <li><i class="fas fa-check"></i> 3-4 Star Comfortable Budget Accommodation</li>
                      <li><i class="fas fa-check"></i> Flight Booking Assistance</li>
