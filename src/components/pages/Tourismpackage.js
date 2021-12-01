@@ -22,6 +22,7 @@ export default function TourismPackage() {
             <h2>Tourism Package</h2>
             <p>We offer a wide range of package that meets all your requirements. eHealthFlex also offers<br/> a facility to customize the package according to your budget and expectations</p>
         </Card>
+       
         <Card className="comparecardset">
             <tr>
               <td>
@@ -62,18 +63,7 @@ export default function TourismPackage() {
         </Card>
       </Grid>
     </Paper>
-    <Paper>
-    <Grid container spacings={2}  >
-          <Grid item xs={6} >
-       
-         
-          </Grid>
-         <Grid item xs={6}>
-         
-         </Grid>
- 
-       </Grid>
-    </Paper>
+   
     <Suspense fallback={<div>Loading...</div>}>
       <Footer/>
     </Suspense>

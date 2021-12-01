@@ -1,6 +1,7 @@
 import React , { Suspense ,useState}from 'react';
 import './comman.css';
 import './UI/footer.css';
+import Progress from 'react-progressbar';
 import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
 import {Card } from "@material-ui/core";
 const Footer = React.lazy(() => import('./UI/footer'));
@@ -10,7 +11,8 @@ export default function StandardPackage() {
   const [description,setDescription]=useState(false);
   const [overview,setOverview]=useState(false);
   const [reviews,setReviews]=useState(false);
-  
+  const [services,setServices]=useState(false);
+  const [packagedetails,setPackagedetails]=useState(false);
   const descriptionContent=<div>
     
       <Card className="standardhotelcard">
@@ -20,18 +22,355 @@ export default function StandardPackage() {
       </Card>
    
   </div>
+  const packagedetailsContent=<div>
+    
+  <Card className="standardpackagedetails">
+        <div className="packcontainer">
+           <img src={process.env.PUBLIC_URL + "/hroom-1.jpg"} />
+            <span>PREMIER ROOM</span>
+            <h6> <img src={process.env.PUBLIC_URL + "/hottel-cion-10.png"} />17 m²</h6>
+            <h6><img src={process.env.PUBLIC_URL + "/hottel-cion-11.png"} /> Floor 8-15</h6>
+            <p>Bigger than most similar rooms in Hong Kong</p>
+        </div>
+        <Card className="packcontainer1">
+          <ul>
+            <li><i class="fas fa-bed"></i> <i class="fas fa-bed"></i></li>
+            <li><span>1 double bed or</span></li>
+            <li><span>2 single beds</span></li>
+          </ul>
+          <ul>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free in-room Wi-Fi</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} /> Western restaurant</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front desk (24 hours)</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft drinks</li>
+          </ul>
+          <ul>
+            <li><i class="far fa-check-circle"></i>  Free cancellation before Nov 10,<br/>2018, 12:00 (hotel's local time</li>
+            <li><i class="far fa-check-circle"></i> Instant Confirmation</li>
+            <li><i class="far fa-check-circle"></i> Summer promotion</li>
+          
+          </ul>
+          <ul>
+            <li>From USD</li>
+            <li><h3>$364</h3></li>
+            <li>After tax $410</li>
+          </ul>
+          <ul>
+            <li><button>Book</button></li>
+            <li style={{color: '#2f7000'}}><i class="fas fa-check"></i> Price Guarantee</li>
+         </ul>
+       </Card>
+       <Card className="packcontainer2">
+          <ul>
+            <li><i class="fas fa-bed"></i> <i class="fas fa-bed"></i></li>
+            <li><span>1 double bed or</span></li>
+            <li><span>2 single beds</span></li>
+          </ul>
+          <ul>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free in-room Wi-Fi</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} /> Western restaurant</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front desk (24 hours)</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft drinks</li>
+          </ul>
+          <ul>
+            <li><i class="far fa-check-circle"></i>  Free cancellation before Nov 10,<br/>2018, 12:00 (hotel's local time</li>
+            <li><i class="far fa-check-circle"></i> Instant Confirmation</li>
+            <li><i class="far fa-check-circle"></i> Summer promotion</li>
+          
+          </ul>
+          <ul>
+            <li>From USD</li>
+            <li><h3>$364</h3></li>
+            <li>After tax $410</li>
+          </ul>
+          <ul>
+            <li><button>Book</button></li>
+            <li style={{color: '#2f7000'}}><i class="fas fa-check"></i> Price Guarantee</li>
+         </ul>
+       </Card>
+  </Card>
+  <Card className="standardpackagedetails">
+        <div className="packcontainer">
+           <img src={process.env.PUBLIC_URL + "/hroom-1.jpg"} />
+            <span>PREMIER ROOM</span>
+            <h6> <img src={process.env.PUBLIC_URL + "/hottel-cion-10.png"} />17 m²</h6>
+            <h6><img src={process.env.PUBLIC_URL + "/hottel-cion-11.png"} /> Floor 8-15</h6>
+            <p><a>Bigger than most similar rooms in the Destination</a></p>
+        </div>
+        <Card className="packcontainer1">
+          <ul>
+            <li><i class="fas fa-bed"></i> <i class="fas fa-bed"></i></li>
+            <li><span>1 double bed or</span></li>
+            <li><span>2 single beds</span></li>
+          </ul>
+          <ul>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free in-room Wi-Fi</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} /> Western restaurant</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front desk (24 hours)</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft drinks</li>
+          </ul>
+          <ul>
+            <li><i class="far fa-check-circle"></i>  Free cancellation before Nov 10,<br/>2018, 12:00 (hotel's local time</li>
+            <li><i class="far fa-check-circle"></i> Instant Confirmation</li>
+            <li><i class="far fa-check-circle"></i> Summer promotion</li>
+          
+          </ul>
+          <ul>
+            <li>From USD</li>
+            <li><h3>$364</h3></li>
+            <li>After tax $410</li>
+          </ul>
+          <ul>
+            <li><button>Book</button></li>
+            <li><i class="fas fa-check"></i> Price Guarantee</li>
+         </ul>
+       </Card>
+       <Card className="packcontainer2">
+          <ul>
+            <li><i class="fas fa-bed"></i> <i class="fas fa-bed"></i></li>
+            <li><span>1 double bed or</span></li>
+            <li><span>2 single beds</span></li>
+          </ul>
+          <ul>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free in-room Wi-Fi</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} /> Western restaurant</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front desk (24 hours)</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft drinks</li>
+          </ul>
+          <ul>
+            <li><i class="far fa-check-circle"></i>  Free cancellation before Nov 10,<br/>2018, 12:00 (hotel's local time</li>
+            <li><i class="far fa-check-circle"></i> Instant Confirmation</li>
+            <li><i class="far fa-check-circle"></i> Summer promotion</li>
+          
+          </ul>
+          <ul>
+            <li>From USD</li>
+            <li><h3>$364</h3></li>
+            <li>After tax $410</li>
+          </ul>
+          <ul>
+            <li><button>Book</button></li>
+            <li style={{color: '#2f7000'}}><i class="fas fa-check"></i> Price Guarantee</li>
+         </ul>
+       </Card>
+  </Card>
+ 
+  <Card className="standardpackagedetails">
+        <div className="packcontainer">
+           <img src={process.env.PUBLIC_URL + "/hroom-1.jpg"} />
+            <span>PREMIER ROOM</span>
+            <h6> <img src={process.env.PUBLIC_URL + "/hottel-cion-10.png"} />17 m²</h6>
+            <h6><img src={process.env.PUBLIC_URL + "/hottel-cion-11.png"} /> Floor 8-15</h6>
+            <p>Bigger than most similar rooms at your Destination</p>
+        </div>
+        <Card className="packcontainer1">
+          <ul>
+            <li><i class="fas fa-bed"></i> <i class="fas fa-bed"></i></li>
+            <li><span>1 double bed or</span></li>
+            <li><span>2 single beds</span></li>
+          </ul>
+          <ul>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free in-room Wi-Fi</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} /> Western restaurant</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front desk (24 hours)</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft drinks</li>
+          </ul>
+          <ul>
+            <li><i class="far fa-check-circle"></i>  Free cancellation before Nov 10,<br/>2018, 12:00 (hotel's local time</li>
+            <li><i class="far fa-check-circle"></i> Instant Confirmation</li>
+            <li><i class="far fa-check-circle"></i> Summer promotion</li>
+          
+          </ul>
+          <ul>
+            <li>From USD</li>
+            <li><h3>$364</h3></li>
+            <li>After tax $410</li>
+          </ul>
+          <ul>
+            <li><button>Book</button></li>
+            <li style={{color: '#2f7000'}}><i class="fas fa-check"></i> Price Guarantee</li>
+         </ul>
+       </Card>
+       <Card className="packcontainer2">
+          <ul>
+            <li><i class="fas fa-bed"></i> <i class="fas fa-bed"></i></li>
+            <li><span>1 double bed or</span></li>
+            <li><span>2 single beds</span></li>
+          </ul>
+          <ul>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free in-room Wi-Fi</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} /> Western restaurant</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front desk (24 hours)</li>
+            <li><img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft drinks</li>
+          </ul>
+          <ul>
+            <li><i class="far fa-check-circle"></i>  Free cancellation before Nov 10,<br/>2018, 12:00 (hotel's local time</li>
+            <li><i class="far fa-check-circle"></i> Instant Confirmation</li>
+            <li><i class="far fa-check-circle"></i> Summer promotion</li>
+          
+          </ul>
+          <ul>
+            <li>From USD</li>
+            <li><h3>$364</h3></li>
+            <li>After tax $410</li>
+          </ul>
+          <ul>
+            <li><button>Book</button></li>
+            <li style={{color: '#2f7000'}}><i class="fas fa-check"></i> Price Guarantee</li>
+         </ul>
+       </Card>
+  </Card>
+ 
+ 
+ </div>
+ 
   const reviewsContent=<div>
+     <Card className="standardreviews">
+          <span><h3>Reviews</h3><h5>(86 verified reviews)</h5> </span>
+         <div className="standreview1scontainer">
+            <h4>Excellent</h4>
+            <h3>
+             4.3/5
+            </h3>
+            <h5>eHealthFlex Verified Reviews</h5>
+            <span ></span>
+            <Progress  className="progress-bar-test" completed={15} />
+         </div>
+</Card>
     
   <Card className="standardreviews">
 
-    <div>
-       <img  src={process.env.PUBLIC_URL + "/cmnt-2.jpg"} style={{ width: 80, height: 80,border: '2px solid #496cfe'}}/>
-      <span><i class="fas fa-calendar-alt"></i> Stayed in Nov 2020</span> 
+    <div className="standreviewscontainer">
+      <img  src={process.env.PUBLIC_URL + "/cmnt-2.jpg"} style={{ width: 80, height: 80,border: '2px solid #496cfe'}}/>
+      <span><i class="fas fa-calendar-alt"></i> Stayed in Nov 2020</span> <br/>
       <span><i class="fas fa-calendar-check"></i> Stayed in Nov 2020</span>
+    </div>
+    <div className="standreviewscontainer1" style={{boxShadow:'none'}}>
+      <ul>
+        <li><h4>Simon Lopez <i class="fas fa-star fa-xs "></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></h4></li>
+        <li><span>November 20, 2020 at 8:31 pm</span></li>
+        <li><p>I am very please with Hotel! I will certainly return. I got a wonderful from the 15 floor to the Botanical Garden a great Supermarket in the corner, about 2 minutes walking, and a bus stop to downtown within few meters. It is close to downtown and great price!</p></li>
+      </ul>
+       <a > Reply  <i class="fas fa-reply-all"></i></a>
     </div>
      
   </Card>
+  <Card className="standardreviews">
+
+    <div className="standreviewscontainer">
+      <img  src={process.env.PUBLIC_URL + "/cmnt-3.jpg"} style={{ width: 80, height: 80,border: '2px solid #496cfe'}}/>
+      <span><i class="fas fa-calendar-alt"></i> Stayed in Nov 2020</span> <br/>
+      <span><i class="fas fa-calendar-check"></i> Stayed in Nov 2020</span>
+    </div>
+    <div className="standreviewscontainer1" style={{boxShadow:'none'}}>
+      <ul>
+        <li><h4>Gary Dunn <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></h4></li>
+        <li><span>November 20, 2020 at 8:31 pm</span></li>
+        <li><p>I am very please with Hotel! I will certainly return. I got a wonderful from the 15 floor to the Botanical Garden a great Supermarket in the corner, about 2 minutes walking, and a bus stop to downtown within few meters. It is close to downtown and great price!</p></li>
+      </ul>
+      <a > Reply  <i class="fas fa-reply-all"></i></a>
+    </div>
+     
+  </Card>
+  <Card className="standardreviews">
+
+    <div className="standreviewscontainer">
+      <img  src={process.env.PUBLIC_URL + "/cmnt-4.jpg"} style={{ width: 80, height: 80,border: '2px solid #496cfe'}}/>
+      <span><i class="fas fa-calendar-alt"></i> Stayed in Nov 2020</span> <br/>
+      <span><i class="fas fa-calendar-check"></i> Stayed in Nov 2020</span>
+    </div>
+    <div className="standreviewscontainer1" style={{boxShadow:'none'}}>
+      <ul>
+        <li><h4>Mark Ques <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></h4></li>
+        <li><span>November 20, 2020 at 8:31 pm</span></li>
+        <li><p>I am very please with Hotel! I will certainly return. I got a wonderful from the 15 floor to the Botanical Garden a great Supermarket in the corner, about 2 minutes walking, and a bus stop to downtown within few meters. It is close to downtown and great price!</p></li>
+      </ul>
+      <a > Reply  <i class="fas fa-reply-all"></i></a>
+    </div>
+     
+  </Card>
+  <Card className="standardreviews">
+
+<div className="standreviewscontainer">
+  <img  src={process.env.PUBLIC_URL + "/cmnt-5.jpg"} style={{ width: 80, height: 80,border: '2px solid #496cfe'}}/>
+  <span><i class="fas fa-calendar-alt"></i> Stayed in Nov 2020</span> <br/>
+  <span><i class="fas fa-calendar-check"></i> Stayed in Nov 2020</span>
+</div>
+<div className="standreviewscontainer1" style={{boxShadow:'none'}}>
+  <ul>
+    <li><h4>Mans Livly <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></h4></li>
+    <li><span>November 20, 2020 at 8:31 pm</span></li>
+    <li><p>I am very please with Hotel! I will certainly return. I got a wonderful from the 15 floor to the Botanical Garden a great Supermarket in the corner, about 2 minutes walking, and a bus stop to downtown within few meters. It is close to downtown and great price!</p></li>
+  </ul>
+  <a > Reply  <i class="fas fa-reply-all"></i></a>
+</div>
  
+</Card>
+<Card className="standardreviews">
+
+<div className="standreviewscontainer">
+  <img  src={process.env.PUBLIC_URL + "/cmnt-2.jpg"} style={{ width: 80, height: 80,border: '2px solid #496cfe'}}/>
+  <span><i class="fas fa-calendar-alt"></i> Stayed in Nov 2020</span> <br/>
+  <span><i class="fas fa-calendar-check"></i> Stayed in Nov 2020</span>
+</div>
+<div className="standreviewscontainer1" style={{boxShadow:'none'}}>
+  <ul>
+    <li><h4>Sirlon Mika    <i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></h4></li>
+    <li><span>November 20, 2020 at 8:31 pm</span></li>
+    <li><p>I am very please with Hotel! I will certainly return. I got a wonderful from the 15 floor to the Botanical Garden a great Supermarket in the corner, about 2 minutes walking, and a bus stop to downtown within few meters. It is close to downtown and great price!</p></li>
+  </ul>
+  <a > Reply  <i class="fas fa-reply-all"></i></a>
+</div>
+ 
+</Card>
+ 
+</div>
+const servicesContent=<div>
+    
+<Card className="standardservices">
+  <span>Services & Amenities</span>
+  <ul>
+    <li>
+       <img src={process.env.PUBLIC_URL + "/hottel-cion-12.png"}/>
+       <h5>Transportation Services</h5>
+        <p><i class="far fa-check-circle"></i> Airport pickup service 
+         <i class="far fa-check-circle"></i> Parking
+         <i class="far fa-check-circle"></i> Car rental</p>
+    </li>
+    <li>
+       <img src={process.env.PUBLIC_URL + "/hottel-cion-13.png"}/>
+       <h5>General</h5>
+       <p><i class="far fa-check-circle"></i> Free Wi-Fi areas
+       <i class="far fa-check-circle"></i> Parking
+       <i class="far fa-check-circle"></i> Car rental</p>
+    </li>
+    <li>
+       <img src={process.env.PUBLIC_URL + "/hottel-cion-15.png"}/>
+       <h5>Food & Drink</h5>
+       <p><i class="far fa-check-circle"></i> Western restaurant
+          <i class="far fa-check-circle"></i> Indian & Western
+          <i class="far fa-check-circle"></i> Café</p>
+    </li>
+    <li>
+       <img src={process.env.PUBLIC_URL + "/hottel-cion-14.png"}/>
+       <h5>Front Desk Services</h5>
+       <p><i class="far fa-check-circle"></i> Luggage storage
+          <i class="far fa-check-circle"></i> Porter
+          <i class="far fa-check-circle"></i> Tourist map
+          <i class="far fa-check-circle"></i> Ticket service
+          <i class="far fa-check-circle"></i> Postal service</p>
+  
+    </li>
+  </ul>
+   
+</Card>
+
 </div>
   const policiesContent=<div>
     
@@ -107,7 +446,6 @@ export default function StandardPackage() {
        <li><i class="fas fa-check"></i>  A Language Translator will also be provided for the foreign patients</li>
        <li><i class="fas fa-check"></i>  On-demand personal assistant</li>
        <li><i class="fas fa-check"></i>  The package will also include City Tour</li>
-       
      </ul>
   </Card>
   <Card className="standardoverviewcard1">
@@ -227,13 +565,13 @@ export default function StandardPackage() {
                 
              </li>
              <li>
-                <a href="#">Package details</a>
+                <a onClick={()=>{setPackagedetails(!packagedetails)}}>Package details</a>
              </li>
              <li>
                 <a onClick={()=>{setDescription(!description)}}>Description</a>
              </li>
              <li>
-                <a href="#">Services & amenities </a>
+                <a onClick={()=>{setServices(!services)}}>Services & amenities </a>
              </li>
              <li>
                 <a onClick={()=>{setPolicies(!policies)}}>Policies </a>
@@ -246,7 +584,9 @@ export default function StandardPackage() {
         {/* <a className="read-more-link" onClick={()=>{setReadMore(!readMore)}}><h2>{linkName}</h2></a> */}
       
       {description && descriptionContent} 
-      {overview && overviewContent}
+      {services && servicesContent}
+      {packagedetails && packagedetailsContent}
+      {policies &&  policiesContent}
       {overview && overviewContent}
       {reviews && reviewsContent}    
       </Grid>
