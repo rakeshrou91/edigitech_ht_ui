@@ -4,6 +4,7 @@ import './UI/footer.css';
 import Progress from 'react-progressbar';
 import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
 import {Card } from "@material-ui/core";
+const Mapcontainer= React.lazy(() => import('./UI/map'));
 const Footer = React.lazy(() => import('./UI/footer'));
 
 export default function StandardPackage() {
@@ -257,7 +258,7 @@ export default function StandardPackage() {
         <li><span>November 20, 2020 at 8:31 pm</span></li>
         <li><p>I am very please with Hotel! I will certainly return. I got a wonderful from the 15 floor to the Botanical Garden a great Supermarket in the corner, about 2 minutes walking, and a bus stop to downtown within few meters. It is close to downtown and great price!</p></li>
       </ul>
-       <a > Reply  <i class="fas fa-reply-all"></i></a>
+       <a style={{textDecoration:'none',cursor:'pointer'}}> Reply  <i class="fas fa-reply-all"></i></a>
     </div>
      
   </Card>
@@ -274,7 +275,7 @@ export default function StandardPackage() {
         <li><span>November 20, 2020 at 8:31 pm</span></li>
         <li><p>I am very please with Hotel! I will certainly return. I got a wonderful from the 15 floor to the Botanical Garden a great Supermarket in the corner, about 2 minutes walking, and a bus stop to downtown within few meters. It is close to downtown and great price!</p></li>
       </ul>
-      <a > Reply  <i class="fas fa-reply-all"></i></a>
+      <a style={{textDecoration:'none',cursor:'pointer'}}> Reply  <i class="fas fa-reply-all"></i></a>
     </div>
      
   </Card>
@@ -291,7 +292,7 @@ export default function StandardPackage() {
         <li><span>November 20, 2020 at 8:31 pm</span></li>
         <li><p>I am very please with Hotel! I will certainly return. I got a wonderful from the 15 floor to the Botanical Garden a great Supermarket in the corner, about 2 minutes walking, and a bus stop to downtown within few meters. It is close to downtown and great price!</p></li>
       </ul>
-      <a > Reply  <i class="fas fa-reply-all"></i></a>
+      <a style={{textDecoration:'none',cursor:'pointer'}}> Reply  <i class="fas fa-reply-all"></i></a>
     </div>
      
   </Card>
@@ -308,7 +309,7 @@ export default function StandardPackage() {
     <li><span>November 20, 2020 at 8:31 pm</span></li>
     <li><p>I am very please with Hotel! I will certainly return. I got a wonderful from the 15 floor to the Botanical Garden a great Supermarket in the corner, about 2 minutes walking, and a bus stop to downtown within few meters. It is close to downtown and great price!</p></li>
   </ul>
-  <a > Reply  <i class="fas fa-reply-all"></i></a>
+  <a style={{textDecoration:'none',cursor:'pointer'}}> Reply  <i class="fas fa-reply-all"></i></a>
 </div>
  
 </Card>
@@ -325,7 +326,7 @@ export default function StandardPackage() {
     <li><span>November 20, 2020 at 8:31 pm</span></li>
     <li><p>I am very please with Hotel! I will certainly return. I got a wonderful from the 15 floor to the Botanical Garden a great Supermarket in the corner, about 2 minutes walking, and a bus stop to downtown within few meters. It is close to downtown and great price!</p></li>
   </ul>
-  <a > Reply  <i class="fas fa-reply-all"></i></a>
+  <a style={{textDecoration:'none',cursor:'pointer'}}> Reply  <i class="fas fa-reply-all"></i></a>
 </div>
  
 </Card>
@@ -493,8 +494,11 @@ const servicesContent=<div>
      <p>A deposit of 10% is required when booking this tour. The remaining balance will be charged 45 days prior departure. For any bookings within 45 days of departure, the full tour amount will be charged upon booking.</p>
     
   </Card>
-
-
+  <Card className="standardoverviewcardmap">
+     <Suspense fallback={<div>Loading...</div>}>
+       <Mapcontainer/>
+    </Suspense>
+  </Card>
 </div>
 
  
@@ -507,9 +511,9 @@ const servicesContent=<div>
             
       </div>
     </div>
-    <Paper>
+    <Paper style={{boxShadow:'none'}}>
       <Grid>
-        <Card className="standardcard"> 
+        <Card className="standardcard" style={{boxShadow:'none'}}> 
            <div>Standard Package</div>  
            <h5>Standard Package</h5>
            <p>We provide you a comfortable journey at affordable rates</p>
@@ -551,7 +555,7 @@ const servicesContent=<div>
            </span>
         
         </Card>
-        <Card className="standardpackage">
+        <Card className="standardpackage" style={{boxShadow:'none'}}>
             <div>
                <span>From USD</span>
                <h2>$2364  <a href="/compare">select package</a></h2>

@@ -283,7 +283,7 @@ const servicesContent=<div>
 </div>
  const packagedetailsContent=<div>
     
- <Card className="standardpackagedetails">
+ <Card className="standardpackagedetails" >
        <div className="packcontainer">
           <img src={process.env.PUBLIC_URL + "/hroom-1.jpg"} />
            <span>PREMIER ROOM</span>
@@ -500,9 +500,9 @@ const servicesContent=<div>
       </div>
       
     </div>
-    <Paper>
+    <Paper style={{boxShadow:'none'}}>
       <Grid>
-        <Card className="standardcard"> 
+        <Card className="standardcard" style={{boxShadow:'none'}}> 
            <div>Premium Package</div>  
            <h5>Premium Package</h5>
            <p>We provide you a comfortable journey at affordable rates</p>
@@ -537,14 +537,14 @@ const servicesContent=<div>
            </span>
         
         </Card>
-        <Card className="standardpackage">
+        <Card className="standardpackage" style={{boxShadow:'none'}}>
             <div>
                <span>From USD</span>
                <h2>$3364  <a href="/compare">select package</a></h2>
               
             </div>
         </Card>
-        <Card className="standardpackbutton"> 
+        <Card className="standardpackbutton" style={{boxShadow:'none'}}> 
            <ul>
              <li >
                 <a onClick={()=>{setOverview(!overview)}}>OVERVIEW</a>

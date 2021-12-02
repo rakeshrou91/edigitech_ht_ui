@@ -15,15 +15,15 @@ export default function TourismPackage() {
             
       </div>
     </div>
-    <Paper >
+    <Paper style={{boxShadow:'none'}}>
       <Grid>
-        <Card className="comparecard">
+        <Card className="comparecard" style={{boxShadow:'none'}}>
             <span>OUR EXCLUSIVE OFFERS</span>
             <h2>Tourism Package</h2>
             <p>We offer a wide range of package that meets all your requirements. eHealthFlex also offers<br/> a facility to customize the package according to your budget and expectations</p>
         </Card>
        
-        <Card className="comparecardset">
+        <Card className="comparecardset" style={{boxShadow:'none'}}>
             <tr>
               <td>
               <Card className="comparestandard">

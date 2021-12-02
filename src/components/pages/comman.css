@@ -41,7 +41,7 @@
     height: 300px;
     text-align: center;
     padding-top: 80px;
-
+    margin-bottom: 30px;
 }
 .section3 button{
     background-color: #5BD1D7;
@@ -63,6 +63,90 @@ button:hover{
     font-size:40px;
     font-weight: bold;
 }
+.helpquetionscard{
+    position: relative;
+    display: block;
+    padding: 14px 26px;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    margin-top:10px;
+    border-radius: 660px;
+    height:60px;
+    margin-left: 20%;
+    margin-right: 38%;
+    background: #fff;
+    box-shadow: 10px 10px 10px 10px rgb(51 55 69 / 20%);
+    cursor: pointer;
+    z-index: 1;
+}
+.helpanswer1card{
+   position: relative;
+   display: block;
+   padding: 14px 26px;
+   text-align: left;
+   text-decoration: none;
+   color: #000;
+   margin-top:-10px;
+   height:120px;
+   margin-left: 20%;
+   margin-right: 38%;
+   background: #fff;
+   box-shadow: 10px 10px 10px 10px rgb(51 55 69 / 20%);
+   cursor: pointer;
+}
+.helpanswer1card p{
+   line-height: 24px;
+   padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    color: #333;
+}
+.helpanswer2card{
+   position: relative;
+   display: block;
+   padding: 14px 26px;
+   text-align: left;
+   text-decoration: none;
+   color: #000;
+   margin-top:-10px;
+   height:120px;
+   margin-left: 20%;
+   margin-right: 38%;
+   background: #fff;
+   box-shadow: 10px 10px 10px 10px rgb(51 55 69 / 20%);
+   cursor: pointer;
+}
+.helpanswer2card p{
+   line-height: 24px;
+   padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    color: #333;
+}
+.helpquetionscard span{
+   font-size: 16px;
+   font-weight: 550;
+   color: #000;
+   margin-left: 2%;
+   margin-top: 2%;
+}
+.helpquetionscard ul{
+   display: inline-table;
+   list-style: none;
+   width: 100%;
+}
+.helpquestionimg{
+   margin-left: 70%;
+}
+.helpquetionscard li {
+   display: inline-flex;
+   width: 100%;
+  
+}
+
  /* Standard css*/
  .standardheading h2{
     font-size: 70px;
@@ -798,9 +882,10 @@ button:hover{
 }
 .comparestandard{
   width:70%;
-  margin-left:40%;
-  
-  
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 40px;
+  margin-bottom: 20%;
 }
 .comparestandard img{
     width:auto;
@@ -821,8 +906,8 @@ button:hover{
 }
 .comparestandard li{
    padding: 15px;
-    border-bottom: 1px solid #ecf0f1;
-    color: #2c3e50;
+   border-bottom: 1px solid #ecf0f1;
+   color: #2c3e50;
    width:576px;
     /* background: #ecf0f1; */
 }
@@ -847,7 +932,7 @@ button:hover{
     font-weight: 600;
     text-transform: uppercase;
     color: #fff;
-
+  
 }
 .comparecardset tr{
     align-items: center;
@@ -1372,6 +1457,24 @@ button:hover{
    color: #496cfe;
    padding-right: 33px;
   }
+  .standardoverviewcardmap{
+   position: relative;
+   z-index: 1;
+   padding: 12px;
+   padding-bottom: 2%;
+   -webkit-transition: all .24s ease-in-out;
+   transition: all .24s ease-in-out;
+   border: 1px solid rgba(13, 21, 75, .15);
+   background-color: #fff;
+   -webkit-box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   margin-bottom: 10%;
+   margin-right: 12%;
+   margin-left: 12%;
+   height:900px;
+   margin-top:-8%;
+   width:auto;
+  }
   .standardpolicies{
    position: relative;
    z-index: 1;
@@ -1573,18 +1676,9 @@ button:hover{
  }
  .progress-bar-test{
    display: flex;
-   -ms-flex-direction: column;
-   flex-direction: column;
-   -ms-flex-pack: center;
-   justify-content: center;
-   color: #fff;
    width: 80%;
-   border-radius: 20px;
-  
+   border-radius: 20px;  
    text-align: center;
-   white-space: nowrap;
-  
-   transition: width .6s ease;
    background-color:  #e1e1e4;
  }
  
@@ -1609,6 +1703,7 @@ button:hover{
    margin-left: 26%;
    box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
  }
+ 
  .standreviewscontainer1 li h4 i{
   
    color:  #ffab53;
@@ -1881,8 +1976,28 @@ button:hover{
         display: flex;
         justify-content: center;
         flex-direction: row;
-        padding-right: 40px;
+        padding-left: 40px;
     }
+    .helpquetionscard{
+       width:90%;
+       margin-left: 4%;
+    }
+    .helpanswer2card,.helpanswer1card{
+       width:90%;
+       margin-left: 4%;
+      height:170px;
+    }
+    .row{
+       display:grid;
+       text-align: center;
+
+    }
+    .row h2{
+       margin-left: -50%;
+    }
+    .row img{
+      display:center;
+   }
     /* Standard css*/
     .standardheading h2{
         text-align: center;

@@ -59,7 +59,7 @@ export default function Home() {
        <Card className="iconsection" style={cardstyle}>
          <div className="rowicon">
              <div className="columnicon">
-               <Avatar className="avatar" src={process.env.PUBLIC_URL + "01.png"}  style={{height:120,width:120}}/> <br/>
+               <Avatar  src={process.env.PUBLIC_URL + "01.png"}  style={{height:120,width:120}}/> <br/>
                 <span>Sneak Peek</span><br/>
                 <p>Choose from list of selected Hospitals,<br/> Clinics and Healthcare Providers</p>
                

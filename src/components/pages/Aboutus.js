@@ -19,7 +19,7 @@ export default function Aboutus() {
     </div>
     <Paper className="paper" style={{boxShadow:'none'}}>
       <Grid>
-        <Card className="card">
+        <Card className="card" style={{boxShadow:'none'}}>
         <span className="span">OUR SHORT STORY</span>
         <div className="style">
               Know About EHealthFlex
@@ -49,7 +49,7 @@ export default function Aboutus() {
       </div>
       
         </Card>
-        <Card className="card" >
+        <Card className="card" style={{boxShadow:'none'}}>
         <span className="span1" style={{textAlign:'initial'}}>HOW WE'RE DIFFERENT</span>
         <div className="style1" >
      
