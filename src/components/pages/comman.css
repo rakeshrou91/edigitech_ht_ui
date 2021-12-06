@@ -1471,7 +1471,7 @@ button:hover{
    margin-bottom: 10%;
    margin-right: 12%;
    margin-left: 12%;
-   height:900px;
+   height:500px;
    margin-top:-8%;
    width:auto;
   }
@@ -1611,6 +1611,25 @@ button:hover{
    font-size: 16px;
    line-height: 26px;
  }
+ .standardreviewsprogressbar{
+   position: block;
+   z-index: 1;
+   padding: 18px;
+   padding-bottom: 6%;
+   -webkit-transition: all .24s ease-in-out;
+   transition: all .24s ease-in-out;
+   border: 1px solid rgba(13, 21, 75, .15);
+   background-color: #fff;
+   -webkit-box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   margin-bottom: 1%;
+   margin-right: 12%;
+   margin-left: 12%;
+   height:70%;
+   margin-top: 3%;
+   width:76%;
+   display: inline-table;
+ }
  .standardreviews{
    position: relative;
    z-index: 1;
@@ -1630,8 +1649,9 @@ button:hover{
    width:76%;
    display: inline-table;
  }
- .standardreviews span {
+ .standardreviewsprogressbar span {
    display:inline-flex;
+
  }
  .standardreviews span h3{
    font-weight: 600;
@@ -1639,12 +1659,20 @@ button:hover{
    color: #000;
    margin-bottom: 30px;
  }
- .standardreviews span h5{
+ .standreview1scontainer h3 a{
+   font-size: 22px;
+   color: #878484;
+ }
+ .standardreviewsprogressbar span h5{
    color: #000;
-   margin-top: 4%;
+   margin-top: 2%;
+   margin-bottom: 20px;
    font-size: 15px;
    font-weight: 600;
    padding-left: 3px;
+}
+.standreview1scontainer h5 a{
+   color:#007bff;
 }
  .standreviewscontainer{
   
@@ -1660,11 +1688,12 @@ button:hover{
  .standreview1scontainer{
    padding-left: 30px;
    padding-top: 30px;
-   
+   margin-bottom: 10%;
    border: 1px dashed #496cfe;
    border-radius: 0.25rem;
    width:27%;
    height:220px;
+   
 
  }
  .standreview1scontainer h4{
@@ -1673,13 +1702,6 @@ button:hover{
    margin-left: 24%;
    margin-bottom: 10px;
 
- }
- .progress-bar-test{
-   display: flex;
-   width: 80%;
-   border-radius: 20px;  
-   text-align: center;
-   background-color:  #e1e1e4;
  }
  
  .standreview1scontainer h5{
@@ -1693,6 +1715,34 @@ button:hover{
    font-size: 60px;
   
  }
+ .standreviewsprogressbar{
+      margin-left: 40%;
+      margin-top:-335px;
+      width: auto;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-left:32%;
+      height:auto;
+ }
+ .standreviewsprogressbar li span{
+   font-size: 18px;
+   color: #000;
+   margin-top: 10px;
+   margin-right: 140px;
+   display: inline-flexbox;
+}
+
+ .standreviewsprogressbar ul{
+    width:100%;
+    display: inline;
+    margin-top: 0%;
+    padding-bottom: 40px;
+ }
+ .standreviewsprogressbar ul li{
+   width:100%;
+   display: inline-block;
+   margin-top: 0%;
+}
  .standreviewscontainer1{
    font-size: 40px;
    z-index: 1;

@@ -35,10 +35,7 @@ export default function ContactUs() {
              </form>
              <Image className="sectionimg1" src={process.env.PUBLIC_URL + "/abt_vec_3.png"} rounded  />
            </Card>
-           
-           
-
-         </Grid>
+          </Grid>
        </Paper>
        <Paper style={{boxShadow:'none'}}>
          <Grid>
@@ -58,15 +55,13 @@ export default function ContactUs() {
                 <p>(123) 456 7890 <br/>contact@example.com</p>
            </Card>
            </div>
-           
            <div className="contcolumn">  
            <Card className="addresssection" style={{borderRadius:'26px',boxShadow:' 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}>
                <Avatar  className="contavatar" src={process.env.PUBLIC_URL + "/con-3.png"}  style={{height:120,width:120}}/>
                <span>Stay In Touch</span><br/>
                <a href="/" className="socialicon"><i class="fab fa-facebook"></i></a> &nbsp;&nbsp;
                <a href="/"className="socialicon"><i class="fab fa-twitter"></i></a> &nbsp;&nbsp;
-               <a href="/"className="socialicon"><SiIndeed/></a> &nbsp;&nbsp;
-               
+               <a href="/"className="socialicon"><SiIndeed/></a> &nbsp;&nbsp;        
            </Card>
            </div>
            </div>
@@ -93,13 +88,10 @@ export default function ContactUs() {
                    <li style={{borderBottom:"none"}}><Image src={process.env.PUBLIC_URL + "/brands-2.png"} /></li>
                    <li style={{borderBottom:"none"}}><Image src={process.env.PUBLIC_URL + "/brands-1.png"} /></li>
 
-              </ul>
-             
+              </ul>     
            </Card>
          </Grid>
        </Paper>
-
-
       <Suspense fallback={<div>Loading...</div>}>
          <Footer/>
       </Suspense>

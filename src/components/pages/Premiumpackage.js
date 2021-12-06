@@ -2,6 +2,8 @@ import React , { Suspense,useState }from 'react';
 import './comman.css';
 import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
 import {Card } from "@material-ui/core";
+import Progress from 'react-progressbar';
+const Mapcontainer= React.lazy(() => import('./UI/map'));
 const Footer = React.lazy(() => import('./UI/footer'));
 
 export default function Premiumpackage() {
@@ -22,6 +24,41 @@ export default function Premiumpackage() {
    
   </div>
  const reviewsContent=<div>
+    <Card className="standardreviewsprogressbar">
+          <span><h3>Reviews</h3><h5>(86 verified reviews)</h5> </span>
+         <div className="standreview1scontainer">
+            <h4>Excellent</h4>
+            <h3>
+             4.3<a>/5</a>
+            </h3>
+            <h5><a>eHealthFlex </a>Verified Reviews</h5>
+            <span ></span>
+           
+         </div>
+         <Card className="standreviewsprogressbar" style={{boxShadow:'none'}}>
+            <ul>
+               <li>
+                 <span>Location </span><span>4.4</span>
+                 <Progress  style={{width:'38%',backgroundColor:'#e1e1e4',borderRadius:'999px',marginBottom:'4px'}} completed={80} />
+               </li>
+               <li>
+                 <span>Cleanliness </span><span>4.5</span>
+                 <Progress  style={{width:'38%',backgroundColor:'#e1e1e4',borderRadius:'999px',marginBottom:'4px'}} completed={80}  />
+               </li>
+            </ul>
+            <ul>
+               <li>
+                 <span>Service </span><span>4.4</span>
+                 <Progress  style={{width:'38%',backgroundColor:'#e1e1e4',borderRadius:'999px',marginBottom:'4px'}} completed={80} />
+               </li>
+               <li>
+                 <span>Facilities</span><span>4.5</span>
+                 <Progress  style={{width:'38%',backgroundColor:'#e1e1e4',borderRadius:'999px',marginBottom:'4px'}}completed={80}  />
+               </li>
+            </ul>
+       
+         </Card>
+     </Card>
     
  <Card className="standardreviews">
 
@@ -277,6 +314,11 @@ const servicesContent=<div>
      <span>TRAVEL INSURANCE</span>
      <p>A deposit of 10% is required when booking this tour. The remaining balance will be charged 45 days prior departure. For any bookings within 45 days of departure, the full tour amount will be charged upon booking.</p>
     
+  </Card>
+  <Card className="standardoverviewcardmap">
+     <Suspense fallback={<div>Loading...</div>}>
+       <Mapcontainer/>
+    </Suspense>
   </Card>
 
 

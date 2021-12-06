@@ -2,7 +2,7 @@ import React , { Suspense ,useState}from 'react';
 import './comman.css';
 import './UI/footer.css';
 import Progress from 'react-progressbar';
-import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
+import {Grid,Paper,Avatar,TextField, CardMedia} from '@material-ui/core';
 import {Card } from "@material-ui/core";
 const Mapcontainer= React.lazy(() => import('./UI/map'));
 const Footer = React.lazy(() => import('./UI/footer'));
@@ -232,18 +232,41 @@ export default function StandardPackage() {
  </div>
  
   const reviewsContent=<div>
-     <Card className="standardreviews">
+     <Card className="standardreviewsprogressbar">
           <span><h3>Reviews</h3><h5>(86 verified reviews)</h5> </span>
          <div className="standreview1scontainer">
             <h4>Excellent</h4>
             <h3>
-             4.3/5
+             4.3<a>/5</a>
             </h3>
-            <h5>eHealthFlex Verified Reviews</h5>
+            <h5><a>eHealthFlex </a>Verified Reviews</h5>
             <span ></span>
-            <Progress  className="progress-bar-test" completed={15} />
+           
          </div>
-</Card>
+         <Card className="standreviewsprogressbar" style={{boxShadow:'none'}}>
+            <ul>
+               <li>
+                 <span>Location </span><span>4.4</span>
+                 <Progress  style={{width:'38%',backgroundColor:'#e1e1e4',borderRadius:'999px',marginBottom:'4px'}} completed={80} />
+               </li>
+               <li>
+                 <span>Cleanliness </span><span>4.5</span>
+                 <Progress  style={{width:'38%',backgroundColor:'#e1e1e4',borderRadius:'999px',marginBottom:'4px'}} completed={80}  />
+               </li>
+            </ul>
+            <ul>
+               <li>
+                 <span>Service </span><span>4.4</span>
+                 <Progress  style={{width:'38%',backgroundColor:'#e1e1e4',borderRadius:'999px',marginBottom:'4px'}} completed={80} />
+               </li>
+               <li>
+                 <span>Facilities</span><span>4.5</span>
+                 <Progress  style={{width:'38%',backgroundColor:'#e1e1e4',borderRadius:'999px',marginBottom:'4px'}}completed={80}  />
+               </li>
+            </ul>
+       
+         </Card>
+     </Card>
     
   <Card className="standardreviews">
 
@@ -453,35 +476,25 @@ const servicesContent=<div>
      <h3>Tour Details</h3>
      <ul>
         <li>
-         
            <img src={process.env.PUBLIC_URL + "/tour-1.png"} />
-         
            <h2>Booking Type</h2>
            <h4>Instant Booking</h4>
         </li>
         <li>
-         
-         <img src={process.env.PUBLIC_URL + "/tour-2.png"} />
-       
-         <h2>Tour Type   </h2>
-         <h4>Private Tour</h4>
+           <img src={process.env.PUBLIC_URL + "/tour-2.png"} />
+           <h2>Tour Type   </h2>
+           <h4>Private Tour</h4>
       </li>
       <li>
-         
-         <img src={process.env.PUBLIC_URL + "/tour-3.png"} />
-       
-         <h2>Availability</h2>
-         <h4>Guide/Instructor</h4>
+           <img src={process.env.PUBLIC_URL + "/tour-3.png"} />
+           <h2>Availability</h2>
+           <h4>Guide/Instructor</h4>
       </li>
       <li>
-         
-         <img src={process.env.PUBLIC_URL + "/tour-4.png"} />
-       
-         <h2>Guiding Method</h2>
-         <h4>Available Daily</h4>
+          <img src={process.env.PUBLIC_URL + "/tour-4.png"} />
+          <h2>Guiding Method</h2>
+          <h4>Available Daily</h4>
       </li>
-
-      
      </ul>
    
   </Card>
