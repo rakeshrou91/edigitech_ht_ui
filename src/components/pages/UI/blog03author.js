@@ -21,8 +21,7 @@ const Blog03author = () => {
                 
                  <td><i><SiIndeed/></i></td>
          </div>
-         <i class="fab fa-facebook-f"></i>
-         <i class="fab fa-twitter"></i>
+        
       </Card>
     
     

@@ -23,7 +23,7 @@ export default function Premiumpackage() {
       </Card>
    
   </div>
- const reviewsContent=<div>
+  const reviewsContent=<div>
     <Card className="standardreviewsprogressbar">
           <span><h3>Reviews</h3><h5>(86 verified reviews)</h5> </span>
          <div className="standreview1scontainer">
@@ -146,7 +146,7 @@ export default function Premiumpackage() {
 
 </Card>
 
-</div>
+  </div>
   const policiesContent=<div>
     
     <Card className="standardpolicies">
@@ -212,8 +212,8 @@ export default function Premiumpackage() {
 
   </Card>
    
-</div>
-const servicesContent=<div>
+  </div>
+  const servicesContent=<div>
     
 <Card className="standardservices">
   <span>Services & Amenities</span>
@@ -253,7 +253,7 @@ const servicesContent=<div>
    
 </Card>
 
-</div>
+  </div>
   const overviewContent=<div>
     
   <Card className="standardoverviewcard">
@@ -322,8 +322,8 @@ const servicesContent=<div>
   </Card>
 
 
-</div>
- const packagedetailsContent=<div>
+  </div>
+  const packagedetailsContent=<div>
     
  <Card className="standardpackagedetails" >
        <div className="packcontainer">
@@ -529,7 +529,7 @@ const servicesContent=<div>
  </Card>
 
 
-</div>
+  </div>
 
   return (
     <>
@@ -613,7 +613,7 @@ const servicesContent=<div>
       
     
       </Grid>
-    </Paper>
+     </Paper>
       {description && descriptionContent} 
       {packagedetails && packagedetailsContent}
       {services && servicesContent}

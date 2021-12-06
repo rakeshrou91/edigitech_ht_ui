@@ -160,7 +160,7 @@ function Navbar() {
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
-            <Link to='/home' className={colorChange1 ? 'nav-links colorChange1':'nav-links'} onClick={closeMobileMenu}>
+            <Link to='/' className={colorChange1 ? 'nav-links colorChange1':'nav-links'} onClick={closeMobileMenu}>
               Home
             </Link>
           </li>

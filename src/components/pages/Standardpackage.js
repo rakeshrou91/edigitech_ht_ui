@@ -513,7 +513,6 @@ const servicesContent=<div>
     </Suspense>
   </Card>
 </div>
-
  
   return (
     <>
@@ -579,7 +578,6 @@ const servicesContent=<div>
            <ul>
              <li >
                 <a onClick={()=>{setOverview(!overview)}}>OVERVIEW</a>
-                
              </li>
              <li>
                 <a onClick={()=>{setPackagedetails(!packagedetails)}}>Package details</a>

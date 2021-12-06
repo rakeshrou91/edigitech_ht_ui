@@ -2031,6 +2031,7 @@ button:hover{
     .helpquetionscard{
        width:90%;
        margin-left: 4%;
+       
     }
     .helpanswer2card,.helpanswer1card{
        width:90%;
@@ -2064,6 +2065,57 @@ button:hover{
         flex-direction: row;
         padding-right: 40px;
      }
+     .standardcard h5,.standardcard p{
+        margin-left: 2%;
+     }
+     .standardcard span {
+     display: inline;
+     }
+     .standardcard span img{
+      margin-left: 2%;
+     }
+     .standardcard span p{
+      margin-left: 10%;
+      margin-top:-50px;
+     }
+     .standardpackage div{
+      margin-left: 2%;
+      width:440px;
+     }
+     .standardpackbutton{
+        height:auto;
+     }
+     .standardpackagedetails{
+        margin-left: 2%;
+        width:460px;
+     }
+     .packcontainer span{
+         font-size: small;
+     }
+     .standardservices {
+         width:460px;
+         margin-left: 2%;
+     }
+     .standardservices li h5{
+      margin-left: 12%;
+     }
+     .standardpolicies li h4,.standardpolicies li h5{
+      margin-left: 12%;
+      margin-top: -30px;
+     }
+     .standardpolicies li span{
+      margin-left: 12%;
+     
+     }
+     .standardpolicies li div{
+      margin-left: 12%;
+     
+     }
+     .standardreviews{
+        margin-left: 2%;
+        width:22%;
+     }
+     
      /* compare css*/
      .compareheading h2{
         text-align: center;
@@ -2131,6 +2183,9 @@ button:hover{
         flex-direction: row;
         margin-right:-10%;
     }
+    .blog01img{
+       width:auto;
+    }
     .blog01section{
        width:100%;
        margin-top: 420%;
@@ -2157,6 +2212,65 @@ button:hover{
    flex-direction: row;
    margin-left: 6%;
  }
+ .blog02card{
+    width:450px;
+    margin-left: 2%;
+ }
+ .blog02quote1 img{
+    width: 200px;
+    height:auto;
+ }
+ .commentscard{
+    margin-left: 2%;
+    width:auto;
+ }
+ .commentscard tr span{
+   margin-top: 10px;
+   width:auto;
+} 
+.commentscard a{
+   margin-left: 60px;
+   width:auto;
+  
+}
+.commentsspan{
+   margin-left: 4%;
+}
+.Feedback{
+   margin-left: 2%;
+}
+/* blog03 */
+.blog02card{
+   width:100%;
+   margin-top: 460%;
+   height: auto;
+}
+.blog03paper{
+   margin-left: 1%;
+   margin-top: 50px;
+
+}
+
+.blog03card{
+   width:600px;
+   margin-left: 1%;
+}
+.blog03card span{
+  
+   margin-left: 1%;
+}
+.blog03card div{
+   width:400px;
+   margin-left: 1%;
+}
+.blog03card div h3{
+  
+  margin-top: 20px;
+}.blog03card i{
+  
+ margin-left: 1%;
+ }
+
   /*Contact us css*/
  .contactusheading h2{
     
@@ -2183,9 +2297,7 @@ button:hover{
  height:0%;
 }
 .addresssection{
-  margin-top: 100px;
- 
-  
+ margin-top: 100px; 
 }
 .addresssection span{
   font-size: auto;
@@ -2195,13 +2307,10 @@ button:hover{
    font-size: auto;
 }
 .row1{
-  
    display:grid;
    height: auto;
-
 }
 .brands ul{
-  
  display:inline-table;
  margin-left: 4%;
  width:100%;
@@ -2209,6 +2318,29 @@ button:hover{
 .brands li{
    border: none;
 }
+  /*compare  css*/
+.comparecardset{
+   margin-left: -42%;
+   width:auto;
 
+}
+.comparecardset span{
+  margin-left: 12%;
+
+}
+.comparecardset li{
+   margin-left: 10%;
+   list-style: none;
+ 
+ }
+ .comparecardset td{
+    display:initial;
+    
+ }
+ 
+ .comparestandard{
+   width:auto;
+ 
+  }
 
 }
