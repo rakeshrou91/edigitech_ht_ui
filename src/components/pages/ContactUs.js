@@ -6,7 +6,7 @@ import Input from '@mui/material/Input';
 import {Grid,Paper,Avatar} from '@material-ui/core';
 import {Card } from "@material-ui/core";
 import {SiIndeed} from 'react-icons/si';
-
+const Mapcontainer= React.lazy(() => import('./UI/map'));
 const Footer = React.lazy(() => import('./UI/footer'));
 
 export default function ContactUs() {
@@ -65,6 +65,11 @@ export default function ContactUs() {
            </Card>
            </div>
            </div>
+           <Card className="contactoverviewcardmap">
+           <Suspense fallback={<div>Loading...</div>}>
+             <Mapcontainer/>
+           </Suspense>
+           </Card>
          </Grid>
        </Paper>
        <Paper style={{boxShadow:'none'}}>

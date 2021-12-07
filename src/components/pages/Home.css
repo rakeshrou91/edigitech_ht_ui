@@ -60,7 +60,17 @@
  
 
 }
-
+.avatar:hover{
+  animation: spin 2s infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 .columnicon span{
   font-size:30px ;
   margin-left:-55%;
@@ -186,6 +196,7 @@
   justify-content:center;
   
 }
+
 .column1 img {
 opacity: 0.8; 
 cursor: arrows; 
@@ -541,17 +552,13 @@ margin-bottom: 16px;
     font-size: small;
     margin-right:-5%;
     margin-left: -10%;
-   
   }
   .rowicon{
-   
     display: flex;
     flex-direction: column;
     justify-content:center;
     text-align: center;
-    
     background-color: #004D61;
-   
   }
   .columnicon{
     margin-right: -100%;
@@ -559,19 +566,17 @@ margin-bottom: 16px;
     justify-content: center;
     flex-direction: column;
   }
+  
   .column1{
    display:column;
    margin-left: 800px;
    width:600px;
    height:400px;
-    
   }
   .columnicon span{
-   
     color:#fff;
   }
   .columnicon p{
-   
     color:#fff;
   }
   

@@ -16,7 +16,7 @@ export default function Blog02() {
     <div className='blog2'>
      <div className="blog2heading">
              <h2 > Single Blog</h2>
-             <a href="/Support"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;Single Blog</a> &nbsp;&nbsp;
+             <a href="/"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;Single Blog</a> &nbsp;&nbsp;
             
       </div>
     </div>

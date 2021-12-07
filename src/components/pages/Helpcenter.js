@@ -66,25 +66,25 @@ const question4Content=<div>
         <Card style={{boxShadow:'none'}}>
           <div className="row">
              <div className="column">
-               <Avatar  src={process.env.PUBLIC_URL + "help-icon-1.png"}  style={{height:160,width:160}}/> <br/>
+               <img  src={process.env.PUBLIC_URL + "help-icon-1.png"}  /> <br/>
                 <h2>Account Overview</h2><br/>
                
                
              </div>
              <div className="column">
-              <Avatar src={process.env.PUBLIC_URL + "help-icon-2.png"}  style={{height:160,width:160}}/><br/> 
+              <img src={process.env.PUBLIC_URL + "help-icon-2.png"} /><br/> 
               <h2>FAQ</h2><br/>
              
               
              </div>
              <div className="column">
-               <Avatar src={process.env.PUBLIC_URL + "help-icon-2.png"}  style={{height:160,width:160}}/> <br/>
+               <img src={process.env.PUBLIC_URL + "help-icon-3.png"} /> <br/>
                <h2 >Contact Us</h2><br/>
              
               
              </div>
              <div className="column">
-              <Avatar src={process.env.PUBLIC_URL + "help-icon-4.png"}  style={{height:160,width:160}}/><br/> 
+              <img src={process.env.PUBLIC_URL + "help-icon-4.png"}/><br/> 
               <h2> Meet The Team</h2><br/>
            
              </div>
@@ -138,10 +138,7 @@ const question4Content=<div>
                  <a onClick={()=>{setQuestion3(!question3)}}><Avatar style={{backgroundColor:'#004D61'}}><i class="fas fa-question"></i></Avatar></a>
                  <span>How do I search for a hotel in a certain area using the map tool?</span>
             </li>
-            
           </ul>
-           
-         
         </Card>
         {question3 && question3Content}   
         <Card className="helpquetionscard" style={{borderRadius:'555px'}}>

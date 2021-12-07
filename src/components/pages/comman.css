@@ -32,10 +32,21 @@
     font-weight: 700;
     margin:0 0 17px;
 }
-
-.helpiconhover:hover{
-   animation: spin 2s infinite; 
+.column img{
+   width:160px;
+   height:160px;
 }
+.column img:hover{
+   animation: spin 2s infinite;
+}
+@keyframes spin {
+   0% {
+     transform: rotateZ(0);
+   }
+   100% {
+     transform: rotateZ(360deg);
+   }
+ }
 .section3{
     background-color: #f4eafe;
     height: 300px;
@@ -953,6 +964,24 @@ button:hover{
    padding:20px;
 
 }
+.contactoverviewcardmap{
+   position: relative;
+   z-index: 1;
+   padding: 0px;
+   padding-bottom: 2%;
+   -webkit-transition: all .24s ease-in-out;
+   transition: all .24s ease-in-out;
+   border: 1px solid rgba(13, 21, 75, .15);
+   background-color: #fff;
+   -webkit-box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   box-shadow: 0 3px 7px 0 rgb(55 94 246 / 20%);
+   margin-bottom: 6%;
+   margin-right: 12%;
+   margin-left: 0%;
+   height:560px;
+   margin-top:-0%;
+   width:100%;
+  }
 .contactusheading a{
    text-decoration: none;
     color: #fff;
@@ -1010,7 +1039,6 @@ button:hover{
    
 }
 .btnsubmit{
-  
     color: #fff;
     border: none;
     background-color: #5BD1D7 ;
@@ -1028,19 +1056,16 @@ button:hover{
    box-shadow: 10px 10px 11px rgba(33,33,33,.2); 
    margin-bottom: 30px;
    margin-top:90px;
-   
+   z-index:999;
    text-align:center;
    margin-left: 50%;
-   
-   
-}
+ }
 .addresssection span{
    color:#413E3E;
    font-size: 24px;
    font-weight: 600;
    line-height:90px;
-  
-}
+ }
 .addresssection p{
    color:#413E3E;
    font-size: 16px;
@@ -1054,10 +1079,11 @@ button:hover{
    margin-left: -180px;
    width: 100%;
    height: auto;
-
+  
 }
 .contcolumn{
    padding-right: 18px;
+  
  
 }
 .avatar1{
@@ -1460,7 +1486,7 @@ button:hover{
   .standardoverviewcardmap{
    position: relative;
    z-index: 1;
-   padding: 12px;
+   padding: 0px;
    padding-bottom: 2%;
    -webkit-transition: all .24s ease-in-out;
    transition: all .24s ease-in-out;

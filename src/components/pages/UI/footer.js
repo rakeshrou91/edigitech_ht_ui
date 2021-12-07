@@ -64,8 +64,7 @@ const Footer = () =>{
         <Grid>
           <Card classsName="card" style={cardstyle}>
              <div className="footer">
-              
-                <div className="footerrow">
+                 <div className="footerrow">
                   <div className="footercolumn">
                     <p style={{textAlign:'center',fontSize:'small'}}> Copyright © 2021. All Rights Reserved By <a style={{color:'#496cfe'}}>eHealthFlex Technologies Private Limited</a>
                     </p>

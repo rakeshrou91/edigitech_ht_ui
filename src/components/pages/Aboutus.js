@@ -4,6 +4,7 @@ import './Home.css';
 import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
 import {Card } from "@material-ui/core";
 import Image from 'react-bootstrap/Image';
+
 const Aboutussignup = React.lazy(()=>import('./UI/aboutussignup'));
 const Footer = React.lazy(() => import('./UI/footer'));
 
@@ -14,8 +15,7 @@ export default function Aboutus() {
         <div className="aboutusheading">
              <h2 > About us</h2>
              <a href="/"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;About us</a> &nbsp;&nbsp;
-            
-      </div>
+       </div>
     </div>
     <Paper className="paper" style={{boxShadow:'none'}}>
       <Grid>
@@ -43,8 +43,6 @@ export default function Aboutus() {
        primary care physicians and propose you the best area or take you to your chose area in an issue free climate. We 
        additionally offer clinical types of assistance to patients living in far off regions. We offer the best support for medical 
        tourists that include travel assistance and accommodations.
-
-
        </p>
       </div>
       
@@ -52,9 +50,7 @@ export default function Aboutus() {
         <Card className="card" style={{boxShadow:'none'}}>
         <span className="span1" style={{textAlign:'initial'}}>HOW WE'RE DIFFERENT</span>
         <div className="style1" >
-     
-
-        Why Book <br/>With Us?
+             Why Book <br/>With Us?
        </div>
        <div>
           <Image className="img1" src={process.env.PUBLIC_URL + "/abt_vec_1.png"} rounded  />

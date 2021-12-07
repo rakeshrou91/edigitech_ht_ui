@@ -11,8 +11,7 @@ export default function Blog() {
      <div className="blogheading">
              <h2 > Blog 02</h2>
              <a href="/"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;Blog 02</a> &nbsp;&nbsp;
-            
-      </div>
+     </div>
       
     </div>
     <Suspense fallback={<div>Loading...</div>}>
@@ -20,7 +19,6 @@ export default function Blog() {
       <Blogprevnext/>
       <Footer/>
     </Suspense>
- 
     </>
   );
 }

@@ -35,8 +35,6 @@ export default function Home() {
                      
                        <p>
                        You can rely on us for choosing the top specialists and clinics. The list of doctors and hospitals present on <br/>the portal is curated after thorough research and you can expect to find the best-fit as per your<br/> requirement. You can rely on us for finding the best doctors in India and around the globe. This is not a <br/>google promoted list that we provide.
-  
-  
                        </p>
                      </Card>
 
@@ -59,25 +57,25 @@ export default function Home() {
        <Card className="iconsection" style={cardstyle}>
          <div className="rowicon">
              <div className="columnicon">
-               <Avatar  src={process.env.PUBLIC_URL + "01.png"}  style={{height:120,width:120}}/> <br/>
+               <Avatar className="avatar" src={process.env.PUBLIC_URL + "01.png"}  style={{height:120,width:120}}/> <br/>
                 <span>Sneak Peek</span><br/>
                 <p>Choose from list of selected Hospitals,<br/> Clinics and Healthcare Providers</p>
                
              </div>
              <div className="columnicon">
-              <Avatar  src={process.env.PUBLIC_URL + "02.png"}  style={{height:120,width:120}}/><br/> 
+              <Avatar  className="avatar" src={process.env.PUBLIC_URL + "02.png"}  style={{height:120,width:120}}/><br/> 
               <span>Travel</span><br/>
               <p>Search by price, destination, and ratings</p>
               
              </div>
              <div className="columnicon">
-               <Avatar  src={process.env.PUBLIC_URL + "03.png"}  style={{height:120,width:120}}/> <br/>
+               <Avatar  className="avatar" src={process.env.PUBLIC_URL + "03.png"}  style={{height:120,width:120}}/> <br/>
                <span>Accommodation</span><br/>
                <p>Get best in class and wholesome <br/>experience with us</p>
               
              </div>
              <div className="columnicon">
-              <Avatar  src={process.env.PUBLIC_URL + "04.png"}  style={{height:120,width:120}}/><br/> 
+              <Avatar  className="avatar"  src={process.env.PUBLIC_URL + "04.png"}  style={{height:120,width:120}}/><br/> 
               <span> Treatment</span><br/>
               <p>Get the most suitable treatment options<br/> in India & across the globe</p>
              </div>
@@ -258,85 +256,7 @@ export default function Home() {
 
       </Paper>
 
-      <br/>
-      <br/>
-      <br/>
-      {/* <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center',height:'100%'}} >
-        <Grid>
-           <Card className="card" style={{boxShadow:'none',height:'700px' }}>
-           <div className='footer-container'>
      
-      <div class='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Company Info</h2>
-            
-            <Link to='/sign-up'className="link"> <i class="fas fa-angle-double-right"></i> Compliance for international users</Link>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Customer Reviews</Link>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Privacy Policy</Link>
-          
-          </div>
-          <div class='footer-link-items'>
-            <h2>Work With Us</h2>
-            <Link to='/'className="link"> <i class="fas fa-angle-double-right"></i> Become Partner</Link>
-            <Link to='/'className="link"> <i class="fas fa-angle-double-right"></i> Careers</Link>
-            <Link to='/'className="link"> <i class="fas fa-angle-double-right"></i> Advertise with us</Link>
-           
-          </div>
-        </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>My Account</h2>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Manage Your Account</Link>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Build your own trip</Link>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Order Status</Link>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Booking Guide</Link>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Travel Insurance &amp; Safety Guide</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Plan Your Trip</h2>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Special Offers</Link>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Flights</Link>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Tour Packages</Link>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Accommodations</Link>
-            <Link to='/'className="link"><i class="fas fa-angle-double-right"></i> Transportation</Link>
-            
-          </div>
-        </div>
-      </div>
-    
-     
-    </div>
-    
-           </Card>
-        </Grid>
-
-      </Paper> */}
-
-      {/* <Paper style={{boxShadow:"none",justifyContent:'center',textAlign:'center'}}>
-        <Grid>
-          <Card classsName="card" style={cardstyle}>
-             <div className="footer">
-              
-                <div className="row">
-                  <div className="column">
-                    <p style={{textAlign:'center',fontSize:'small'}}> Copyright © 2021. All Rights Reserved By <a style={{color:'#496cfe'}}>eHealthFlex Technologies Private Limited</a>
-                    </p>
-                  </div>
-                <div className="column">
-                  <div className="footerimg">
-                <img style={{height:'26px',marginBottom:'20%'}} src={process.env.PUBLIC_URL + "/card-1.png"}/>&nbsp;&nbsp;
-                <img style={{height:'26px',marginBottom:'20%'}} src={process.env.PUBLIC_URL + "/card-2.png"}/>&nbsp;&nbsp;
-                <img  style={{height:'26px',marginBottom:'20%'}}src={process.env.PUBLIC_URL + "/card-3.png"}/>&nbsp;&nbsp;
-                <img  style={{height:'26px',marginBottom:'20%'}}src={process.env.PUBLIC_URL + "/card-4.png"}/>&nbsp;&nbsp;
-                <img  style={{height:'26px',marginBottom:'20%'}}src={process.env.PUBLIC_URL + "/card-5.png"}/>
-               </div>
-                </div>
-               </div>
-            </div>
-          </Card>
-        </Grid>
-      </Paper> */}
        <Suspense fallback={<div>Loading...</div>}>
       <Footer/>
     </Suspense>
