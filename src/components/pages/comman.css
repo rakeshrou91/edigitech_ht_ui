@@ -198,6 +198,15 @@ button:hover{
     font-size: 16px;
     font-size: 16px;
  }
+ .nextprevrow{
+   display:inline-block;
+   width:auto;
+   margin-left: 32%;
+   text-align: center;
+   justify-content: center;
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
  .blogfooter{
    margin-top: 0px;
    padding-top: 24px;
@@ -211,30 +220,30 @@ button:hover{
 }
 .nextprev{
    color: #fff;
-    padding-top: 10px;
+   padding:  10px 10px ;
     width:8%; 
     height:44px;
     background-color: #004D61;
     font-weight: bold;
     font-size:23px;
     margin-top: 26px;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-bottom: 20%;
     box-shadow: 20px 20px 11px rgba(33,33,33,.2);
-   
+    display:inline;
    
 }
 .nextprev1{
-  
+   display:inline;
    background-color:#004D61;
-   padding-top: 10px;
+   padding:  10px 10px ;
    width:8%; 
    height:44px;
    color: #fff;
    font-weight: bold;
    font-size:23px;
    margin-top: 26px;
-   margin-right: 20px;
+   margin-right: 40px;
    margin-bottom: 20%;
    box-shadow: 20px 20px 11px rgba(33,33,33,.2);
 }
@@ -1711,6 +1720,11 @@ button:hover{
    height:220px;
 
  }
+ .standardreviews img{
+    width:80px;
+    height: 80px;
+    border: 2px solid #496cfe;
+ }
  .standreview1scontainer{
    padding-left: 30px;
    padding-top: 30px;
@@ -2075,6 +2089,10 @@ button:hover{
     .row img{
       display:center;
    }
+   /* About us */
+   .aboutusheading a{
+     margin-left:0%;
+   }
     /* Standard css*/
     .standardheading h2{
         text-align: center;
@@ -2082,14 +2100,14 @@ button:hover{
         font-size: auto;
         flex-direction:column;
       
-        margin-top: 10%;
+        margin-top: 4%;
      }
      .standardheading a{
         text-align: center;
         display: flex;
         justify-content: center;
         flex-direction: row;
-        padding-right: 40px;
+        padding-left: 0%;
      }
      .standardcard h5,.standardcard p{
         margin-left: 2%;
@@ -2138,10 +2156,63 @@ button:hover{
      
      }
      .standardreviews{
-        margin-left: 2%;
-        width:22%;
+        margin-left: 8%;
+        width:80%;
      }
+     .standreviewscontainer{
+      width:22%;
+      height:auto;
+     }
+     .standreviewscontainer img{
+       margin-left:-48%;
+       width:60px;
+       height:60px;
+     }
+     .standreviewscontainer span{
+      margin-left:-48%;
      
+    }
+    .standreviewscontainer1 li h4{
+       margin-top: -80px;
+    }
+     .standreviewscontainer1{
+        width:80%;
+     }
+     .standreviewscontainer1 ul{
+        display:initial;
+     }
+     .standreviewscontainer1 ul li p{
+      display:initial;
+      width:auto;
+      padding-right:20px;
+   }
+  
+   .standreview1scontainer{
+      width:100px;
+   }
+   .standreview1scontainer h4{
+      margin-left: -36%;
+      font-size: 15px;
+   }
+   .standreview1scontainer h3,.standreview1scontainer h5{
+      margin-left: -36%;
+      font-size: 15px;
+   }
+   .standreview1scontainer h5 a{
+      font-size: 15px;
+   }
+   .standreview1scontainer h3 a{
+   
+      font-size: 15px;
+   }
+   .standreviewsprogressbar li span:first-child{
+      margin-top: 72px;
+     
+   }
+   .standreviewsprogressbar li span{
+      margin-bottom: 2px;
+     
+   }
      /* compare css*/
      .compareheading h2{
         text-align: center;
@@ -2368,5 +2439,14 @@ button:hover{
    width:auto;
  
   }
-
+ .nextprev{
+   
+    display:column;
+ }
+ .nextprev1{
+   display:initial;
+}
+.nextprevrow{
+   display:initial;
+}
 }

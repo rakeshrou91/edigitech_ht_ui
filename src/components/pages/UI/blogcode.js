@@ -8,7 +8,7 @@ import {Card } from "@material-ui/core";
 const Blogcode = () => {
     return (
     <>
-       <Paper>
+       <Paper style={{boxShadow:'none'}}>
       <Grid >
         <div className="gridrow">
           <div className="gridColumn">

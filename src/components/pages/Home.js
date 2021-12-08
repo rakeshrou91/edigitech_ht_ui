@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense,useState } from 'react';
 import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
 import {Card } from "@material-ui/core";
 import './Home.css';
@@ -11,6 +11,138 @@ const Footer = React.lazy(() => import('./UI/footer'));
 
 
 export default function Home() {
+  const [mumbai,setMumbai]=useState(false);
+  const [delhi,setDelhi]=useState(false);
+  const [kolkata,setKolkata]=useState(false);
+  const [pune,setPune]=useState(false);
+  const [bangalore,setBangalore]=useState(false);
+  const [hyderabad,setHyderabad]=useState(false);
+  const [ahmedabad,setAhmedabad]=useState(false);
+  let inputRef;
+
+  const mumbaiImage=<div>
+    
+         <div class="row1" style={{marginLeft:"1%"}}>
+                   <div class="column1">
+                      
+                      <img  src={process.env.PUBLIC_URL + "/11.jpg"} name="Deteminology" style={{height:'100%',width:"100%"}} />
+
+                   </div>
+                   <div class="column1">
+                      <img  src={process.env.PUBLIC_URL + "/12.jpg"}  style={{height:'100%',width:"100%" }}/>
+                   </div>
+                   <div class="column1">
+                       <img  src={process.env.PUBLIC_URL + "/13.jpg"} style={{height:'100%',width:"100%"}}/>
+                   </div>
+                  
+                 </div>
+                 <div class="row1"style={{marginLeft:"1%"}}>
+
+                   <div class="column1">
+                      <img  src={process.env.PUBLIC_URL + "/14.jpg"} style={{height:'100%',width:"100%"}} />
+                   </div>
+                   <div class="column1">
+                      <img  src={process.env.PUBLIC_URL + "/15.jpg"} style={{height:'100%',width:"100%" }}/>
+                   </div>
+                   <div class="column1">
+                       <img  src={process.env.PUBLIC_URL + "/16.jpg"}  style={{height:'100%',width:"100%"}}/>
+                   </div>
+                  
+                 </div>
+   
+  </div>
+  const delhiImage=<div>
+  
+       <div class="row1" style={{marginLeft:"1%"}}>
+                 <div class="column1">
+                    
+                    <img  src={process.env.PUBLIC_URL + "/11.jpg"} name="Deteminology" style={{height:'100%',width:"100%"}} />
+
+                 </div>
+                 <div class="column1">
+                    <img  src={process.env.PUBLIC_URL + "/12.jpg"}  style={{height:'100%',width:"100%" }}/>
+                 </div>
+                 <div class="column1">
+                     <img  src={process.env.PUBLIC_URL + "/13.jpg"} style={{height:'100%',width:"100%"}}/>
+                 </div>
+                
+               </div>
+             
+      </div>
+      const kolkataImage=<div>
+  
+      <div class="row1" style={{marginLeft:"1%"}}>
+              
+                <div class="column1">
+                   <img  src={process.env.PUBLIC_URL + "/12.jpg"}  style={{height:'80%',width:"40%" }}/>
+                </div>
+               
+              </div>
+            
+     </div>
+     const puneImage=<div>
+  
+       <div class="row1" style={{marginLeft:"1%"}}>
+                 <div class="column1">
+                    
+                    <img  src={process.env.PUBLIC_URL + "/12.jpg"} name="Deteminology" style={{height:'100%',width:"100%"}} />
+
+                 </div>
+                 <div class="column1">
+                    <img  src={process.env.PUBLIC_URL + "/14.jpg"}  style={{height:'100%',width:"100%" }}/>
+                 </div>
+                 <div class="column1">
+                     <img  src={process.env.PUBLIC_URL + "/16.jpg"} style={{height:'100%',width:"100%"}}/>
+                 </div>
+                
+               </div>
+           
+    </div>
+    const bangaloreImage=<div>
+  
+    <div class="row1" style={{marginLeft:"1%"}}>
+              <div class="column1">
+                 
+                 <img  src={process.env.PUBLIC_URL + "/11.jpg"} name="Deteminology" style={{height:'100%',width:"100%"}} />
+
+              </div>
+              <div class="column1">
+                 <img  src={process.env.PUBLIC_URL + "/13.jpg"}  style={{height:'100%',width:"100%" }}/>
+              </div>
+              <div class="column1">
+                  <img  src={process.env.PUBLIC_URL + "/14.jpg"} style={{height:'100%',width:"100%"}}/>
+              </div>
+             
+            </div>
+        
+ </div>
+  const hyderabadImage=<div>
+  
+  <div class="row1" style={{marginLeft:"1%"}}>
+            <div class="column1">
+               
+               <img  src={process.env.PUBLIC_URL + "/11.jpg"} name="Deteminology" style={{height:'100%',width:"100%"}} />
+
+            </div>
+            <div class="column1">
+               <img  src={process.env.PUBLIC_URL + "/13.jpg"}  style={{height:'100%',width:"100%" }}/>
+            </div>
+            <div class="column1">
+                <img  src={process.env.PUBLIC_URL + "/14.jpg"} style={{height:'100%',width:"100%"}}/>
+            </div>
+           
+          </div>
+          <div class="row1"style={{marginLeft:"1%"}}>
+
+        <div class="column1">
+   <img  src={process.env.PUBLIC_URL + "/15.jpg"} style={{height:'100%',width:"60%"}} />
+</div>
+<div class="column1">
+   <img  src={process.env.PUBLIC_URL + "/16.jpg"} style={{height:'100%',width:"60%" }}/>
+</div>
+   </div>   
+</div>
+  
   const cardstyle={boxShadow:'none',justifyContent: 'center',textAlign: 'center',display:'flex',flexDirection:'column'} 
   const paperStyle={padding:20,height:800,width :'100%',margin:"24% 0%",boxShadow:"none",justifyContent:'center',textAlign: 'center'}
   return (
@@ -137,15 +269,21 @@ export default function Home() {
                  
                 <h1> Top Medical Tourism <br/>Destinations </h1><br/>
                 <p >We offer the best services and a list of treatment centres as per your requirement. Find the best hospitals<br/> and treatment centres in India and around the globe.</p><br/> <br/>
-                <button  class="button-71">Mumbai</button> <space/><space/>
-                  <button  class="button-hover">Delhi</button> <space/><space/>
-                  <button  class="button-hover">Kolkata</button> <space/><space/>
-                  <button  class="button-hover">Pune</button> <space/><space/>
-                  <button  class="button-hover">Bangalore</button> <space/><space/>
-                  <button  class="button-hover">Hyderabad</button> <space/><space/>
-                  <button  class="button-hover">Ahmedabad</button> <space/><space/><br/>
+                <button onClick={()=>{setMumbai(!mumbai)}} class="button-71">Mumbai</button> <space/><space/>
+                  <button onClick={()=>{setDelhi(!delhi)}} class="button-hover">Delhi</button> <space/><space/>
+                  <button  onClick={()=>{setKolkata(!kolkata)}} class="button-hover">Kolkata</button> <space/><space/>
+                  <button  onClick={()=>{setPune(!pune)}} class="button-hover">Pune</button> <space/><space/>
+                  <button  onClick={()=>{setBangalore(!bangalore)}} class="button-hover">Bangalore</button> <space/><space/>
+                  <button  onClick={()=>{setHyderabad(!hyderabad)}} class="button-hover">Hyderabad</button> <space/><space/>
+                  <button  onClick={()=>{setHyderabad(!hyderabad)}} class="button-hover">Ahmedabad</button> <space/><space/><br/>
 
-                  <div class="row1" style={{marginLeft:"1%"}}>
+                  {mumbai && mumbaiImage} 
+                  {delhi && delhiImage}
+                  {kolkata && kolkataImage}
+                  {pune && puneImage}
+                  {bangalore && bangaloreImage}
+                  {hyderabad && hyderabadImage}
+                  {/* <div class="row1" style={{marginLeft:"1%"}}>
                    <div class="column1">
                       <img  src={process.env.PUBLIC_URL + "/11.jpg"}  style={{height:'100%',width:"100%"}} />
                    </div>
@@ -169,25 +307,12 @@ export default function Home() {
                        <img  src={process.env.PUBLIC_URL + "/16.jpg"}  style={{height:'100%',width:"100%"}}/>
                    </div>
                   
-                 </div>
+                 </div> */}
                  <a  class="link-button1" href="#"><b>SIGN IN FOR MORE OPTIONS</b></a>
               </div>
           
   
-                  <div >
                  
-                  <div>
-
-                  </div>
-                      
-                  
-                </div>
-                <div style={{justifyContent:'center',textAlign:'center'}}>
-                {/* <br/><br/> */}
-                 
-                  </div>
-
-
           </Card>
         </Grid>
       </Paper>
@@ -247,6 +372,33 @@ export default function Home() {
                <div className="deptbutton">
                     <button  class="link-button1" style={{textAlign: 'center',justifyContent: 'center'}}><b>Search Facility </b></button>&nbsp;&nbsp;
                     <button  class="link-button1" style={{textAlign: 'center',justifyContent: 'center'}}><b>Search Doctor</b></button> 
+               </div>
+          <br/>
+          </Card>
+          <br/><br/>
+          </Card>
+          <Card className="card" style={cardstyle}>
+          <Card className="Card1" style={{boxShadow:'5px 10px 8px #888888 '}}>
+          <form >
+          <TextField style={{width:'436px',marginRight:'20px',marginTop:'20px'}} id="outlined-basic" label="Name" variant="outlined" /><TextField style={{width:'436px',marginTop:'20px'}} id="outlined-basic" label="Diseases Symptom" variant="outlined" /><br/>
+          <TextField style={{width:'436px',marginTop:'20px',marginRight:'20px'}} id="outlined-basic" label="Email Address" variant="outlined" />
+          <TextField style={{width:'436px',marginTop:'20px'}} id="outlined-basic" label="Contact Number" variant="outlined" /><br/>
+          <TextField style={{width:'896px',marginTop:'20px'}}id="outlined-basic" label="Address" variant="outlined" />
+          <TextField style={{width:'400px',marginTop:'20px',marginRight:'10px'}} id="outlined-basic" label="Country" variant="outlined" />
+          <TextField style={{width:'300px',marginTop:'20px',marginRight:'10px'}} id="outlined-basic" label="State" variant="outlined" />
+          <TextField style={{width:'160px',marginTop:'20px',marginRight:'10px'}} id="outlined-basic" label="Pin Code" variant="outlined" /><br/>
+          <input type="file" style={{ position: 'relative',width:'100%',height:' calc(1.5em + 0.75rem + 2px)',margin:'0',opacity: '0'}} id="customFile" name="file[]" multiple="multiple"/>
+                   <input type="file" id="myFile" name="filename"/>
+                   <input type="file" hidden={true} ref={refParam => inputRef = refParam}/>
+                   <button style={{ backgroundColor: "orange", color: "white" }} onClick={() => inputRef.click()}>
+                     Upload
+                   </button>
+          </form>
+        
+               <br/><br/>
+               <div className="deptbutton">
+                   
+                    <button  class="link-button1" style={{textAlign: 'center',justifyContent: 'center'}}><b>Submit</b></button> 
                </div>
           <br/>
           </Card>

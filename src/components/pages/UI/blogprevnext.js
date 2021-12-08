@@ -7,8 +7,8 @@ import {Card } from "@material-ui/core";
 const Blogprevnext = () => {
     return (
         <>
-            <Paper>
-      <Grid className="row">
+      <Paper style={{boxShadow:'none'}} className='nextprevrow'>
+      <Grid>
   
         <Card className="nextprev">
            <a href="#"><i class="fas fa-angle-double-left"></i></a>

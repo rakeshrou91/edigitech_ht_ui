@@ -271,7 +271,7 @@ export default function StandardPackage() {
   <Card className="standardreviews">
 
     <div className="standreviewscontainer">
-      <img  src={process.env.PUBLIC_URL + "/cmnt-2.jpg"} style={{ width: 80, height: 80,border: '2px solid #496cfe'}}/>
+      <img  src={process.env.PUBLIC_URL + "/cmnt-2.jpg"} />
       <span><i class="fas fa-calendar-alt"></i> Stayed in Nov 2020</span> <br/>
       <span><i class="fas fa-calendar-check"></i> Stayed in Nov 2020</span>
     </div>
@@ -288,7 +288,7 @@ export default function StandardPackage() {
   <Card className="standardreviews">
 
     <div className="standreviewscontainer">
-      <img  src={process.env.PUBLIC_URL + "/cmnt-3.jpg"} style={{ width: 80, height: 80,border: '2px solid #496cfe'}}/>
+      <img  src={process.env.PUBLIC_URL + "/cmnt-3.jpg"} />
       <span><i class="fas fa-calendar-alt"></i> Stayed in Nov 2020</span> <br/>
       <span><i class="fas fa-calendar-check"></i> Stayed in Nov 2020</span>
     </div>
@@ -305,7 +305,7 @@ export default function StandardPackage() {
   <Card className="standardreviews">
 
     <div className="standreviewscontainer">
-      <img  src={process.env.PUBLIC_URL + "/cmnt-4.jpg"} style={{ width: 80, height: 80,border: '2px solid #496cfe'}}/>
+      <img  src={process.env.PUBLIC_URL + "/cmnt-4.jpg"}/>
       <span><i class="fas fa-calendar-alt"></i> Stayed in Nov 2020</span> <br/>
       <span><i class="fas fa-calendar-check"></i> Stayed in Nov 2020</span>
     </div>
@@ -322,7 +322,7 @@ export default function StandardPackage() {
   <Card className="standardreviews">
 
 <div className="standreviewscontainer">
-  <img  src={process.env.PUBLIC_URL + "/cmnt-5.jpg"} style={{ width: 80, height: 80,border: '2px solid #496cfe'}}/>
+  <img  src={process.env.PUBLIC_URL + "/cmnt-5.jpg"} />
   <span><i class="fas fa-calendar-alt"></i> Stayed in Nov 2020</span> <br/>
   <span><i class="fas fa-calendar-check"></i> Stayed in Nov 2020</span>
 </div>
@@ -339,7 +339,7 @@ export default function StandardPackage() {
 <Card className="standardreviews">
 
 <div className="standreviewscontainer">
-  <img  src={process.env.PUBLIC_URL + "/cmnt-2.jpg"} style={{ width: 80, height: 80,border: '2px solid #496cfe'}}/>
+  <img  src={process.env.PUBLIC_URL + "/cmnt-2.jpg"} />
   <span><i class="fas fa-calendar-alt"></i> Stayed in Nov 2020</span> <br/>
   <span><i class="fas fa-calendar-check"></i> Stayed in Nov 2020</span>
 </div>

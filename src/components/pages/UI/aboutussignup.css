@@ -28,6 +28,8 @@
     font-size: 15px;
     margin-top: 8%;
     border: none;
+}.container a{
+    text-decoration: none;
 }
 .button:hover{
     background-color: #f5142b;

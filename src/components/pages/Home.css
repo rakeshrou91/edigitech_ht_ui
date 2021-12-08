@@ -182,6 +182,7 @@
   background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
   border:'none';
 }
+
 .column1{
   flex: 10%;
   
@@ -189,7 +190,8 @@
   width:500px;
   padding:10px;
   float: left;
- 
+  margin-top: 20px;
+  
   align-items:center;
   display: flex;
   flex-direction:column;
@@ -206,6 +208,7 @@ cursor: arrows;
 
 .column1 img:hover {
 opacity: 1;
+
 }
 .section{
   background-image: url(/src/images/bgshapes_1.png);
@@ -315,6 +318,7 @@ opacity: 1;
   font-size: 16px;
   font-weight: 600;
   height: 56px;
+  margin-top: 20px;
   justify-content: center;
   letter-spacing: .4px;
   line-height: 1;
@@ -375,8 +379,14 @@ align-items: center;
  float: center;
  padding: 200px;
 }
+.imagesectiondiv h2{
+ 
+  margin-top: 16px;
+  margin-bottom: -2%;
+}
 .div h2{
 margin-left: 50%;
+
 }
 div h1{
 font-size:60px;
@@ -617,7 +627,6 @@ margin-bottom: 16px;
   }
   
   .link-button1{ 
-   
     flex-direction: row;
     text-align: center;
     justify-content:center;
@@ -762,6 +771,14 @@ margin-bottom: 16px;
     margin-left: -0%;
  
   }
+  .custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    margin: 0;
+    opacity: 0;
+}
   .deptbutton{
     text-align: center;
     justify-content: center;
