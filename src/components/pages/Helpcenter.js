@@ -105,16 +105,13 @@ const question4Content=<div>
     <Paper style={{boxShadow:"none"}}>
       
       <Grid>
-      
         <Card className="helpquetionscard" style={{borderRadius:'555px'}}>
         
           <ul>
             <li>
                  <a onClick={()=>{setQuestion1(!question1)}}><Avatar style={{backgroundColor:'#004D61'}}><i class="fas fa-question"></i></Avatar></a>
                  <span>What are the possible reasons for my credit card declining?</span>
-                
             </li>
-            
           </ul>
        
         </Card>
@@ -126,10 +123,7 @@ const question4Content=<div>
                  <span>How long in advance must we book and make full payment?</span>
                  
             </li>
-            
           </ul>
-           
-           
         </Card>
         {question2 && question2Content}   
         <Card className="helpquetionscard" style={{borderRadius:'555px'}}>

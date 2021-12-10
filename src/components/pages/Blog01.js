@@ -14,8 +14,7 @@ export default function Blog01() {
     <div className='blog1'>
     <div className="blog01heading">
              <h2 > Blogs</h2>
-             <a href="/"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;Blogs</a> &nbsp;&nbsp;
-            
+             <a href="/"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;Blogs</a> &nbsp;&nbsp;    
       </div>
     </div>
     <Paper style={{boxShadow:"none"}}>
@@ -32,7 +31,6 @@ export default function Blog01() {
              <Blog01sidecard/>
           </Suspense>
          </Grid>
- 
        </Grid>
  
     </Paper>

@@ -9,7 +9,6 @@ import Image from 'react-bootstrap/Image';
 import {Currency,Department,Destination} from '../select/Select';
 const Footer = React.lazy(() => import('./UI/footer'));
 
-
 export default function Home() {
   const cardstyle={boxShadow:'none',justifyContent: 'center',textAlign: 'center',display:'flex',flexDirection:'column'} 
   const paperStyle={padding:20,height:800,width :'100%',margin:"24% 0%",boxShadow:"none",justifyContent:'center',textAlign: 'center'}
@@ -187,7 +186,6 @@ export default function Home() {
                        You can rely on us for choosing the top specialists and clinics. The list of doctors and hospitals present on <br/>the portal is curated after thorough research and you can expect to find the best-fit as per your<br/> requirement. You can rely on us for finding the best doctors in India and around the globe. This is not a <br/>google promoted list that we provide.
                        </p>
                      </Card>
-
                 </Grid>
       </Paper>
       <Paper style={{boxShadow:"none",justifyContent:'center',textAlign: 'center',marginTop:"-55%"}}>

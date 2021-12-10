@@ -417,7 +417,6 @@ export default function Premiumpackage() {
            <li><i class="far fa-check-circle"></i>  Free cancellation before Nov 10,<br/>2018, 12:00 (hotel's local time</li>
            <li><i class="far fa-check-circle"></i> Instant Confirmation</li>
            <li><i class="far fa-check-circle"></i> Summer promotion</li>
-         
          </ul>
          <ul>
            <li>From USD</li>
