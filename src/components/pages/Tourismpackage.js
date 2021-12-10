@@ -12,7 +12,6 @@ export default function TourismPackage() {
       <div className="compareheading">
              <h2 > Tourism Package</h2>
              <a href="/"><i class="fas fa-home"></i>&nbsp;&nbsp;Home <i class="fas fa-angle-right" ></i> &nbsp;&nbsp;Tourism Package</a> &nbsp;&nbsp;
-            
       </div>
     </div>
     <Paper style={{boxShadow:'none'}}>
@@ -22,7 +21,6 @@ export default function TourismPackage() {
             <h2>Tourism Package</h2>
             <p>We offer a wide range of package that meets all your requirements. eHealthFlex also offers<br/> a facility to customize the package according to your budget and expectations</p>
         </Card>
-       
         <Card className="comparecardset" style={{boxShadow:'none'}}>
             <tr>
               <td>

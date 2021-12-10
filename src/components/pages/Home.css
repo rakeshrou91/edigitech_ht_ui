@@ -749,6 +749,10 @@ margin-bottom: 16px;
     background-color: #004D61;
 
   }
+  .custom-file-input{
+    width:200px;
+    background-color: #f34079;
+  }
   .divimg{
     margin-top: -50%;
     font-size: small;
@@ -757,7 +761,6 @@ margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     margin-left: 20%;
-    
     background-color: #004D61;
 
   }
@@ -767,7 +770,7 @@ margin-bottom: 16px;
    
     flex-direction: column;
     width:500px;
-    height:200px;
+    height:auto;
     margin-left: -0%;
  
   }

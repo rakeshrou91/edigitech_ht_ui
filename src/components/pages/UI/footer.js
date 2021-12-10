@@ -4,7 +4,7 @@ import {Grid,Paper,Avatar,TextField} from '@material-ui/core';
 import {Card } from "@material-ui/core";
 import { Link } from 'react-router-dom';
 const Footer = () =>{
-
+     
     const cardstyle={boxShadow:'none',justifyContent: 'center',textAlign: 'center',display:'flex',flexDirection:'column'} 
     const paperStyle={padding:20,height:800,width :'100%',margin:"24% 0%",boxShadow:"none",justifyContent:'center',textAlign: 'center'}
     return (
