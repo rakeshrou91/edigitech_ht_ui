@@ -1,11 +1,11 @@
 .btn {
-  background: rgb(89, 189, 184) ;
+  background: rgb(89, 189, 184);
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  font-size:12px;
-  outline: medium none; 
-  border:none;
+  font-size: 12px;
+  outline: medium none;
+  border: none;
   font-weight: bold;
   text-align: center;
   padding-top: 8px;
@@ -19,11 +19,8 @@
 
 .btn:hover {
   background-color: red;
- 
- 
+
   color: #fff;
- 
- 
 }
 .navbar {
   background: transparent;
@@ -33,31 +30,28 @@
   align-items: center;
   font-size: 1.2rem;
   z-index: 999;
- 
+
   top: 0;
- 
 }
 
-.upnavitemsupport{
+.upnavitemsupport {
   text-decoration: none;
-  color:#413E3E;
-  margin-left:10%;
+  color: #413e3e;
+  margin-left: 10%;
   cursor: pointer;
- 
 }
-.upnavitememail{
+.upnavitememail {
   text-decoration: none;
-  color:#413E3E;
+  color: #413e3e;
 }
-.upnavitemsignin{
+.upnavitemsignin {
   text-decoration: none;
-  color:#d9e0fd;
+  color: #d9e0fd;
   margin-left: 50%;
 }
-.upnavitemregister{
+.upnavitemregister {
   text-decoration: none;
-  color:#d9e0fd;
-  
+  color: #d9e0fd;
 }
 .navbar-container {
   display: flex;
@@ -66,17 +60,14 @@
   height: 80px;
   max-width: 1500px;
 }
-.navbar.colorChange{
+.navbar.colorChange {
   background-color: #fff;
-  position:fixed;
+  position: fixed;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
-  height:auto;
-  
-  
+  height: auto;
 }
-
 
 .navbar-logo {
   color: #242222;
@@ -108,20 +99,16 @@
   display: flex;
   align-items: center;
   height: 60px;
-  
 }
-
 
 .nav-links {
   color: #fff;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  font-size:14px;
-  
-  
+  font-size: 14px;
 }
 .nav-links.colorChange1 {
-  color:#004D61;
+  color: #004d61;
 }
 
 .nav-links:hover {
@@ -141,7 +128,6 @@
 .menu-icon {
   display: none;
 }
-
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
@@ -180,8 +166,6 @@
     color: white;
     border-radius: 0;
   }
-  
-
 
   .navbar-logo img {
     position: absolute;
@@ -189,7 +173,6 @@
     top: 0;
     left: 0;
     margin-bottom: 10%;
-    
   }
 
   .menu-icon {
@@ -214,7 +197,7 @@
     margin: 4rem auto;
     border-radius: 8px;
     width: 80%;
-    height:4pc;
+    height: 4pc;
     background: #1888ff;
     text-decoration: none;
     color: #fff;
@@ -230,30 +213,26 @@
   button {
     display: none;
   }
-  .upnavitemsupport{
-   
-    color:#fff;
-  
-   
+  .upnavitemsupport {
+    color: #fff;
   }
-  .upnavitememail{
-    color:#fff;
-   
+  .upnavitememail {
+    color: #fff;
   }
-  .upnavitemsignin{
-    color:#fff;
+  .upnavitemsignin {
+    color: #fff;
   }
-  .upnavitemregister{
-    color:#fff;
+  .upnavitemregister {
+    color: #fff;
   }
-  .btn{
-    color:transparent;
+  .btn {
+    color: transparent;
     background-color: transparent;
-    box-shadow:none;
+    box-shadow: none;
   }
-  .btn:hover{
-    color:transparent;
+  .btn:hover {
+    color: transparent;
     background-color: transparent;
-    box-shadow:none;
+    box-shadow: none;
   }
 }

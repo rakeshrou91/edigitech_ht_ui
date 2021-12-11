@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .home,
@@ -22,16 +22,14 @@
 .blog,
 .blog1,
 .blog2,
-.blog3
- {
+.blog3,
+.customerreview,
+.privacypolicy {
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
-  
 }
-
-
 
 .aboutus,
 .affiliateprogram,
@@ -45,14 +43,15 @@
 .blog1,
 .blog2,
 .blog3,
-.contact-us
-{
-  background-image: url('./images/bredcump.png'); 
+.contact-us,
+.customerreview,
+.privacypolicy {
+  background-image: url("./images/bredcump.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  height:500px;
+  height: 500px;
   margin-top: -8%;
 }
 
@@ -101,7 +100,7 @@
 }
 
 .marketing {
-  background-image: url('./images/img-6.jpg');
+  background-image: url("./images/img-6.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -109,8 +108,8 @@
   font-size: 100px;
 }
 
-.consulting {
-  background-image: url('./images/img-5.jpg');
+.Costomerreview {
+  background-image: url("./images/img-5.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -130,8 +129,9 @@
   .blog1,
   .blog2,
   .blog3,
-  .contact-us
-  {
+  .contact-us,
+  .customerreview,
+  .privacypolicy {
     width: auto;
   }
 }

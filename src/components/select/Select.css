@@ -1,19 +1,17 @@
-.MenuItem{
-    flex-direction: column;
-    background-color: #fff;
-    text-align: center;
-    justify-content: center;
-    padding:12px;
-    color:#413E3E;
-
+.MenuItem {
+  flex-direction: column;
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+  padding: 12px;
+  color: #413e3e;
 }
-.MenuItem:hover{
-    background-color: #ddd;
+.MenuItem:hover {
+  background-color: #ddd;
 }
-.formcontrol{
-   width:16%;
+.formcontrol {
+  width: 16%;
 }
-.formcontrol1{
-    width:40%;
-   
- }
+.formcontrol1 {
+  width: 40%;
+}
