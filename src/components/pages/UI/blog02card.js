@@ -2,7 +2,7 @@ import React from "react";
 import "../comman.css";
 import Image from "react-bootstrap/Image";
 import { SiIndeed } from "react-icons/si";
-import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 const blog02card = () => {
   return (
@@ -19,10 +19,10 @@ const blog02card = () => {
             </span>
             <br />
             <br />
-            <a>
+            <a href="#" style={{ textDecoration:'none'}}>
               <i class="fas fa-comments"></i> 20 Comments
             </a>
-            <a>
+            <a href="#" style={{ textDecoration:'none'}}>
               <i class="fas fa-eye-slash"></i> 466 View
             </a>
             <p>
@@ -67,7 +67,7 @@ const blog02card = () => {
               <Grid container spacing={2}>
                 <Grid item xs={7}>
                   <p>
-                    {" "}
+                   
                     Lsom unice nas nibh dolor, malesuada et bibendum elit teger
                     ameti consectet ur adipiscing elit. consectetur nibah is nec
                     eros eget nsl ametysom unice nas nibh dolo males uada et

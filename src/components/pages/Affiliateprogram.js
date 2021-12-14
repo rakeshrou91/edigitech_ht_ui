@@ -1,22 +1,25 @@
 import React, { Suspense } from "react";
 import "./Affiliateprogram.css";
 import Image from "react-bootstrap/Image";
-import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
+import { Grid, Paper} from "@material-ui/core";
 import { Card } from "@material-ui/core";
 
 const Aboutussignup = React.lazy(() => import("./UI/aboutussignup"));
 const Footer = React.lazy(() => import("./UI/footer"));
-
+const Navbar1= React.lazy(()=> import("../Navbar1"));
 export default function AffiliateProgram() {
   return (
     <>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Navbar1/>
+      </Suspense>
       <div className="affiliateprogram">
         <div className="heading">
           <h2> Affiliate Program</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home{" "}
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Affiliate Program
-          </a>{" "}
+          </a>
           &nbsp;&nbsp;
         </div>
       </div>
@@ -48,7 +51,7 @@ export default function AffiliateProgram() {
             <ul>
               <li>
                 <i class="far fa-check-circle">
-                  {" "}
+                  
                   Earn up to 5% commission per sale
                 </i>
               </li>
@@ -57,19 +60,19 @@ export default function AffiliateProgram() {
               </li>
               <li>
                 <i class="far fa-check-circle">
-                  {" "}
+                  
                   Variety of text links and banners.
                 </i>
               </li>
               <li>
                 <i class="far fa-check-circle">
-                  {" "}
+                  
                   Reliable third-party tracking
                 </i>
               </li>
               <li>
                 <i class="far fa-check-circle">
-                  {" "}
+                  
                   Accessible and dynamic reporting
                 </i>
               </li>

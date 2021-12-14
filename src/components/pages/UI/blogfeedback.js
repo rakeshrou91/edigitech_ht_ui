@@ -1,9 +1,7 @@
 import React from "react";
 import "../comman.css";
 import Input from "@mui/material/Input";
-import Image from "react-bootstrap/Image";
-import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
-import { Card } from "@material-ui/core";
+import { Card ,Paper,Grid} from "@material-ui/core";
 
 const blogfeedback = () => {
   return (

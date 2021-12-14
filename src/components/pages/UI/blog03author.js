@@ -1,7 +1,6 @@
 import React from "react";
 import "../comman.css";
 import { SiIndeed } from "react-icons/si";
-import { Paper } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 const Blog03author = () => {
   return (

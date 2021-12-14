@@ -2,10 +2,11 @@ import React, { Suspense, useState } from "react";
 import "./comman.css";
 import "./UI/footer.css";
 import Progress from "react-progressbar";
-import { Grid, Paper, Avatar, TextField, CardMedia } from "@material-ui/core";
+import { Grid, Paper} from "@material-ui/core";
 import { Card } from "@material-ui/core";
 const Mapcontainer = React.lazy(() => import("./UI/map"));
 const Footer = React.lazy(() => import("./UI/footer"));
+const Navbar1= React.lazy(()=> import("../Navbar1"));
 
 export default function StandardPackage() {
   const [policies, setPolicies] = useState(false);
@@ -36,15 +37,15 @@ export default function StandardPackage() {
     <div>
       <Card className="standardpackagedetails">
         <div className="packcontainer">
-          <img src={process.env.PUBLIC_URL + "/hroom-1.jpg"} />
+          <img src={process.env.PUBLIC_URL + "/hroom-1.jpg"} alt="hroom-1" />
           <span>PREMIER ROOM</span>
           <h6>
-            {" "}
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-10.png"} />
+            
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-10.png"} alt="hottel-cion-10" />
             17 m²
           </h6>
           <h6>
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-11.png"} /> Floor
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-11.png"} alt="hottel-cion-10" /> Floor
             8-15
           </h6>
           <p>Bigger than most similar rooms in Hong Kong</p>
@@ -63,22 +64,22 @@ export default function StandardPackage() {
           </ul>
           <ul>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} alt="hottel-cion-1" /> Free
               in-room Wi-Fi
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} alt="hottel-cion-2" /> Gym
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} />{" "}
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} alt="hottel-cion-3" />
               Western restaurant
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} alt="hottel-cion-4" /> Front
               desk (24 hours)
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} alt="hottel-cion-5" /> soft
               drinks
             </li>
           </ul>
@@ -126,22 +127,22 @@ export default function StandardPackage() {
           </ul>
           <ul>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} alt="hottel-cion-1" /> Free
               in-room Wi-Fi
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} alt="hottel-cion-2" /> Gym
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} />{" "}
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} alt="hottel-cion-3" />
               Western restaurant
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} alt="hottel-cion-4" /> Front
               desk (24 hours)
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} alt="hottel-cion-5"/> soft
               drinks
             </li>
           </ul>
@@ -178,15 +179,15 @@ export default function StandardPackage() {
       </Card>
       <Card className="standardpackagedetails">
         <div className="packcontainer">
-          <img src={process.env.PUBLIC_URL + "/hroom-1.jpg"} />
+          <img src={process.env.PUBLIC_URL + "/hroom-1.jpg"} alt="hroom-1"/>
           <span>PREMIER ROOM</span>
           <h6>
-            {" "}
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-10.png"} />
+            
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-10.png"} alt="hottel-cion-10"/>
             17 m²
           </h6>
           <h6>
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-11.png"} /> Floor
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-11.png"} alt="hottel-cion-11"/> Floor
             8-15
           </h6>
           <p>
@@ -207,22 +208,22 @@ export default function StandardPackage() {
           </ul>
           <ul>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} alt="hottel-cion-1"/> Free
               in-room Wi-Fi
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} alt="hottel-cion-2"/> Gym
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} />{" "}
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} alt="hottel-cion-3"/>
               Western restaurant
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} alt="hottel-cion-4"/> Front
               desk (24 hours)
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} alt="hottel-cion-5"/> soft
               drinks
             </li>
           </ul>
@@ -270,22 +271,22 @@ export default function StandardPackage() {
           </ul>
           <ul>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} alt="hottel-cion-1"/> Free
               in-room Wi-Fi
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} alt="hottel-cion-2"/> Gym
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} />{" "}
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} alt="hottel-cion-3"/>
               Western restaurant
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} alt="hottel-cion-4"/> Front
               desk (24 hours)
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} alt="hottel-cion-5"/> soft
               drinks
             </li>
           </ul>
@@ -323,15 +324,15 @@ export default function StandardPackage() {
 
       <Card className="standardpackagedetails">
         <div className="packcontainer">
-          <img src={process.env.PUBLIC_URL + "/hroom-1.jpg"} />
+          <img src={process.env.PUBLIC_URL + "/hroom-1.jpg"} alt="hroom-1"/>
           <span>PREMIER ROOM</span>
           <h6>
-            {" "}
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-10.png"} />
+            
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-10.png"} alt="hottel-cion-10"/>
             17 m²
           </h6>
           <h6>
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-11.png"} /> Floor
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-11.png"} alt="hottel-cion-11"/> Floor
             8-15
           </h6>
           <p>Bigger than most similar rooms at your Destination</p>
@@ -350,22 +351,22 @@ export default function StandardPackage() {
           </ul>
           <ul>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} alt="hottel-cion-1"/> Free
               in-room Wi-Fi
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} alt="hottel-cion-2"/> Gym
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} />{" "}
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} alt="hottel-cion-3"/>
               Western restaurant
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} alt="hottel-cion-4"/> Front
               desk (24 hours)
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} alt="hottel-cion-5"/> soft
               drinks
             </li>
           </ul>
@@ -413,22 +414,22 @@ export default function StandardPackage() {
           </ul>
           <ul>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} /> Free
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-1.png"} alt="hottel-cion-1"/> Free
               in-room Wi-Fi
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} /> Gym
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-2.png"} alt="hottel-cion-2"/> Gym
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} />{" "}
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-3.png"} alt="hottel-cion-3"/>
               Western restaurant
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} /> Front
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-4.png"} alt="hottel-cion-4"/> Front
               desk (24 hours)
             </li>
             <li>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} /> soft
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-5.png"} alt="hottel-cion-5"/> soft
               drinks
             </li>
           </ul>
@@ -471,7 +472,7 @@ export default function StandardPackage() {
       <Card className="standardreviewsprogressbar">
         <span>
           <h3>Reviews</h3>
-          <h5>(86 verified reviews)</h5>{" "}
+          <h5>(86 verified reviews)</h5>
         </span>
         <div className="standreview1scontainer">
           <h4>Excellent</h4>
@@ -545,10 +546,10 @@ export default function StandardPackage() {
 
       <Card className="standardreviews">
         <div className="standreviewscontainer">
-          <img src={process.env.PUBLIC_URL + "/cmnt-2.jpg"} />
+          <img src={process.env.PUBLIC_URL + "/cmnt-2.jpg"} alt="cmnt-2"/>
           <span>
             <i class="fas fa-calendar-alt"></i> Stayed in Nov 2020
-          </span>{" "}
+          </span>
           <br />
           <span>
             <i class="fas fa-calendar-check"></i> Stayed in Nov 2020
@@ -578,18 +579,18 @@ export default function StandardPackage() {
               </p>
             </li>
           </ul>
-          <a style={{ textDecoration: "none", cursor: "pointer" }}>
-            {" "}
+          <a style={{ textDecoration: "none", cursor: "pointer" }}href="#">
+            
             Reply <i class="fas fa-reply-all"></i>
           </a>
         </div>
       </Card>
       <Card className="standardreviews">
         <div className="standreviewscontainer">
-          <img src={process.env.PUBLIC_URL + "/cmnt-3.jpg"} />
+          <img src={process.env.PUBLIC_URL + "/cmnt-3.jpg"} alt="cmnt-3"/>
           <span>
             <i class="fas fa-calendar-alt"></i> Stayed in Nov 2020
-          </span>{" "}
+          </span>
           <br />
           <span>
             <i class="fas fa-calendar-check"></i> Stayed in Nov 2020
@@ -619,18 +620,18 @@ export default function StandardPackage() {
               </p>
             </li>
           </ul>
-          <a style={{ textDecoration: "none", cursor: "pointer" }}>
-            {" "}
+          <a style={{ textDecoration: "none", cursor: "pointer" }}href="#">
+            
             Reply <i class="fas fa-reply-all"></i>
           </a>
         </div>
       </Card>
       <Card className="standardreviews">
         <div className="standreviewscontainer">
-          <img src={process.env.PUBLIC_URL + "/cmnt-4.jpg"} />
+          <img src={process.env.PUBLIC_URL + "/cmnt-4.jpg"} alt="cmnt-4"/>
           <span>
             <i class="fas fa-calendar-alt"></i> Stayed in Nov 2020
-          </span>{" "}
+          </span>
           <br />
           <span>
             <i class="fas fa-calendar-check"></i> Stayed in Nov 2020
@@ -660,18 +661,18 @@ export default function StandardPackage() {
               </p>
             </li>
           </ul>
-          <a style={{ textDecoration: "none", cursor: "pointer" }}>
-            {" "}
+          <a style={{ textDecoration: "none", cursor: "pointer" }}href="#">
+            
             Reply <i class="fas fa-reply-all"></i>
           </a>
         </div>
       </Card>
       <Card className="standardreviews">
         <div className="standreviewscontainer">
-          <img src={process.env.PUBLIC_URL + "/cmnt-5.jpg"} />
+          <img src={process.env.PUBLIC_URL + "/cmnt-5.jpg"} alt="cmnt-5"/>
           <span>
             <i class="fas fa-calendar-alt"></i> Stayed in Nov 2020
-          </span>{" "}
+          </span>
           <br />
           <span>
             <i class="fas fa-calendar-check"></i> Stayed in Nov 2020
@@ -701,18 +702,18 @@ export default function StandardPackage() {
               </p>
             </li>
           </ul>
-          <a style={{ textDecoration: "none", cursor: "pointer" }}>
-            {" "}
+          <a style={{ textDecoration: "none", cursor: "pointer" }}href="#">
+            
             Reply <i class="fas fa-reply-all"></i>
           </a>
         </div>
       </Card>
       <Card className="standardreviews">
         <div className="standreviewscontainer">
-          <img src={process.env.PUBLIC_URL + "/cmnt-2.jpg"} />
+          <img src={process.env.PUBLIC_URL + "/cmnt-2.jpg"} alt="cmnt-2"/>
           <span>
             <i class="fas fa-calendar-alt"></i> Stayed in Nov 2020
-          </span>{" "}
+          </span>
           <br />
           <span>
             <i class="fas fa-calendar-check"></i> Stayed in Nov 2020
@@ -742,8 +743,8 @@ export default function StandardPackage() {
               </p>
             </li>
           </ul>
-          <a style={{ textDecoration: "none", cursor: "pointer" }}>
-            {" "}
+          <a style={{ textDecoration: "none", cursor: "pointer" }} href="#">
+            
             Reply <i class="fas fa-reply-all"></i>
           </a>
         </div>
@@ -756,7 +757,7 @@ export default function StandardPackage() {
         <span>Services & Amenities</span>
         <ul>
           <li>
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-12.png"} />
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-12.png"} alt="hottel-cion-12"/>
             <h5>Transportation Services</h5>
             <p>
               <i class="far fa-check-circle"></i> Airport pickup service
@@ -765,7 +766,7 @@ export default function StandardPackage() {
             </p>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-13.png"} />
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-13.png"} alt="hottel-cion-13"/>
             <h5>General</h5>
             <p>
               <i class="far fa-check-circle"></i> Free Wi-Fi areas
@@ -774,7 +775,7 @@ export default function StandardPackage() {
             </p>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-15.png"} />
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-15.png"} alt="hottel-cion-15"/>
             <h5>Food & Drink</h5>
             <p>
               <i class="far fa-check-circle"></i> Western restaurant
@@ -783,7 +784,7 @@ export default function StandardPackage() {
             </p>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-14.png"} />
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-14.png"} alt="hottel-cion-14"/>
             <h5>Front Desk Services</h5>
             <p>
               <i class="far fa-check-circle"></i> Luggage storage
@@ -803,11 +804,11 @@ export default function StandardPackage() {
         <h3>Hotel Policies</h3>
         <ul>
           <li>
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-16.png"} />
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-16.png"} alt="hottel-cion-16"/>
             <h4>Check-In & Check-Out</h4>
             <div>
               <p>
-                <i class="far fa-check-circle"></i> Check-in from 12:00{" "}
+                <i class="far fa-check-circle"></i> Check-in from 12:00
               </p>
               <p>
                 <i class="far fa-check-circle"></i> Check-out before 11:00
@@ -815,7 +816,7 @@ export default function StandardPackage() {
             </div>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-17.png"} />
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-17.png"} alt="hottel-cion-17"/>
             <h4>Children And Extra Beds</h4>
             <span>
               Guests aged under 18 must be accompanied by a parent or legal
@@ -823,14 +824,14 @@ export default function StandardPackage() {
             </span>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-15.png"} />
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-15.png"} alt="hottel-cion-15"/>
             <h5>Dining</h5>
             <div>
               <span>Buffet Breakfast $15</span>
             </div>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "/hottel-cion-14.png"} />
+            <img src={process.env.PUBLIC_URL + "/hottel-cion-14.png"} alt="hottel-cion-14"/>
             <h4>Paying At The Hotel</h4>
             <span>
               <div>
@@ -839,30 +840,35 @@ export default function StandardPackage() {
                     <img
                       style={{ height: "26px" }}
                       src={process.env.PUBLIC_URL + "/card-1.png"}
+                      alt="card-1"
                     />
                   </li>
                   <li>
                     <img
                       style={{ height: "26px" }}
                       src={process.env.PUBLIC_URL + "/card-2.png"}
+                      alt="card-2"
                     />
                   </li>
                   <li>
                     <img
                       style={{ height: "26px" }}
                       src={process.env.PUBLIC_URL + "/card-3.png"}
+                      alt="card-3"
                     />
                   </li>
                   <li>
                     <img
                       style={{ height: "26px" }}
                       src={process.env.PUBLIC_URL + "/card-4.png"}
+                      alt="card-4"
                     />
                   </li>
                   <li>
                     <img
                       style={{ height: "26px" }}
                       src={process.env.PUBLIC_URL + "/card-5.png"}
+                      alt="card-5"
                     />
                   </li>
                 </ul>
@@ -922,22 +928,22 @@ export default function StandardPackage() {
         <h3>Tour Details</h3>
         <ul>
           <li>
-            <img src={process.env.PUBLIC_URL + "/tour-1.png"} />
+            <img src={process.env.PUBLIC_URL + "/tour-1.png"} alt="tour-1"/>
             <h2>Booking Type</h2>
             <h4>Instant Booking</h4>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "/tour-2.png"} />
+            <img src={process.env.PUBLIC_URL + "/tour-2.png"} alt="tour-2"/>
             <h2>Tour Type </h2>
             <h4>Private Tour</h4>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "/tour-3.png"} />
+            <img src={process.env.PUBLIC_URL + "/tour-3.png"} alt="tour-3"/>
             <h2>Availability</h2>
             <h4>Guide/Instructor</h4>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "/tour-4.png"} />
+            <img src={process.env.PUBLIC_URL + "/tour-4.png"} alt="tour-4"/>
             <h2>Guiding Method</h2>
             <h4>Available Daily</h4>
           </li>
@@ -971,13 +977,16 @@ export default function StandardPackage() {
 
   return (
     <>
+     <Suspense fallback={<div>Loading...</div>}>
+      <Navbar1/>
+      </Suspense>
       <div className="standard">
         <div className="standardheading">
           <h2> Standard Package</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home{" "}
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Standard Package
-          </a>{" "}
+          </a>
           &nbsp;&nbsp;
         </div>
       </div>
@@ -988,29 +997,29 @@ export default function StandardPackage() {
             <h5>Standard Package</h5>
             <p>We provide you a comfortable journey at affordable rates</p>
             <span>
-              <img src={process.env.PUBLIC_URL + "/flight.png"} />
+              <img src={process.env.PUBLIC_URL + "/flight.png"} alt="flight"/>
               <p>Flight Tickets in Economy Class</p>
             </span>
             <span>
-              <img src={process.env.PUBLIC_URL + "/cab.jpg"} />
+              <img src={process.env.PUBLIC_URL + "/cab.jpg"} alt="cab"/>
               <p>
                 Standard Car for airport pick and drop or smaller room in 5 Star
               </p>
             </span>
             <span>
-              <img src={process.env.PUBLIC_URL + "/hotel.jpg"} />
+              <img src={process.env.PUBLIC_URL + "/hotel.jpg"} alt="hotel"/>
               <p>3-4 Star Hotel Accommodation</p>
             </span>
             <span>
-              <img src={process.env.PUBLIC_URL + "/hospital.png"} />
+              <img src={process.env.PUBLIC_URL + "/hospital.png"} alt="hospital"/>
               <p>Hospital</p>
             </span>
             <span>
-              <img src={process.env.PUBLIC_URL + "/return.png"} />
+              <img src={process.env.PUBLIC_URL + "/return.png"} alt="return"/>
               <p>Pre-departure orientation</p>
             </span>
             <span>
-              <img src={process.env.PUBLIC_URL + "/hottel-cion-9.png"} />
+              <img src={process.env.PUBLIC_URL + "/hottel-cion-9.png"} alt="hottel-cion-9"/>
               <p>Full time valet (optional)</p>
             </span>
           </Card>
@@ -1029,6 +1038,7 @@ export default function StandardPackage() {
                   onClick={() => {
                     setOverview(!overview);
                   }}
+                
                 >
                   OVERVIEW
                 </a>
@@ -1038,6 +1048,7 @@ export default function StandardPackage() {
                   onClick={() => {
                     setPackagedetails(!packagedetails);
                   }}
+                 
                 >
                   Package details
                 </a>
@@ -1047,6 +1058,7 @@ export default function StandardPackage() {
                   onClick={() => {
                     setDescription(!description);
                   }}
+                  
                 >
                   Description
                 </a>
@@ -1056,8 +1068,9 @@ export default function StandardPackage() {
                   onClick={() => {
                     setServices(!services);
                   }}
+                 
                 >
-                  Services & amenities{" "}
+                  Services & amenities
                 </a>
               </li>
               <li>
@@ -1065,8 +1078,9 @@ export default function StandardPackage() {
                   onClick={() => {
                     setPolicies(!policies);
                   }}
+                
                 >
-                  Policies{" "}
+                  Policies
                 </a>
               </li>
               <li>
@@ -1074,8 +1088,9 @@ export default function StandardPackage() {
                   onClick={() => {
                     setReviews(!reviews);
                   }}
+                 
                 >
-                  Reviews{" "}
+                  Reviews
                 </a>
               </li>
             </ul>

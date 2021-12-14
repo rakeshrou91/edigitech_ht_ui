@@ -1,7 +1,6 @@
 import React from "react";
 import "../comman.css";
-import Image from "react-bootstrap/Image";
-import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
+import { Grid, Paper, Avatar} from "@material-ui/core";
 import { Card } from "@material-ui/core";
 const Blog02comment = () => {
   return (
@@ -16,7 +15,7 @@ const Blog02comment = () => {
                 style={{ width: 80, height: 80, border: "2px solid #496cfe" }}
               />
               <span>Angel Smith</span>
-              <a>November 20,2018 at 8:31 pm</a>
+              <h6 >November 20,2018 at 8:31 pm</h6>
               <p>
                 Maecenas at turpis ut lacus posuere dapibus. Fusce et
                 sollicitudin libero, id vehicula sem. Morbi pharetra nisl eget
@@ -35,7 +34,7 @@ const Blog02comment = () => {
                 style={{ width: 80, height: 80, border: "2px solid #496cfe" }}
               />
               <span>Mahedi Amin</span>
-              <a>September 3,2012 at 10:30 am</a>
+              <h6 >September 3,2012 at 10:30 am</h6>
               <p>
                 Maecenas at turpis ut lacus posuere dapibus. Fusce et
                 sollicitudin libero, id vehicula sem. Morbi pharetra nisl eget
@@ -55,7 +54,7 @@ const Blog02comment = () => {
                 style={{ width: 80, height: 80, border: "2px solid #496cfe" }}
               />
               <span>Cheris Ames</span>
-              <a>January 4,2013 at 10:15 am</a>
+              <h6  >January 4,2013 at 10:15 am</h6>
               <p>
                 Maecenas at turpis ut lacus posuere dapibus. Fusce et
                 sollicitudin libero, id vehicula sem. Morbi pharetra nisl eget

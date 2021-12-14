@@ -1,7 +1,6 @@
 import React from "react";
 import "../comman.css";
 import Image from "react-bootstrap/Image";
-import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 
 const Blog01card = () => {
@@ -17,17 +16,17 @@ const Blog01card = () => {
         <span>
           Online Travel Agent Secrets That Saves Clients 100s to 1000s of
           Dollars Off All Travel
-        </span>{" "}
+        </span>
         <br />
         <br />
-        <a>
+        <a href="#" style={{ textDecoration:'none'}}>
           <i class="fas fa-comments"></i> 20 Comments
         </a>
-        <a>
+        <a href="#" style={{ textDecoration:'none'}} >
           <i class="fas fa-eye-slash"></i> 466 View
         </a>
         <p>
-          {" "}
+          
           Although global travel insurance does, by its nature, cover the
           majority of the world, the current climate ensures that there are some
           places where the likelihood of incident means that UK travel insurance
@@ -48,13 +47,13 @@ const Blog01card = () => {
         <span>
           At Your Own Risk - 10 Countries Where Travel Insurance Won't Be Able
           To Help You
-        </span>{" "}
+        </span>
         <br />
         <br />
-        <a>
+        <a href="#" style={{ textDecoration:'none'}}>
           <i class="fas fa-comments"></i> 20 Comments
         </a>
-        <a>
+        <a href="#" style={{ textDecoration:'none'}}>
           <i class="fas fa-eye-slash"></i> 466 View
         </a>
         <p>
@@ -77,13 +76,13 @@ const Blog01card = () => {
         <span>
           Become A Travel Agent - The Secret To Saving Up To 80% On Your
           Personal Travel
-        </span>{" "}
+        </span>
         <br />
         <br />
-        <a>
+        <a href="#" style={{ textDecoration:'none'}}>
           <i class="fas fa-comments"></i> 20 Comments
         </a>
-        <a>
+        <a href="#" style={{ textDecoration:'none'}}>
           <i class="fas fa-eye-slash"></i> 466 View
         </a>
         <p>

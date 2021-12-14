@@ -40,9 +40,19 @@
   margin-left: 10%;
   cursor: pointer;
 }
+.upnavitemsupport1 {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10%;
+  cursor: pointer;
+}
 .upnavitememail {
   text-decoration: none;
   color: #413e3e;
+}
+.upnavitememail1 {
+  text-decoration: none;
+  color: #fff;
 }
 .upnavitemsignin {
   text-decoration: none;
@@ -216,7 +226,13 @@
   .upnavitemsupport {
     color: #fff;
   }
+  .upnavitemsupport1 {
+    color: #fff;
+  }
   .upnavitememail {
+    color: #fff;
+  }
+  .upnavitememail1 {
     color: #fff;
   }
   .upnavitemsignin {

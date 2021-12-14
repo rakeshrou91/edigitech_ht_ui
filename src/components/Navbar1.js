@@ -5,7 +5,7 @@ import Dropdown from "./Dropdown";
 import Dropdown1 from "./Dropdown1";
 import Dropdown2 from "./Dropdown2";
 
-function Navbar() {
+function Navbar1() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdown1, setDropdown1] = useState(false);
@@ -85,11 +85,11 @@ function Navbar() {
       <nav className={colorChange ? "navbar  colorChange" : ""}>
         <div>
           <br />
-          <a  className= "upnavitemsupport " href="#" >
+          <a  className= "upnavitemsupport1 " href="#" >
             <i class="fas fa-headset"></i> Support
           </a>
           &nbsp;&nbsp;
-          <a href="/Support" className="upnavitememail" >
+          <a href="/Support" className="upnavitememail1" >
             <i class="fas fa-envelope"></i> info@ehealthflex.com
           </a>
           <a href="/Support" className="upnavitemsignin">
@@ -104,9 +104,7 @@ function Navbar() {
       
       <nav className={colorChange ? "navbar  colorChange" : "navbar"}>
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <img src={process.env.PUBLIC_URL + "/logo.jpg"} />
-          </Link>
+          
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
@@ -202,5 +200,5 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar1;
 

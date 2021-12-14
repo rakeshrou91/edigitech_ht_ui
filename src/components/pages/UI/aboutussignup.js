@@ -1,6 +1,6 @@
 import React from "react";
 import "../Aboutus.css";
-import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 
 const Aboutussignup = () => {

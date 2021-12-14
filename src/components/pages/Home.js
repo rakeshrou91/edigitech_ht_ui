@@ -3,11 +3,11 @@ import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 import "./Home.css";
 import "../../App.css";
-import { Link } from "react-router-dom";
 import { ReactVideo } from "reactjs-media";
 import Image from "react-bootstrap/Image";
-import { Currency, Department, Destination } from "../select/Select";
+import { Currency2, Department, Destination,Currency1,Amount ,Convertamount,ConvertButton} from "../select/Select";
 const Footer = React.lazy(() => import("./UI/footer"));
+const Navbar= React.lazy(()=> import("../Navbar"));
 
 export default function Home() {
   const cardstyle = {
@@ -41,20 +41,23 @@ export default function Home() {
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/11.jpg"}
-            name="Deteminology"
+            alt="Deteminology"
             style={{ height: "100%", width: "100%" }}
+           
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Ophthalmologists'
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/13.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Cardiologists'
           />
         </div>
       </div>
@@ -63,18 +66,21 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Endocrinologists'
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/15.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Gastroenterologists'
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/16.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Nephrologists'
           />
         </div>
       </div>
@@ -86,7 +92,7 @@ export default function Home() {
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/11.jpg"}
-            name="Deteminology"
+            alt="Deteminology"
             style={{ height: "100%", width: "100%" }}
           />
         </div>
@@ -94,12 +100,14 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Cardiologists'
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/13.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Gastroenterologists'
           />
         </div>
       </div>
@@ -112,6 +120,7 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
             style={{ height: "80%", width: "40%" }}
+            alt='Ophthalmologists'
           />
         </div>
       </div>
@@ -123,7 +132,7 @@ export default function Home() {
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
-            name="Deteminology"
+            alt='Ophthalmologists'
             style={{ height: "100%", width: "100%" }}
           />
         </div>
@@ -131,12 +140,14 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Endocrinologists'
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/16.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Nephrologists'
           />
         </div>
       </div>
@@ -148,7 +159,7 @@ export default function Home() {
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/11.jpg"}
-            name="Deteminology"
+            alt="Deteminology"
             style={{ height: "100%", width: "100%" }}
           />
         </div>
@@ -156,12 +167,14 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/13.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Cardiologists'
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Endocrinologists'
           />
         </div>
       </div>
@@ -173,7 +186,7 @@ export default function Home() {
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/11.jpg"}
-            name="Deteminology"
+            alt="Deteminology"
             style={{ height: "100%", width: "100%" }}
           />
         </div>
@@ -181,12 +194,14 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/13.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Ophthalmologists'
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
             style={{ height: "100%", width: "100%" }}
+            alt='Endocrinologists'
           />
         </div>
       </div>
@@ -195,12 +210,14 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/15.jpg"}
             style={{ height: "100%", width: "60%" }}
+            alt='Gastroenterologists'
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/16.jpg"}
             style={{ height: "100%", width: "60%" }}
+            alt='Nephrologists'
           />
         </div>
       </div>
@@ -289,12 +306,16 @@ export default function Home() {
   );
   return (
     <>
+     <Suspense fallback={<div>Loading...</div>}>
+      <Navbar/>
+      </Suspense>
       <h1 className="services"></h1>
+     
       {/* <Image className="img" src={process.env.PUBLIC_URL + "/banner1.png"} /> */}
       <div className="mtimg">
         <Image src={process.env.PUBLIC_URL + "/mt.png"} rounded />
         <h4 style={{ color: "#413E3E" }}>
-          Looking for a stress-free medical journey?{" "}
+          Looking for a stress-free medical journey?
         </h4>
       </div>
       <Paper style={paperStyle}>
@@ -359,7 +380,7 @@ export default function Home() {
                   className="avatar"
                   src={process.env.PUBLIC_URL + "01.png"}
                   style={{ height: 120, width: 120 }}
-                />{" "}
+                />
                 <br />
                 <span>Sneak Peek</span>
                 <br />
@@ -384,7 +405,7 @@ export default function Home() {
                   className="avatar"
                   src={process.env.PUBLIC_URL + "03.png"}
                   style={{ height: 120, width: 120 }}
-                />{" "}
+                />
                 <br />
                 <span>Accommodation</span>
                 <br />
@@ -466,28 +487,15 @@ export default function Home() {
           <Card className="currency" style={{ boxShadow: "none" }}>
             <br />
             <div className="selectbox">
-              <Currency></Currency>&nbsp;&nbsp; &nbsp;
-              <TextField
-                className="textfieldamount"
-                id="outlined-basic"
-                label="Amount"
-                variant="outlined"
-              />{" "}
-              &nbsp;&nbsp; <Currency></Currency>
-            </div>{" "}
+              <Currency1></Currency1>&nbsp;&nbsp; &nbsp;
+              <Amount/>
+              &nbsp;&nbsp; <Currency2></Currency2>
+            </div>
             <br />
             <br />
-            <TextField
-              disabled
-              className="textfieldamountdisabled"
-              id="outlined-basic"
-              label="Amount"
-              variant="outlined"
-            />
+            <Convertamount/>
             &nbsp; &nbsp;
-            <button class="link-button1" href="#">
-              <b>Convert</b>
-            </button>
+            <ConvertButton/>
           </Card>
         </Grid>
       </Paper>
@@ -509,9 +517,9 @@ export default function Home() {
               </h2>
               <br />
               <h1>
-                {" "}
+                
                 Top Medical Tourism <br />
-                Destinations{" "}
+                Destinations
               </h1>
               <br />
               <p>
@@ -524,10 +532,10 @@ export default function Home() {
                 onClick={() => {
                   setMumbai(!mumbai);
                 }}
-                class="button-71"
+                class="button-hover"
               >
                 Mumbai
-              </button>{" "}
+              </button>
               <space />
               <space />
               <button
@@ -537,7 +545,7 @@ export default function Home() {
                 class="button-hover"
               >
                 Delhi
-              </button>{" "}
+              </button>
               <space />
               <space />
               <button
@@ -547,7 +555,7 @@ export default function Home() {
                 class="button-hover"
               >
                 Kolkata
-              </button>{" "}
+              </button>
               <space />
               <space />
               <button
@@ -557,7 +565,7 @@ export default function Home() {
                 class="button-hover"
               >
                 Pune
-              </button>{" "}
+              </button>
               <space />
               <space />
               <button
@@ -567,7 +575,7 @@ export default function Home() {
                 class="button-hover"
               >
                 Bangalore
-              </button>{" "}
+              </button>
               <space />
               <space />
               <button
@@ -577,7 +585,7 @@ export default function Home() {
                 class="button-hover"
               >
                 Hyderabad
-              </button>{" "}
+              </button>
               <space />
               <space />
               <button
@@ -587,7 +595,7 @@ export default function Home() {
                 class="button-hover"
               >
                 Ahmedabad
-              </button>{" "}
+              </button>
               <space />
               <space />
               <br />
@@ -687,8 +695,8 @@ export default function Home() {
               style={{ backgroundColor: "#5BD1D7", borderColor: "#5BD1D7" }}
               class="button111"
             >
-              Get Diagnosed{" "}
-            </button>{" "}
+              Get Diagnosed
+            </button>
             <space />
             <space />
             <br />
@@ -717,7 +725,7 @@ export default function Home() {
               }}
             >
               <br />
-              <br /> <Department></Department> &nbsp; &nbsp; &nbsp; &nbsp;{" "}
+              <br /> <Department></Department> &nbsp; &nbsp; &nbsp; &nbsp;
               <Destination></Destination>
               <br />
               <br />

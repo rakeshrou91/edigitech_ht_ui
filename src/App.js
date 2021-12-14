@@ -5,7 +5,6 @@ import Home from "./components/pages/Home";
 import ScrollButton from "./components/angleup/ScrollButton";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Services from "./components/pages/Services";
-import Products from "./components/pages/Products";
 import Aboutus from "./components/pages/Aboutus";
 import AffiliateProgram from "./components/pages/Affiliateprogram";
 import HelpCenter from "./components/pages/Helpcenter";
@@ -18,14 +17,13 @@ import Blog02 from "./components/pages/Blog02";
 import Blog03 from "./components/pages/Blog03";
 import ContactUs from "./components/pages/ContactUs";
 import SignUp from "./components/pages/SignUp";
-import Marketing from "./components/pages/Marketing";
 import Customerreview from "./components/pages/Customerreview";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Switch>
         <Route path="/" exact component={Home} />
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "../comman.css";
 import Image from "react-bootstrap/Image";
-import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 
 const Blogcode = () => {
@@ -22,10 +22,10 @@ const Blogcode = () => {
                 <span>Elements of a Strong Corporate Travel Program</span>{" "}
                 <br />
                 <br />
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-comments"></i> 20 Comments
                 </a>
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-eye-slash"></i> 466 View
                 </a>
                 <p>
@@ -48,10 +48,10 @@ const Blogcode = () => {
                 <span>Closer To Truth:Is Time Travel Possible?</span>
                 <br />
                 <br />
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-comments"></i> 20 Comments
                 </a>
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-eye-slash"></i> 466 View
                 </a>
                 <p>
@@ -75,10 +75,10 @@ const Blogcode = () => {
                 <span>Travel Risk Management and Foreseeable Risk</span>
                 <br />
                 <br />
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-comments"></i> 20 Comments
                 </a>
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-eye-slash"></i> 466 View
                 </a>
                 <p>
@@ -104,10 +104,10 @@ const Blogcode = () => {
                 {/* <div className="metadate"><span>22</span><span>Dec</span></div>*/}
                 <span>How to Become a Group Leader and Travel Free</span> <br />
                 <br />
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-comments"></i> 20 Comments
                 </a>
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-eye-slash"></i> 466 View
                 </a>
                 <p>
@@ -130,10 +130,10 @@ const Blogcode = () => {
                 <span>Best Traveling Experience at Affordable Cost</span>
                 <br />
                 <br />
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-comments"></i> 20 Comments
                 </a>
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-eye-slash"></i> 466 View
                 </a>
                 <p>
@@ -157,10 +157,10 @@ const Blogcode = () => {
                 <span>Is There a Travel Consultant on Your Team?</span>
                 <br />
                 <br />
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-comments"></i> 20 Comments
                 </a>
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-eye-slash"></i> 466 View
                 </a>
                 <p>
@@ -186,10 +186,10 @@ const Blogcode = () => {
                 {/* <div className="metadate"><span>22</span><span>Dec</span></div>*/}
                 <span>A Short Note About the Variety of Travellers</span> <br />
                 <br />
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-comments"></i> 20 Comments
                 </a>
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-eye-slash"></i> 466 View
                 </a>
                 <p>
@@ -212,10 +212,10 @@ const Blogcode = () => {
                 <span>Travelings Commandments of Wise Travel</span>
                 <br />
                 <br />
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-comments"></i> 20 Comments
                 </a>
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-eye-slash"></i> 466 View
                 </a>
                 <p>
@@ -239,10 +239,10 @@ const Blogcode = () => {
                 <span>The Health Benefits of Humor When Traveling</span>
                 <br />
                 <br />
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-comments"></i> 20 Comments
                 </a>
-                <a>
+                <a  href="#" style={{ textDecoration:'none'}}>
                   <i class="fas fa-eye-slash"></i> 466 View
                 </a>
                 <p>

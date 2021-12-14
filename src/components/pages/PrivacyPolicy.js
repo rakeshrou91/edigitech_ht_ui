@@ -1,20 +1,25 @@
 import React, { Suspense } from "react";
 import "./comman.css";
-import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
+import { Grid, Paper} from "@material-ui/core";
 import { Card } from "@material-ui/core";
 import Image from "react-bootstrap/Image";
+
 const Footer = React.lazy(() => import("./UI/footer"));
+const Navbar1= React.lazy(()=> import("../Navbar1"));
 
 const PrivacyPolicy = () => {
   return (
     <>
+     <Suspense fallback={<div>Loading...</div>}>
+      <Navbar1/>
+      </Suspense>
       <div className="privacypolicy">
         <div className="privacypolicyheading">
           <h2>Privacy Policy</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home{" "}
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Privacy Policy
-          </a>{" "}
+          </a>
           &nbsp;&nbsp;
         </div>
       </div>

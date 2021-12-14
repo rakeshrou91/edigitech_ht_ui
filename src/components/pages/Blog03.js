@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import "./comman.css";
 
-import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
+import { Grid, Paper} from "@material-ui/core";
 
 const Blog03author = React.lazy(() => import("./UI/blog03author"));
 const Blog01sidecard = React.lazy(() => import("./UI/blog01sidecard"));
@@ -9,17 +9,20 @@ const Blogfeedback = React.lazy(() => import("./UI/blogfeedback"));
 const Blog02comment = React.lazy(() => import("./UI/blog02comment"));
 const Blog02card = React.lazy(() => import("./UI/blog02card"));
 const Footer = React.lazy(() => import("./UI/footer"));
-
+const Navbar1= React.lazy(()=> import("../Navbar1"));
 export default function Blog03() {
   return (
     <>
+     <Suspense fallback={<div>Loading...</div>}>
+      <Navbar1/>
+      </Suspense>
       <div className="blog3">
         <div className="blog2heading">
           <h2> Single Blog</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home{" "}
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Single Blog
-          </a>{" "}
+          </a>
           &nbsp;&nbsp;
         </div>
       </div>

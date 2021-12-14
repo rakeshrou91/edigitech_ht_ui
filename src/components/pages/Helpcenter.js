@@ -1,9 +1,10 @@
 import React, { Suspense, useState } from "react";
 import "./comman.css";
 import "./Affiliateprogram.css";
-import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
+import { Grid, Paper, Avatar} from "@material-ui/core";
 import { Card } from "@material-ui/core";
 const Footer = React.lazy(() => import("./UI/footer"));
+const Navbar1= React.lazy(()=> import("../Navbar1"));
 
 export default function HelpCenter() {
   const [question1, setQuestion1] = useState(false);
@@ -59,13 +60,16 @@ export default function HelpCenter() {
 
   return (
     <>
+     <Suspense fallback={<div>Loading...</div>}>
+      <Navbar1/>
+      </Suspense>
       <div className="help">
         <div className="helpheading">
           <h2> Help Center</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home{" "}
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Help Center
-          </a>{" "}
+          </a>
           &nbsp;&nbsp;
         </div>
       </div>
@@ -84,23 +88,23 @@ export default function HelpCenter() {
           <Card style={{ boxShadow: "none" }}>
             <div className="row">
               <div className="column">
-                <img src={process.env.PUBLIC_URL + "help-icon-1.png"} /> <br />
+                <img src={process.env.PUBLIC_URL + "help-icon-1.png"} alt='help-icon-1'/> <br />
                 <h2>Account Overview</h2>
                 <br />
               </div>
               <div className="column">
-                <img src={process.env.PUBLIC_URL + "help-icon-2.png"} />
+                <img src={process.env.PUBLIC_URL + "help-icon-2.png"} alt='help-icon-2'/>
                 <br />
                 <h2>FAQ</h2>
                 <br />
               </div>
               <div className="column">
-                <img src={process.env.PUBLIC_URL + "help-icon-3.png"} /> <br />
+                <img src={process.env.PUBLIC_URL + "help-icon-3.png"} alt='help-icon-3'/> <br />
                 <h2>Contact Us</h2>
                 <br />
               </div>
               <div className="column">
-                <img src={process.env.PUBLIC_URL + "help-icon-4.png"} />
+                <img src={process.env.PUBLIC_URL + "help-icon-4.png"} alt='help-icon-4'/>
                 <br />
                 <h2> Meet The Team</h2>
                 <br />
@@ -128,6 +132,7 @@ export default function HelpCenter() {
                   onClick={() => {
                     setQuestion1(!question1);
                   }}
+                  
                 >
                   <Avatar style={{ backgroundColor: "#004D61" }}>
                     <i class="fas fa-question"></i>
@@ -143,15 +148,16 @@ export default function HelpCenter() {
           <Card className="helpquetionscard" style={{ borderRadius: "555px" }}>
             <ul>
               <li>
-                <a
+                <h6
                   onClick={() => {
                     setQuestion2(!question2);
                   }}
+                 
                 >
                   <Avatar style={{ backgroundColor: "#004D61" }}>
                     <i class="fas fa-question"></i>
                   </Avatar>
-                </a>
+                </h6>
                 <span>
                   How long in advance must we book and make full payment?
                 </span>
@@ -162,15 +168,16 @@ export default function HelpCenter() {
           <Card className="helpquetionscard" style={{ borderRadius: "555px" }}>
             <ul>
               <li>
-                <a
+                <h6
                   onClick={() => {
                     setQuestion3(!question3);
                   }}
+                 
                 >
                   <Avatar style={{ backgroundColor: "#004D61" }}>
                     <i class="fas fa-question"></i>
                   </Avatar>
-                </a>
+                </h6>
                 <span>
                   How do I search for a hotel in a certain area using the map
                   tool?
@@ -182,15 +189,16 @@ export default function HelpCenter() {
           <Card className="helpquetionscard" style={{ borderRadius: "555px" }}>
             <ul>
               <li>
-                <a
+                <h6
                   onClick={() => {
                     setQuestion4(!question4);
                   }}
+                 
                 >
                   <Avatar style={{ backgroundColor: "#004D61" }}>
                     <i class="fas fa-question"></i>
                   </Avatar>
-                </a>
+                </h6>
                 <span>How can I make a booking?</span>
               </li>
             </ul>

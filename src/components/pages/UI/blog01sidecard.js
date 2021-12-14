@@ -1,7 +1,7 @@
 import React from "react";
 import "../comman.css";
 import Image from "react-bootstrap/Image";
-import { Grid, Paper, Avatar, TextField, Input } from "@material-ui/core";
+import {Input } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 
 const Blog01sidecard = () => {
@@ -17,31 +17,31 @@ const Blog01sidecard = () => {
         <h3>Categories</h3>
         <tr>
           <td>
-            <a>Travelling</a>{" "}
+            <a href="#" className="atag">Travelling</a>{" "}
           </td>
           <td>(33)</td>
         </tr>
         <tr>
           <td>
-            <a>World Tour </a>
+            <a href="#" className="atag">World Tour </a>
           </td>
           <td>(77)</td>
         </tr>
         <tr>
           <td>
-            <a>Guide</a>{" "}
+            <a href="#" className="atag">Guide</a>{" "}
           </td>
           <td>(49)</td>
         </tr>
         <tr>
           <td>
-            <a>Explore</a>{" "}
+            <a href="#" className="atag">Explore</a>{" "}
           </td>
           <td>(70)</td>
         </tr>
         <tr>
           <td>
-            <a>Design</a>{" "}
+            <a href="#" className="atag">Design</a>{" "}
           </td>
           <td>(89)</td>
         </tr>

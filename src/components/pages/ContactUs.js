@@ -8,17 +8,21 @@ import { Card } from "@material-ui/core";
 import { SiIndeed } from "react-icons/si";
 const Mapcontainer = React.lazy(() => import("./UI/map"));
 const Footer = React.lazy(() => import("./UI/footer"));
+const Navbar1= React.lazy(()=> import("../Navbar1"));
 
 export default function ContactUs() {
   return (
     <>
+     <Suspense fallback={<div>Loading...</div>}>
+      <Navbar1/>
+      </Suspense>
       <div className="contact-us">
         <div className="contactusheading">
           <h2> Contact Us</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home{" "}
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Contact Us
-          </a>{" "}
+          </a>
           &nbsp;&nbsp;
         </div>
       </div>
@@ -122,15 +126,15 @@ export default function ContactUs() {
                 <br />
                 <a href="/" className="socialicon">
                   <i class="fab fa-facebook"></i>
-                </a>{" "}
+                </a>
                 &nbsp;&nbsp;
                 <a href="/" className="socialicon">
                   <i class="fab fa-twitter"></i>
-                </a>{" "}
+                </a>
                 &nbsp;&nbsp;
                 <a href="/" className="socialicon">
                   <SiIndeed />
-                </a>{" "}
+                </a>
                 &nbsp;&nbsp;
               </Card>
             </div>

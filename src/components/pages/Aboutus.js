@@ -1,24 +1,27 @@
 import React, { Suspense } from "react";
 import "./Aboutus.css";
 import "./Home.css";
-import { Grid, Paper, Avatar, TextField } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 import Image from "react-bootstrap/Image";
 
 const Aboutussignup = React.lazy(() => import("./UI/aboutussignup"));
 const Footer = React.lazy(() => import("./UI/footer"));
-
+const Navbar1= React.lazy(()=> import("../Navbar1"));
 
 export default function Aboutus() {
   return (
     <>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Navbar1/>
+      </Suspense>
       <div className="aboutus">
         <div className="aboutusheading">
           <h2> About us</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home{" "}
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;About us
-          </a>{" "}
+          </a>
           &nbsp;&nbsp;
         </div>
       </div>
@@ -131,7 +134,7 @@ export default function Aboutus() {
             />
             <h3>Access To 1000+ Hospitals</h3>
             <p>
-              {" "}
+              
               Giving you access to the world's most prestigious and efficient
               Healthcare delivery centers.
             </p>

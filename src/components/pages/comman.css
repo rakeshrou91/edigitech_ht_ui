@@ -566,6 +566,10 @@ button:hover {
   text-decoration: none;
   background-color: #f1f2f6;
 }
+.atag{
+  text-decoration: none;
+  color: #717584;
+}
 .sideblog01card1 img {
   width: 70px;
   height: 50px;
@@ -599,6 +603,9 @@ button:hover {
   text-transform: capitalize;
   color: #000;
   border-bottom: 1px solid rgba(32, 32, 32, 0.078);
+}
+.sideblog01card1 tr td:hover{
+  color: #496cfe;
 }
 .sideblog01card3 {
   height: auto;
@@ -814,7 +821,10 @@ button:hover {
   border: 0;
   margin-bottom: 16px;
 }
-.commentscard tr a {
+.commentscard tr span:hover{
+  color: #007bff;
+}
+.commentscard tr h6 {
   font-size: 14px;
   display: block;
   color: #646262;
@@ -822,6 +832,9 @@ button:hover {
   width: 90%;
   margin-top: 2px;
   margin-bottom: 20px;
+}
+.commentscard tr h6:hover{
+  color: #007bff;
 }
 .commentscard tr p {
   margin-left: 14%;
@@ -831,7 +844,8 @@ button:hover {
   color: #3d446f;
 }
 .commentscard a {
-  color: #496cfe;
+  
+  color: #007bff;
   text-decoration: none;
   margin-left: 90%;
 }
