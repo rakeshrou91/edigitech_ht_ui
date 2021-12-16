@@ -12,7 +12,16 @@ function Navbar() {
   const [dropdown2, setDropdown2] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const [colorChange1, setColorchange1] = useState(false);
-  
+  const [buttonchange , setButtonchange] = useState(false);
+ 
+  const changeNavbarButton= () => {
+    if (window.scrollY >= 80) {
+      setButtonchange(true);
+    } else {
+      setButtonchange(false);
+    }
+  };
+ 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
       setColorchange(true);
@@ -30,6 +39,7 @@ function Navbar() {
   
   window.addEventListener("scroll", changeNavbarColor);
   window.addEventListener("scroll", changeNavbaritemColor);
+  window.addEventListener("scroll", changeNavbarButton);
   
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -136,7 +146,7 @@ function Navbar() {
               >
                 About us <i className="fas fa-caret-down" />
               </Link>
-              {dropdown && <Dropdown />}
+             {dropdown && <Dropdown />}
             </li>
             <li
               className="nav-item"
@@ -193,7 +203,7 @@ function Navbar() {
             </Link> */}
             </li>
           </ul>
-          <a href="/contact-us" className="btn">
+          <a href="/contact-us" className={buttonchange ? "btn down": "btn" }>
             Contact us
           </a>
         </div>

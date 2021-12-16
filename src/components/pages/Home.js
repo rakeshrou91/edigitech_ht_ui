@@ -6,6 +6,7 @@ import "../../App.css";
 import { ReactVideo } from "reactjs-media";
 import Image from "react-bootstrap/Image";
 import { Currency2, Department, Destination,Currency1,Amount ,Convertamount,ConvertButton} from "../select/Select";
+
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar= React.lazy(()=> import("../Navbar"));
 
@@ -35,7 +36,8 @@ export default function Home() {
   const [bangalore, setBangalore] = useState(false);
   const [hyderabad, setHyderabad] = useState(false);
   const [getdiagnosed, setGetdiagnosed] = useState(false);
-
+ 
+  
   const mumbaiImage = (
     <div>
       <div class="row1" style={{ marginLeft: "1%" }}>
@@ -87,6 +89,7 @@ export default function Home() {
       </div>
     </div>
   );
+  
   const delhiImage = (
     <div>
       <div class="row1" style={{ marginLeft: "1%" }}>
@@ -305,6 +308,12 @@ export default function Home() {
       </Card>
     </div>
   );
+  const myfunmctio=()=>{
+    if(setMumbai(!mumbai)==true)
+    {
+      return delhiImage.hide();
+    }
+  }
   return (
     <>
      <Suspense fallback={<div>Loading...</div>}>
@@ -530,9 +539,7 @@ export default function Home() {
               </p>
               <br /> <br />
               <button
-                onClick={() => {
-                  setMumbai(!mumbai);
-                }}
+                onClick={myfunmctio}
                 class="button-hover"
               >
                 Mumbai
@@ -573,6 +580,7 @@ export default function Home() {
                 onClick={() => {
                   setBangalore(!bangalore);
                 }}
+               
                 class="button-hover"
               >
                 Bangalore
@@ -590,9 +598,7 @@ export default function Home() {
               <space />
               <space />
               <button
-                onClick={() => {
-                  setHyderabad(!hyderabad);
-                }}
+                onClick={() => {setHyderabad(!hyderabad); }}
                 class="button-hover"
               >
                 Ahmedabad

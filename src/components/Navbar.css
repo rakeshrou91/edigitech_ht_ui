@@ -17,6 +17,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 .btn:hover {
   background-color: red;
 
@@ -33,7 +34,10 @@
 
   top: 0;
 }
-
+.btn.down{
+  margin-top: 34px;
+  
+}
 .upnavitemsupport {
   text-decoration: none;
   color: #413e3e;
@@ -71,13 +75,13 @@
   height: 80px;
   max-width: 1500px;
 }
-.navbar.colorChange {
+.navbar.colorChange  {
   background-color: #fff;
   position: fixed;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
-  height: auto;
+  height: 90px;
 }
 .navbar-logo1.navbar-logoshow{
   color: #242222;
@@ -142,6 +146,8 @@
 }
 .nav-links.colorChange1 {
   color: #004d61;
+  margin-top: 34px;
+  font-size: 17px;
 }
 
 .nav-links:hover {

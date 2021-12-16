@@ -1,15 +1,25 @@
 .dropdown-menu {
   background: #fd7e14;
+  width: 150px;
+  position:absolute;
+  display:block;
+  top: 78px;
+  
+  list-style: none;
+  text-align: start;
+
+  /* background: #fd7e14;
   width: 160px;
   position: absolute;
   top: 84px;
   list-style: none;
-  text-align: start;
+  text-align: start; */
 }
 
 .dropdown-menu li {
   background: #fff;
   cursor: pointer;
+  
 }
 
 .dropdown-menu li:hover {
