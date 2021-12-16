@@ -2,8 +2,10 @@ import React from "react";
 import "../Aboutus.css";
 import { Grid, Paper } from "@material-ui/core";
 import { Card } from "@material-ui/core";
+import Button from '@mui/material/Button';
 
 const Aboutussignup = () => {
+  
   return (
     <Paper style={{ boxShadow: "none" }}>
       <Grid>
@@ -16,7 +18,8 @@ const Aboutussignup = () => {
               all your medi <br />
               travel needs. Sign up and we'll send the best medi deals to you
             </p>
-            <button>SIGN UP</button>
+            
+            <Button variant="contained" className="signupbutton">SIGN UP</Button>
           </div>
         </Card>
       </Grid>

@@ -9,6 +9,7 @@ import { Currency2, Department, Destination,Currency1,Amount ,Convertamount,Conv
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar= React.lazy(()=> import("../Navbar"));
 
+
 export default function Home() {
   const cardstyle = {
     boxShadow: "none",
@@ -705,8 +706,8 @@ export default function Home() {
       </Paper>
       <br />
       <br />
-
-      <Paper
+     
+     <Paper
         style={{
           boxShadow: "none",
           justifyContent: "center",
@@ -751,7 +752,7 @@ export default function Home() {
           </Card>
           {getdiagnosed && getdiagnosedContent}
         </Grid>
-      </Paper>
+      </Paper> 
       <Suspense fallback={<div>Loading...</div>}>
         <Footer />
       </Suspense>

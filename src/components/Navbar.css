@@ -46,6 +46,7 @@
   margin-left: 10%;
   cursor: pointer;
 }
+
 .upnavitememail {
   text-decoration: none;
   color: #413e3e;
@@ -78,7 +79,29 @@
   width: 100%;
   height: auto;
 }
-
+.navbar-logo1.navbar-logoshow{
+  color: #242222;
+  justify-self: start;
+  margin-left: -1px;
+  margin-right: -10%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  visibility: visible;
+}
+.sample{
+  background-color: blueviolet;
+}
+.navbar-logo1{
+  color: #242222;
+  justify-self: start;
+  margin-left: -1px;
+  margin-right: -10%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  visibility:hidden;
+}
 .navbar-logo {
   color: #242222;
   justify-self: start;

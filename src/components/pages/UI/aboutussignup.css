@@ -18,7 +18,7 @@ h4 {
   font-size: 14px;
   margin-top: 4%;
 }
-.container button {
+.signupbutton {
   background-color: #fff;
   height: 56px;
   width: 260px;
@@ -28,12 +28,9 @@ h4 {
   font-size: 15px;
   margin-top: 8%;
   border: none;
-}
-.container a {
-  text-decoration: none;
-}
-.button:hover {
-  background-color: #f5142b;
 
-  color: #fff;
+}
+.signupbutton:hover{
+  color:#fff;
+  background-color:red;
 }

@@ -67,7 +67,7 @@ export default function HelpCenter() {
         <div className="helpheading">
           <h2> Help Center</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Help Center
           </a>
           &nbsp;&nbsp;

@@ -17,7 +17,7 @@ export default function AffiliateProgram() {
         <div className="heading">
           <h2> Affiliate Program</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Affiliate Program
           </a>
           &nbsp;&nbsp;

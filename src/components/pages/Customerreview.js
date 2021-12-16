@@ -16,7 +16,7 @@ export default function Customerreview() {
         <div className="customerreviewheading">
           <h2>Customer Reviews</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Customer Reviews
           </a>
           &nbsp;&nbsp;

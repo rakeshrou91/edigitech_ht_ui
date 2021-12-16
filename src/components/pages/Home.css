@@ -162,14 +162,13 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.button-hover:hover {
+.button-hover:hover{
   background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
   border: "none";
 }
 
 .column1 {
   flex: 10%;
-
   height: 300px;
   width: 500px;
   padding: 10px;

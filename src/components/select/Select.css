@@ -3,18 +3,52 @@
   text-align: center;
   justify-content: center;
   padding: 12px;
+  padding-top: 20px;
   color: #413e3e;
-  z-index: 1;
-  
+  margin-top: 900px;
+  background-size: cover;
+
 }
+
 .MenuItem:hover {
   background-color: #ddd;
 }
 .formcontrol {
   width: 16%;
+
+}
+.form-controldesti{
+  display: block;
+    width: 100%;
+    height:50px;
+    padding: 12px 21px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    
+}
+.selectdept{ 
+  display: block;
+  width: 100%;
+  height:50px;
+  padding: 12px 21px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
 }
 .formcontrol1 {
   width: 40%;
+  
 }
 .convertbutton{
   background-color:rgb(89, 189, 184);

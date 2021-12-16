@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
         <div className="privacypolicyheading">
           <h2>Privacy Policy</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Privacy Policy
           </a>
           &nbsp;&nbsp;

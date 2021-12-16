@@ -4,3 +4,15 @@
 .Button{
   color:red;
 }
+@media screen and (max-width: 960px) {
+  .icon{
+    display:center;
+    margin-left: -40px;
+  }
+  .Button{
+    color:red;
+    display:center;
+    margin-left: -40px;
+  }
+
+}

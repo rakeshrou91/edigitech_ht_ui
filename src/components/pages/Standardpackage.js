@@ -984,7 +984,7 @@ export default function StandardPackage() {
         <div className="standardheading">
           <h2> Standard Package</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Standard Package
           </a>
           &nbsp;&nbsp;

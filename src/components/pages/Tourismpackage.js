@@ -17,7 +17,7 @@ export default function TourismPackage() {
         <div className="compareheading">
           <h2> Tourism Package</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Tourism Package
           </a>
           &nbsp;&nbsp;

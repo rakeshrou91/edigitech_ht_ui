@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,componentDidMount,componentWillUnmout} from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
@@ -12,14 +12,17 @@ function Navbar1() {
   const [dropdown2, setDropdown2] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const [colorChange1, setColorchange1] = useState(false);
-  
+  const [imgchange,setimgchange]=useState(false);
+
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
       setColorchange(true);
+
     } else {
       setColorchange(false);
     }
   };
+  
   const changeNavbaritemColor = () => {
     if (window.scrollY >= 80) {
       setColorchange1(true);
@@ -27,10 +30,18 @@ function Navbar1() {
       setColorchange1(false);
     }
   };
-  
+  const mydemo=()=>{
+    if (window.scrollY >= 80) {
+      setimgchange(true);
+      } else {
+        setimgchange(false);
+      }
+  };
+ 
   window.addEventListener("scroll", changeNavbarColor);
   window.addEventListener("scroll", changeNavbaritemColor);
-  
+  window.addEventListener("scroll",mydemo);
+
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -41,7 +52,7 @@ function Navbar1() {
       setDropdown(true);
     }
   };
-
+  
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -71,7 +82,7 @@ function Navbar1() {
       setDropdown2(true);
     }
   };
-
+  
   const onMouseLeave2 = () => {
     if (window.innerWidth < 960) {
       setDropdown2(false);
@@ -103,8 +114,10 @@ function Navbar1() {
       </nav>
       
       <nav className={colorChange ? "navbar  colorChange" : "navbar"}>
-        <div className="navbar-container">
-          
+        <div className="navbar-container"  >
+         <Link to="/"  onClick={closeMobileMenu} className={imgchange ? "navbar-logo1  navbar-logoshow" :"navbar-logo1"} >
+            <img src={process.env.PUBLIC_URL + "/logo.jpg"} />
+          </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>

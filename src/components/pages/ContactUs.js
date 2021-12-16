@@ -20,7 +20,7 @@ export default function ContactUs() {
         <div className="contactusheading">
           <h2> Contact Us</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Contact Us
           </a>
           &nbsp;&nbsp;

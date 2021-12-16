@@ -19,7 +19,7 @@ export default function Aboutus() {
         <div className="aboutusheading">
           <h2> About us</h2>
           <a href="/">
-            <i class="fas fa-home"></i>&nbsp;&nbsp;Home
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;About us
           </a>
           &nbsp;&nbsp;
