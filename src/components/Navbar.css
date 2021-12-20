@@ -16,7 +16,9 @@
   box-shadow: 4pc;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.navbar1{
+  background-color: #004d61;
+}
 
 .btn:hover {
   background-color: red;
@@ -115,12 +117,10 @@
   text-decoration: none;
   font-size: 2rem;
 }
-
 .fa-firstdraft {
   margin-left: 0.5rem;
   font-size: 1.6rem;
 }
-
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
@@ -131,7 +131,6 @@
   justify-content: end;
   margin-right: 2rem;
 }
-
 .nav-item {
   display: flex;
   align-items: center;
@@ -253,22 +252,22 @@
     display: none;
   }
   .upnavitemsupport {
-    color: #fff;
+    color: transparent;
   }
   .upnavitemsupport1 {
-    color: #fff;
+    color: transparent;
   }
   .upnavitememail {
-    color: #fff;
+    color: transparent;
   }
   .upnavitememail1 {
-    color: #fff;
+    color: transparent;
   }
   .upnavitemsignin {
-    color: #fff;
+    color: transparent;
   }
   .upnavitemregister {
-    color: #fff;
+    color: transparent;
   }
   .btn {
     color: transparent;
@@ -280,4 +279,37 @@
     background-color: transparent;
     box-shadow: none;
   }
+  
+}
+@media screen and (max-width: 320) {
+  .fa-times {
+    margin-right: -60px;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    
+  }
+  .NavbarItems {
+    position: relative;
+  }
+  .nav-menu.active{
+    width: 349px;
+  }
+  .upnavitemregister{
+    color:transparent;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .upnavitemsupport1{
+    margin-top: 50px;
+  }
+  .upnavitemsignin{
+    margin-left: 440px;
+  } 
 }

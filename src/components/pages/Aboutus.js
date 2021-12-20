@@ -4,7 +4,6 @@ import "./Home.css";
 import { Grid, Paper } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 import Image from "react-bootstrap/Image";
-
 const Aboutussignup = React.lazy(() => import("./UI/aboutussignup"));
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
@@ -73,7 +72,8 @@ export default function Aboutus() {
               HOW WE'RE DIFFERENT
             </span>
             <div className="style1">
-              Why Book <br />
+              Why Book {<br />}
+              
               With Us?
             </div>
             <div>

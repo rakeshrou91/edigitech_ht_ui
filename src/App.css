@@ -53,6 +53,8 @@
   color: #fff;
   height: 500px;
   margin-top: -8%;
+  width: 100%;
+ 
 }
 
 /* .home {
@@ -133,5 +135,195 @@
   .customerreview,
   .privacypolicy {
     width: auto;
+  }
+}
+/* @media screen and (max-width: 320px) {
+
+  .aboutus,
+  .affiliateprogram,
+  .services,
+  .help,
+  .howitworks,
+  .standard,
+  .premium,
+  .compare,
+  .blog,
+  .blog1,
+  .blog2,
+  .blog3,
+  .contact-us,
+  .customerreview,
+  .privacypolicy {
+    width:auto;
+    background-position: center;
+    background-size: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: -30px;
+    
+  }
+  
+}
+@media screen and (max-width: 411px) {
+  .aboutus,
+  .affiliateprogram,
+  .services,
+  .help,
+  .howitworks,
+  .standard,
+  .premium,
+  .compare,
+  .blog,
+  .blog1,
+  .blog2,
+  .blog3,
+  .contact-us,
+  .customerreview,
+  .privacypolicy {
+    width:auto;
+    background-position: center;
+    background-size: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    height:auto;
+   
+  }
+  
+}
+@media screen and (max-width: 414px) {
+  .aboutus,
+  .affiliateprogram,
+  .services,
+  .help,
+  .howitworks,
+  .standard,
+  .premium,
+  .compare,
+  .blog,
+  .blog1,
+  .blog2,
+  .blog3,
+  .contact-us,
+  .customerreview,
+  .privacypolicy {
+    width:auto;
+    background-position: center;
+    background-size: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    height:auto;
+    
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .aboutus,
+  .affiliateprogram,
+  .services,
+  .help,
+  .howitworks,
+  .standard,
+  .premium,
+  .compare,
+  .blog,
+  .blog1,
+  .blog2,
+  .blog3,
+  .contact-us,
+  .customerreview,
+  .privacypolicy {
+    width:auto;
+    background-position: center;
+    background-size: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    height:400px;
+    
+    margin-bottom: -60px;
+  }
+  
+}
+@media screen and (max-width: 1024px) {
+  .aboutus,
+  .affiliateprogram,
+  .services,
+  .help,
+  .howitworks,
+  .standard,
+  .premium,
+  .compare,
+  .blog,
+  .blog1,
+  .blog2,
+  .blog3,
+  .contact-us,
+  .customerreview,
+  .privacypolicy {
+   
+    background-position: center;
+    background-size: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    height:400px;
+   
+   
+  }
+  
+}
+@media screen and (max-width: 540px) {
+  .aboutus,
+  .affiliateprogram,
+  .services,
+  .help,
+  .howitworks,
+  .standard,
+  .premium,
+  .compare,
+  .blog,
+  .blog1,
+  .blog2,
+  .blog3,
+  .contact-us,
+  .customerreview,
+  .privacypolicy {
+     width:auto;
+    background-position: center;
+    background-size: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    height:400px;
+   
+   
+  }
+  
+} */
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  .aboutus,
+  .affiliateprogram,
+  .services,
+  .help,
+  .howitworks,
+  .standard,
+  .premium,
+  .compare,
+  .blog,
+  .blog1,
+  .blog2,
+  .blog3,
+  .contact-us,
+  .customerreview,
+  .privacypolicy {
+    width:auto;
+    background-position: center;
+    background-size: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    height:400px;
+    top:0px;
+   
   }
 }

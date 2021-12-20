@@ -6,7 +6,7 @@ import "../../App.css";
 import { ReactVideo } from "reactjs-media";
 import Image from "react-bootstrap/Image";
 import { Currency2, Department, Destination,Currency1,Amount ,Convertamount,ConvertButton} from "../select/Select";
-
+const Background = React.lazy(()=>import("./UI/background"));
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar= React.lazy(()=> import("../Navbar"));
 
@@ -37,7 +37,6 @@ export default function Home() {
   const [hyderabad, setHyderabad] = useState(false);
   const [getdiagnosed, setGetdiagnosed] = useState(false);
  
-  
   const mumbaiImage = (
     <div>
       <div class="row1" style={{ marginLeft: "1%" }}>
@@ -89,7 +88,6 @@ export default function Home() {
       </div>
     </div>
   );
-  
   const delhiImage = (
     <div>
       <div class="row1" style={{ marginLeft: "1%" }}>
@@ -308,17 +306,15 @@ export default function Home() {
       </Card>
     </div>
   );
-  const myfunmctio=()=>{
-    if(setMumbai(!mumbai)==true)
-    {
-      return delhiImage.hide();
-    }
-  }
   return (
     <>
+    
      <Suspense fallback={<div>Loading...</div>}>
+      <Background/>
       <Navbar/>
+    
       </Suspense>
+     
       <h1 className="services"></h1>
      
       {/* <Image className="img" src={process.env.PUBLIC_URL + "/banner1.png"} /> */}
@@ -539,7 +535,7 @@ export default function Home() {
               </p>
               <br /> <br />
               <button
-                onClick={myfunmctio}
+                onClick={() => { setMumbai(!mumbai);}}
                 class="button-hover"
               >
                 Mumbai
@@ -548,7 +544,7 @@ export default function Home() {
               <space />
               <button
                 onClick={() => {
-                  setDelhi(!delhi);
+                  setDelhi(true);
                 }}
                 class="button-hover"
               >
@@ -598,7 +594,9 @@ export default function Home() {
               <space />
               <space />
               <button
-                onClick={() => {setHyderabad(!hyderabad); }}
+                onClick={() => {
+                  setHyderabad(!hyderabad);
+                }}
                 class="button-hover"
               >
                 Ahmedabad
@@ -607,7 +605,7 @@ export default function Home() {
               <space />
               <br />
               {mumbai && mumbaiImage}
-              {delhi && delhiImage}
+              {delhi ? delhiImage : null}
               {kolkata && kolkataImage}
               {pune && puneImage}
               {bangalore && bangaloreImage}
