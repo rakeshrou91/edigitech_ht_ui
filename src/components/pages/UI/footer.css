@@ -215,15 +215,11 @@
     .footer-link-items{
       display:row;
     }
-    .footer-link-items h2{
-     
-    }
+    
     .footer-link-items{
       display: column;
     }
-    .footer-link-items a{
     
-    }
     .footer-container{
      display: initial;
     

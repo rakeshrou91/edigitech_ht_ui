@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./components/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
 import ScrollButton from "./components/angleup/ScrollButton";
@@ -19,6 +18,8 @@ import ContactUs from "./components/pages/ContactUs";
 import SignUp from "./components/pages/SignUp";
 import Customerreview from "./components/pages/Customerreview";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
+import Advertise from './components/pages/Advertise';
+import Careers from "./components/pages/Careers";
 
 function App() {
   return (
@@ -45,6 +46,9 @@ function App() {
         <Route path="/contact-us" component={ContactUs} />
         <Route path="/customerreview" component={Customerreview} />
         <Route path="/privacypolicy" component={PrivacyPolicy} />
+        <Route path="/advertise" component={Advertise} />
+        <Route path="/careers" component={Careers} />
+      
         {/* <Route path='/services' component={Services} />
         <Route path='/products' component={Products} />
         <Route path='/contact-us' component={ContactUs} />

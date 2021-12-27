@@ -1,12 +1,18 @@
 .aboutusheading h2 {
   font-size: 70px;
-  margin-left: -90%;
+  margin-left: 0em;
   margin-top: 39%;
   padding: 24px;
+  min-width: 1px;
+}
+.aboutusheading a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 1em;
 }
 .iconpaper {
   width: auto;
-  margin-top: -30%;
+  margin-top: -26%;
   box-shadow: none;
 }
 .iconimg:hover {
@@ -46,11 +52,7 @@
   text-align: initial;
   margin-left: 28%;
 }
-.aboutusheading a {
-  text-decoration: none;
-  color: #fff;
-  margin-left: -84%;
-}
+
 .container {
   background-color: #004d61;
   height: 90%;
@@ -534,6 +536,8 @@ h4 {
      font-size: inherit;
    }  
 } */
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
@@ -573,6 +577,7 @@ h4 {
   and (orientation: landscape) { 
 
 }
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -608,6 +613,7 @@ h4 {
 
   }
 }
+/* ----------- iPhone 4 and 4S ----------- */
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -632,10 +638,7 @@ h4 {
     margin-left: 0px;
     width: auto;
    }
-   .singleicon h3{
-    /* margin-top: -70%; */
-  
-   }
+   
    .singleicon p{
     padding-bottom: 30px;
    }

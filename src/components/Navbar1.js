@@ -1,10 +1,10 @@
-import React, { useState ,componentDidMount,componentWillUnmout} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
 import Dropdown1 from "./Dropdown1";
 import Dropdown2 from "./Dropdown2";
-
+import BasicModal1 from "../components/pages/UI/Model1";
 function Navbar1() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -14,7 +14,7 @@ function Navbar1() {
   const [colorChange1, setColorchange1] = useState(false);
   const [imgchange,setimgchange]=useState(false);
   const [buttonchange , setButtonchange] = useState(false);
- 
+  const [button, setButton] = useState(true);
   const changeNavbarButton= () => {
     if (window.scrollY >= 80) {
       setButtonchange(true);
@@ -104,20 +104,7 @@ function Navbar1() {
       <nav className={colorChange ? "navbar  colorChange" : ""}>
         <div>
           <br />
-          <a  className= "upnavitemsupport1 " href="#" >
-            <i class="fas fa-headset"></i> Support
-          </a>
-          &nbsp;&nbsp;
-          <a href="/Support" className="upnavitememail1" >
-            <i class="fas fa-envelope"></i> info@ehealthflex.com
-          </a>
-          <a href="/Support" className="upnavitemsignin">
-            <i class="fas fa-user-circle"></i> Sign in
-          </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="/Support" className="upnavitemregister">
-            <i class="fas fa-user-plus"></i> Register
-          </a>
+          <BasicModal1 />
         </div>
       </nav>
       
@@ -203,18 +190,30 @@ function Navbar1() {
             </li>
 
             <li>
-              {/* <Link
-              to='/contact-us'
-              className='nav-links-mobile'
-              onClick={closeMobileMenu}
-            >
-              CONTACT US
-            </Link> */}
+              <Link
+                to='/contact-us'
+                className='nav-links-mobile'
+                onClick={closeMobileMenu}
+              >
+               Contact us
+              </Link>
+              <Link
+                to='/'
+                className='nav-links-mobile1'
+                onClick={closeMobileMenu}
+              >
+               Sign In
+              </Link>
+              <Link
+                to='/'
+                className='nav-links-mobile1'
+                onClick={closeMobileMenu}
+              >
+               Register
+              </Link>
             </li>
           </ul>
-          <a href="/contact-us" className={buttonchange ? "btn down": "btn" }>
-            Contact us
-          </a>
+          {button && <a  href="/contact-us" className={buttonchange ? "btn down": "btn" }>CONTACT US</a>}
         </div>
       </nav>
     </>

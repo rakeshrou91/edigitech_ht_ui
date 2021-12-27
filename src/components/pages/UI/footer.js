@@ -48,11 +48,11 @@ const Footer = () => {
                      
                       <i class="fas fa-angle-double-right"></i> Become Partner
                     </Link>
-                    <Link to="/" className="link">
+                    <Link to="/careers" className="link">
                      
                       <i class="fas fa-angle-double-right"></i> Careers
                     </Link>
-                    <Link to="/" className="link">
+                    <Link to="/advertise" className="link">
                      
                       <i class="fas fa-angle-double-right"></i> Advertise with
                       us

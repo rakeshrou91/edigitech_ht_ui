@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.currencycontainer{
+height: 300px;
+width: 800px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: -5%;
+margin-left: 26%;
+margin-bottom: -90px;
+}
+input{
+padding-left: 5px;
+font-size: 20px;
+height: 36px;
+}
+.middle,.right{
+width: 120px;
+}
+.switch{
+padding: 5px;
+margin-top: 25px;
+background-color: #004d61;
+border-radius: 50%;
+cursor: pointer;
+}
+.result{
+box-sizing: border-box;
+width: 800px;
+margin-left: 25%;
+
+}
+.result button{
+    margin-bottom: 15px;
+}
+.result h3, button, .switch{
+color: #fff;
+}
+.currencycontainer h3{
+    color: #413E3E;
+}
+.result p{
+font-size: 26px;
+margin-top: 20px;
+display: inline;
+
+}
+.result h2{
+    color: #004d61;
+    margin-bottom: 15px;
+}

@@ -4,6 +4,7 @@ import "./Navbar.css";
 import Dropdown from "./Dropdown";
 import Dropdown1 from "./Dropdown1";
 import Dropdown2 from "./Dropdown2";
+import BasicModal from "../components/pages/UI/Model";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -13,7 +14,8 @@ function Navbar() {
   const [colorChange, setColorchange] = useState(false);
   const [colorChange1, setColorchange1] = useState(false);
   const [buttonchange , setButtonchange] = useState(false);
- 
+  const [button, setButton] = useState(true);
+
   const changeNavbarButton= () => {
     if (window.scrollY >= 80) {
       setButtonchange(true);
@@ -95,20 +97,9 @@ function Navbar() {
       <nav className={colorChange ? "navbar  colorChange" : ""}>
         <div>
           <br />
-          <a  className= "upnavitemsupport " href="#" >
-            <i class="fas fa-headset"></i> Support
-          </a>
-          &nbsp;&nbsp;
-          <a href="/Support" className="upnavitememail" >
-            <i class="fas fa-envelope"></i> info@ehealthflex.com
-          </a>
-          <a href="/Support" className="upnavitemsignin">
-            <i class="fas fa-user-circle"></i> Sign in
-          </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="/Support" className="upnavitemregister">
-            <i class="fas fa-user-plus"></i> Register
-          </a>
+          <BasicModal />
+         
+          
         </div>
       </nav>
       
@@ -192,20 +183,46 @@ function Navbar() {
               </Link>
               {dropdown2 && <Dropdown2 />}
             </li>
-
             <li>
-              {/* <Link
+              <Link
+                to='/contact-us'
+                className='nav-links-mobile'
+                onClick={closeMobileMenu}
+              >
+               Contact us
+              </Link>
+              <Link
+                to='/'
+                className='nav-links-mobile1'
+                onClick={closeMobileMenu}
+              >
+               Sign In
+              </Link>
+              <Link
+                to='/'
+                className='nav-links-mobile1'
+                onClick={closeMobileMenu}
+              >
+               Register
+              </Link>
+            </li>
+          </ul>
+          {button && <a  href="/contact-us" className={buttonchange ? "btn down": "btn" }>CONTACT US</a>}
+           {/* <li>
+              
+            <a href="/contact-us" className={buttonchange ? "btn down": "btn" }>
+            Contact us
+            </a>
+               <Link
               to='/contact-us'
               className='nav-links-mobile'
               onClick={closeMobileMenu}
             >
               CONTACT US
-            </Link> */}
+            </Link> 
             </li>
-          </ul>
-          <a href="/contact-us" className={buttonchange ? "btn down": "btn" }>
-            Contact us
-          </a>
+          </ul>*/}
+          
         </div>
       </nav>
     </>

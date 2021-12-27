@@ -3,6 +3,7 @@ import "./comman.css";
 import "./Affiliateprogram.css";
 import { Grid, Paper, Avatar} from "@material-ui/core";
 import { Card } from "@material-ui/core";
+import Questionhelp from "./UI/Questionhelp";
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
 
@@ -118,14 +119,14 @@ export default function HelpCenter() {
           <Card style={{ boxShadow: "none" }}>
             <div className="section3">
               <div> Didn't find what You were looking for?</div>
-              <button>SUBMIT YOUR QUERY</button>
+              <button ><a href="/contact-us">SUBMIT YOUR QUERY</a></button>
             </div>
           </Card>
         </Grid>
       </Paper>
       <Paper style={{ boxShadow: "none" }}>
         <Grid>
-          <Card className="helpquetionscard" style={{ borderRadius: "555px" }}>
+          {/* <Card className="helpquetionscard" style={{ borderRadius: "555px" }}>
             <ul>
               <li>
                 <a
@@ -202,10 +203,12 @@ export default function HelpCenter() {
                 <span>How can I make a booking?</span>
               </li>
             </ul>
-          </Card>
-          {question4 && question4Content}
+         
+          {question4 && question4Content} */}
+          
         </Grid>
       </Paper>
+      <Questionhelp />
       <Suspense fallback={<div>Loading...</div>}>
         <Footer />
       </Suspense>

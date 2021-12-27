@@ -8,7 +8,7 @@ const Aboutussignup = React.lazy(() => import("./UI/aboutussignup"));
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
 
-export default function Aboutus() {
+export default function Aboutus () {
   return (
     <>
     <Suspense fallback={<div>Loading...</div>}>

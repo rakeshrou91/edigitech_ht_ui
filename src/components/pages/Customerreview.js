@@ -3,6 +3,7 @@ import "./comman.css";
 import { Grid, Paper} from "@material-ui/core";
 import { Card } from "@material-ui/core";
 import Image from "react-bootstrap/Image";
+import Typography from '@mui/material/Typography';
 
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
@@ -12,9 +13,13 @@ export default function Customerreview() {
      <Suspense fallback={<div>Loading...</div>}>
       <Navbar1/>
       </Suspense>
+     
       <div className="customerreview">
         <div className="customerreviewheading">
-          <h2>Customer Reviews</h2>
+        <Typography  variant="h2" gutterBottom component="div">
+        <h2>Customer Reviews</h2>
+        </Typography>
+         
           <a href="/">
             <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Customer Reviews

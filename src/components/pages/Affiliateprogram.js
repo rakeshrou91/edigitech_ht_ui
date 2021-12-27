@@ -50,31 +50,19 @@ export default function AffiliateProgram() {
             <h3>What affiliate benefits are offered?</h3>
             <ul>
               <li>
-                <i class="far fa-check-circle">
-                  
-                  Earn up to 5% commission per sale
-                </i>
+                <i class="far fa-check-circle"> Earn up to 5% commission per sale </i>
               </li>
               <li>
-                <i class="far fa-check-circle"> Average order of $650+</i>
+                <i class="far fa-check-circle"> Average order of $650+ </i>
               </li>
               <li>
-                <i class="far fa-check-circle">
-                  
-                  Variety of text links and banners.
-                </i>
+                <i class="far fa-check-circle"> Variety of text links and banners. </i>
               </li>
               <li>
-                <i class="far fa-check-circle">
-                  
-                  Reliable third-party tracking
-                </i>
+                <i class="far fa-check-circle"> Reliable third-party tracking </i>
               </li>
               <li>
-                <i class="far fa-check-circle">
-                  
-                  Accessible and dynamic reporting
-                </i>
+                <i class="far fa-check-circle"> Accessible and dynamic reporting </i>
               </li>
               <li>
                 <i class="far fa-check-circle"> Monthly commission checks</i>

@@ -19,7 +19,7 @@ const Aboutussignup = () => {
               travel needs. Sign up and we'll send the best medi deals to you
             </p>
             
-            <Button variant="contained" className="signupbutton">SIGN UP</Button>
+            <Button  variant="contained" className="signupbutton">SIGN UP</Button>
           </div>
         </Card>
       </Grid>

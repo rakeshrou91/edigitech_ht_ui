@@ -24,7 +24,9 @@
 .blog2,
 .blog3,
 .customerreview,
-.privacypolicy {
+.privacypolicy,
+.advertise,
+.careers {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -45,7 +47,9 @@
 .blog3,
 .contact-us,
 .customerreview,
-.privacypolicy {
+.privacypolicy,
+.advertise,
+.careers {
   background-image: url("./images/bredcump.png");
   background-position: center;
   background-size: cover;
@@ -133,7 +137,9 @@
   .blog3,
   .contact-us,
   .customerreview,
-  .privacypolicy {
+  .privacypolicy,
+  .advertise,
+  .careers {
     width: auto;
   }
 }
@@ -316,7 +322,8 @@
   .blog3,
   .contact-us,
   .customerreview,
-  .privacypolicy {
+  .privacypolicy,
+   .advertise {
     width:auto;
     background-position: center;
     background-size: auto;

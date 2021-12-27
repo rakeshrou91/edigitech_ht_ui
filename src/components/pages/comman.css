@@ -60,6 +60,12 @@
   font-weight: bold;
   margin-top: 50px;
   cursor: pointer;
+  text-decoration: none;
+}
+.section3 button a {
+  text-decoration: none;
+  cursor: pointer;
+  color:#fff;
 }
 button:hover {
   background-color: red;
@@ -220,6 +226,48 @@ button:hover {
 
 .para {
   list-style: none;
+}
+/* Advertise css */
+.advertiseheading h2{
+  font-size: 70px;
+  padding-bottom: 14px;
+  margin-left: -28%;
+  margin-top: 28%;
+}
+.advertiseheading a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: -26%;
+  font-size: 16px;
+}
+.advertiseheadingcard{
+  margin-top: 100px;
+}
+.advertiseheadingcard img{
+  width: 300px;
+  height: 200px;
+  margin-left: 60px;
+}
+
+.advertiseheadingcard span {
+  color: #5bd1d7;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 36.5%;
+  margin-top: 30%;
+}
+/* Careers css*/
+.careersheading h2{
+  font-size: 70px;
+  padding-bottom: 10px;
+  margin-left: -120%;
+  margin-top: 60%;
+}
+.careersheading a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: -110%;
+  font-size: 16px;
 }
 /* Standard css*/
 .standardheading h2 {
@@ -2449,8 +2497,8 @@ button:hover {
     margin-left: 6%;
   }
   .customerreviewcard img {
-    width: 50%;
-    height: auto;
+    width: 300px;
+    height: 200px;
     margin-left: 30%;
   }
   .wrapper li:first-child {

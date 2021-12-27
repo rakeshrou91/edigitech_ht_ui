@@ -5,11 +5,14 @@ import "./Home.css";
 import "../../App.css";
 import { ReactVideo } from "reactjs-media";
 import Image from "react-bootstrap/Image";
-import { Currency2, Department, Destination,Currency1,Amount ,Convertamount,ConvertButton} from "../select/Select";
-const Background = React.lazy(()=>import("./UI/background"));
-const Footer = React.lazy(() => import("./UI/footer"));
-const Navbar= React.lazy(()=> import("../Navbar"));
+import Currency from "./UI/Currency";
+import { Department, Destination } from "../select/Select";
 
+import Container from "@material-ui/core/Container";
+// const Background = React.lazy(()=>import("./UI/background"));
+const Footer = React.lazy(() => import("./UI/footer"));
+const Navbar = React.lazy(() => import("../Navbar"));
+const Upload = React.lazy(() => import("./UI/Upload"));
 
 export default function Home() {
   const cardstyle = {
@@ -18,6 +21,8 @@ export default function Home() {
     textAlign: "center",
     display: "flex",
     flexDirection: "column",
+    paddingRight: "10px",
+    paddingLeft: "10px",
   };
   const paperStyle = {
     padding: 20,
@@ -28,7 +33,7 @@ export default function Home() {
     justifyContent: "center",
     textAlign: "center",
   };
-
+  
   const [mumbai, setMumbai] = useState(false);
   const [delhi, setDelhi] = useState(false);
   const [kolkata, setKolkata] = useState(false);
@@ -45,21 +50,20 @@ export default function Home() {
             src={process.env.PUBLIC_URL + "/11.jpg"}
             alt="Deteminology"
             style={{ height: "100%", width: "100%" }}
-           
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Ophthalmologists'
+            alt="Ophthalmologists"
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/13.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Cardiologists'
+            alt="Cardiologists"
           />
         </div>
       </div>
@@ -68,21 +72,21 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Endocrinologists'
+            alt="Endocrinologists"
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/15.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Gastroenterologists'
+            alt="Gastroenterologists"
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/16.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Nephrologists'
+            alt="Nephrologists"
           />
         </div>
       </div>
@@ -102,14 +106,14 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Cardiologists'
+            alt="Cardiologists"
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/13.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Gastroenterologists'
+            alt="Gastroenterologists"
           />
         </div>
       </div>
@@ -122,7 +126,7 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
             style={{ height: "80%", width: "40%" }}
-            alt='Ophthalmologists'
+            alt="Ophthalmologists"
           />
         </div>
       </div>
@@ -134,7 +138,7 @@ export default function Home() {
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
-            alt='Ophthalmologists'
+            alt="Ophthalmologists"
             style={{ height: "100%", width: "100%" }}
           />
         </div>
@@ -142,14 +146,14 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Endocrinologists'
+            alt="Endocrinologists"
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/16.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Nephrologists'
+            alt="Nephrologists"
           />
         </div>
       </div>
@@ -169,14 +173,14 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/13.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Cardiologists'
+            alt="Cardiologists"
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Endocrinologists'
+            alt="Endocrinologists"
           />
         </div>
       </div>
@@ -196,14 +200,14 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/13.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Ophthalmologists'
+            alt="Ophthalmologists"
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
             style={{ height: "100%", width: "100%" }}
-            alt='Endocrinologists'
+            alt="Endocrinologists"
           />
         </div>
       </div>
@@ -212,14 +216,14 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/15.jpg"}
             style={{ height: "100%", width: "60%" }}
-            alt='Gastroenterologists'
+            alt="Gastroenterologists"
           />
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/16.jpg"}
             style={{ height: "100%", width: "60%" }}
-            alt='Nephrologists'
+            alt="Nephrologists"
           />
         </div>
       </div>
@@ -281,13 +285,18 @@ export default function Home() {
               variant="outlined"
             />
             <br />
-            <input
-              type="file"
-              className="custom-file-input"
-              id="customFile"
-              name="file[]"
-              multiple="multiple"
-            />
+            <div
+              style={{
+                width: "892px",
+                height: "200px",
+                marginTop: "10px",
+                marginLeft: "106px",
+              }}
+            >
+              <Suspense fallback={<div>Loading...</div>}>
+                <Upload style={{ height: "100px" }} />
+              </Suspense>
+            </div>
           </form>
           <br />
           <br />
@@ -308,15 +317,13 @@ export default function Home() {
   );
   return (
     <>
-    
-     <Suspense fallback={<div>Loading...</div>}>
-      <Background/>
-      <Navbar/>
-    
+      <Suspense fallback={<div>Loading...</div>}>
+        {/* <Background/> */}
+        <Navbar />
       </Suspense>
-     
+
       <h1 className="services"></h1>
-     
+
       {/* <Image className="img" src={process.env.PUBLIC_URL + "/banner1.png"} /> */}
       <div className="mtimg">
         <Image src={process.env.PUBLIC_URL + "/mt.png"} rounded />
@@ -330,7 +337,7 @@ export default function Home() {
             <span
               style={{ color: "#5BD1D7", fontSize: "2vh", fontWeight: "bold" }}
             >
-              REACH BEFORE YOY FLY OUT
+              REACH BEFORE YOU FLY OUT
             </span>
             <div className="rt1-section-title">
               Connect With The <br />
@@ -464,8 +471,13 @@ export default function Home() {
               <br />
               <br />
               <br />
-              <button class="link-button1" href="#">
-                <b>Read More</b>
+              <button class="link-button1">
+                <a
+                  style={{ color: "#fff", textDecoration: "none" }}
+                  href="/compare"
+                >
+                  Read More
+                </a>
               </button>
             </div>
           </Card>
@@ -488,21 +500,9 @@ export default function Home() {
             </span>
             <div class="rt1-section-title">Conversion Check</div>
             <p>Enquire the best for your medical travel</p>
+            <Currency />
           </Card>
           <br />
-          <Card className="currency" style={{ boxShadow: "none" }}>
-            <br />
-            <div className="selectbox">
-              <Currency1></Currency1>&nbsp;&nbsp; &nbsp;
-              <Amount/>
-              &nbsp;&nbsp; <Currency2></Currency2>
-            </div>
-            <br />
-            <br />
-            <Convertamount/>
-            &nbsp; &nbsp;
-            <ConvertButton/>
-          </Card>
         </Grid>
       </Paper>
       <br />
@@ -523,7 +523,6 @@ export default function Home() {
               </h2>
               <br />
               <h1>
-                
                 Top Medical Tourism <br />
                 Destinations
               </h1>
@@ -535,7 +534,9 @@ export default function Home() {
               </p>
               <br /> <br />
               <button
-                onClick={() => { setMumbai(!mumbai);}}
+                onClick={() => {
+                  setMumbai(!mumbai);
+                }}
                 class="button-hover"
               >
                 Mumbai
@@ -544,7 +545,7 @@ export default function Home() {
               <space />
               <button
                 onClick={() => {
-                  setDelhi(true);
+                  setDelhi(!delhi);
                 }}
                 class="button-hover"
               >
@@ -576,7 +577,6 @@ export default function Home() {
                 onClick={() => {
                   setBangalore(!bangalore);
                 }}
-               
                 class="button-hover"
               >
                 Bangalore
@@ -605,7 +605,7 @@ export default function Home() {
               <space />
               <br />
               {mumbai && mumbaiImage}
-              {delhi ? delhiImage : null}
+              {delhi && delhiImage}
               {kolkata && kolkataImage}
               {pune && puneImage}
               {bangalore && bangaloreImage}
@@ -710,8 +710,32 @@ export default function Home() {
       </Paper>
       <br />
       <br />
-     
-     <Paper
+      <Container maxWidth="md">
+        <Card
+          style={{
+            display: "center",
+            justifyContent: "center",
+            tableLayout: "center",
+            paddingRight: "40px",
+            paddingLeft: "40px",
+           
+          }}
+        >
+          <br />
+          <br />
+          <Department></Department> &nbsp; &nbsp; &nbsp; &nbsp;
+          <Destination></Destination>
+          <button class="link-button1">
+            <b>Search Facility </b>
+          </button>
+          &nbsp;&nbsp;
+          <button class="link-button1">
+            <b>Search Doctor</b>
+          </button>
+         <br/><br/>
+        </Card>
+      </Container>
+      <Paper
         style={{
           boxShadow: "none",
           justifyContent: "center",
@@ -720,7 +744,7 @@ export default function Home() {
         }}
       >
         <Grid>
-          <Card className="card" style={cardstyle}>
+          {/* <Card className="card" style={cardstyle}>
             <Card
               className="Card1"
               style={{
@@ -753,10 +777,10 @@ export default function Home() {
             </Card>
             <br />
             <br />
-          </Card>
+          </Card> */}
           {getdiagnosed && getdiagnosedContent}
         </Grid>
-      </Paper> 
+      </Paper>
       <Suspense fallback={<div>Loading...</div>}>
         <Footer />
       </Suspense>

@@ -158,9 +158,10 @@
   color: #242222;
 }
 
-.nav-links-mobile {
+.nav-links-mobile,.nav-links-mobile1 {
   display: none;
   height: 6px;
+  
 }
 
 .menu-icon {
@@ -188,6 +189,7 @@
     background: #ddd;
     left: 0;
     opacity: 1;
+    color: #004d61;
     transition: all 0.5s ease;
     z-index: 1;
   }
@@ -197,6 +199,7 @@
     padding: 2rem;
     width: 100%;
     display: table;
+    color:#004d61;
   }
 
   .nav-links:hover {
@@ -230,44 +233,65 @@
 
   .nav-links-mobile {
     display: block;
-    text-align: center;
-    padding: 1.5rem;
-    margin: 4rem auto;
+    text-transform:capitalize;
+    float: right;
+     text-decoration: none;
+     color: #004d61;
+     margin: 1rem auto;
+   
+     text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    /*
     border-radius: 8px;
     width: 80%;
     height: 4pc;
     background: #1888ff;
-    text-decoration: none;
+    
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.5rem; */
   }
-
+ .nav-links-mobile1{ 
+  display: block;
+  text-transform:capitalize;
+  float: right;
+  background: rgb(89, 189, 184);
+   text-decoration: none;
+   color: #fff;
+   margin: 1rem auto;
+   border-radius: 8px;
+   text-align: center;
+  padding: 2rem;
+  width: 100%;
+  display: table;
+ }
   .nav-links-mobile:hover {
-    background: #fff;
-    color: #1888ff;
-    transition: 250ms;
+    background-color: red;
+    color: white;
+    border-radius: 0;
   }
 
   button {
     display: none;
   }
   .upnavitemsupport {
-    color: transparent;
+    visibility: hidden;
   }
   .upnavitemsupport1 {
-    color: transparent;
+    visibility: hidden;
   }
   .upnavitememail {
-    color: transparent;
+    visibility: hidden;
   }
   .upnavitememail1 {
-    color: transparent;
+    visibility: hidden;
   }
   .upnavitemsignin {
-    color: transparent;
+    visibility: hidden;
   }
   .upnavitemregister {
-    color: transparent;
+  visibility: hidden;
   }
   .btn {
     color: transparent;
@@ -285,6 +309,7 @@
   .fa-times {
     margin-right: -60px;
   }
+ 
   .menu-icon {
     display: block;
     position: absolute;

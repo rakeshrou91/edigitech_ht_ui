@@ -166,6 +166,15 @@
   background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
   border: "none";
 }
+.mumbaiimg{
+  width: 1200px;
+  height: auto;
+}
+
+.hideimg{
+  visibility:hidden;
+  background-color: #fc894d;
+}
 .muiimg{
   visibility: hidden;
 }
@@ -225,6 +234,15 @@
   background-position: center;
   box-shadow: none;
   text-align: center;
+}
+.card p,.reactoutsection p,.iconsection p,.section p{
+  font-size: 16px;
+    line-height: 26px;
+}
+.dropzone{
+  width : 100%;
+  height : 20%;
+  border : 1px solid black;
 }
 .Card1 {
   color: "skyblue";
@@ -594,6 +612,7 @@ div h1 {
     flex-direction: row;
     text-align: center;
     justify-content: center;
+   
   }
 
   .reactvideo {

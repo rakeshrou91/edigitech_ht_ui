@@ -82,8 +82,8 @@ export default function ContactUs() {
 
                 <span>Our Address</span>
                 <p>
-                  971-949 8th Ave
-                  <br /> New York, NY
+                411, Crossroads, Bhumkar Chowk,{<br/>}
+                Wakad, Pune, India
                 </p>
               </Card>
             </div>
@@ -103,8 +103,9 @@ export default function ContactUs() {
                 />
                 <span>Phone & Email</span>
                 <p>
-                  (123) 456 7890 <br />
-                  contact@example.com
+                +91 917 504 0052 {<br/>}
+                support@ehealthflex.com
+                
                 </p>
               </Card>
             </div>
@@ -139,14 +140,14 @@ export default function ContactUs() {
               </Card>
             </div>
           </div>
-          <Card className="contactoverviewcardmap">
+          {/* <Card className="contactoverviewcardmap">
             <Suspense fallback={<div>Loading...</div>}>
               <Mapcontainer />
             </Suspense>
-          </Card>
+          </Card> */}
         </Grid>
       </Paper>
-      <Paper style={{ boxShadow: "none" }}>
+      {/* <Paper style={{ boxShadow: "none" }}>
         <Grid>
           <Card className="textsection" style={{ boxShadow: "none" }}>
             <span>Take a Look at our</span>
@@ -188,7 +189,7 @@ export default function ContactUs() {
             </ul>
           </Card>
         </Grid>
-      </Paper>
+      </Paper> */}
       <Suspense fallback={<div>Loading...</div>}>
         <Footer />
       </Suspense>
