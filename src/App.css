@@ -26,7 +26,10 @@
 .customerreview,
 .privacypolicy,
 .advertise,
-.careers {
+.careers,
+.travel,
+.special,
+.flights {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -49,7 +52,10 @@
 .customerreview,
 .privacypolicy,
 .advertise,
-.careers {
+.careers,
+.travel,
+.special,
+.flights {
   background-image: url("./images/bredcump.png");
   background-position: center;
   background-size: cover;
@@ -139,7 +145,10 @@
   .customerreview,
   .privacypolicy,
   .advertise,
-  .careers {
+  .careers,
+  .travel,
+  .special,
+  .flights{
     width: auto;
   }
 }

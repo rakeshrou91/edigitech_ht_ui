@@ -20,7 +20,9 @@ import Customerreview from "./components/pages/Customerreview";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import Advertise from './components/pages/Advertise';
 import Careers from "./components/pages/Careers";
-
+import Travel from "./components/pages/Travel";
+import Specialoffer from "./components/pages/Specialoffer";
+import Flight from "./components/pages/Flight";
 function App() {
   return (
     <Router>
@@ -48,7 +50,9 @@ function App() {
         <Route path="/privacypolicy" component={PrivacyPolicy} />
         <Route path="/advertise" component={Advertise} />
         <Route path="/careers" component={Careers} />
-      
+        <Route path="/travel" component={Travel}/>
+        <Route path="/special" component={Specialoffer} />
+        <Route path="/flights" component={Flight} />
         {/* <Route path='/services' component={Services} />
         <Route path='/products' component={Products} />
         <Route path='/contact-us' component={ContactUs} />

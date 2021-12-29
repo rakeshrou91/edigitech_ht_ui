@@ -44,10 +44,10 @@ const Footer = () => {
                   </div>
                   <div class="footer-link-items">
                     <h2>Work With Us</h2>
-                    <Link to="/" className="link">
+                    {/* <Link to="/" className="link">
                      
                       <i class="fas fa-angle-double-right"></i> Become Partner
-                    </Link>
+                    </Link> */}
                     <Link to="/careers" className="link">
                      
                       <i class="fas fa-angle-double-right"></i> Careers
@@ -66,38 +66,36 @@ const Footer = () => {
                       <i class="fas fa-angle-double-right"></i> Manage Your
                       Account
                     </Link>
-                    <Link to="/" className="link">
+                    <Link to="/compare" className="link">
                       <i class="fas fa-angle-double-right"></i> Build your own
                       trip
                     </Link>
-                    <Link to="/" className="link">
+                    {/* <Link to="/" className="link">
                       <i class="fas fa-angle-double-right"></i> Order Status
-                    </Link>
-                    <Link to="/" className="link">
+                    </Link> */}
+                    <Link to="/help" className="link">
                       <i class="fas fa-angle-double-right"></i> Booking Guide
                     </Link>
-                    <Link to="/" className="link">
+                    <Link to="/travel" className="link">
                       <i class="fas fa-angle-double-right"></i> Travel Insurance
                       &amp; Safety Guide
                     </Link>
                   </div>
                   <div class="footer-link-items">
                     <h2>Plan Your Trip</h2>
-                    <Link to="/" className="link">
+                    <Link to="/special" className="link">
                       <i class="fas fa-angle-double-right"></i> Special Offers
                     </Link>
                     <Link to="/" className="link">
+                      <i class="fas fa-angle-double-right"></i> Hospitals
+                    </Link>
+                    <Link to="/flights" className="link">
                       <i class="fas fa-angle-double-right"></i> Flights
                     </Link>
-                    <Link to="/" className="link">
+                    <Link to="/compare" className="link">
                       <i class="fas fa-angle-double-right"></i> Tour Packages
                     </Link>
-                    <Link to="/" className="link">
-                      <i class="fas fa-angle-double-right"></i> Accommodations
-                    </Link>
-                    <Link to="/" className="link">
-                      <i class="fas fa-angle-double-right"></i> Transportation
-                    </Link>
+                  
                   </div>
                 </div>
               </div>

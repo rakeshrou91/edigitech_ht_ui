@@ -27,14 +27,14 @@ export default function BasicModal1() {
             <i class="fas fa-headset"></i> Support
           </a>
           &nbsp;&nbsp;
-          <a href="/Support" className="upnavitememail1" >
+          <a href="#" className="upnavitememail1" >
             <i class="fas fa-envelope"></i> info@ehealthflex.com
           </a>
-          <a href="/Support" className="upnavitemsignin">
+          <a href="#" className="upnavitemsignin">
             <i class="fas fa-user-circle"></i> Sign in
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="/Support" className="upnavitemregister">
+          <a href="#" className="upnavitemregister">
             <i class="fas fa-user-plus"></i> Register
           </a>
       <Modal

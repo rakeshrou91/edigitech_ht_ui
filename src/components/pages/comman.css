@@ -269,6 +269,45 @@ button:hover {
   margin-left: -110%;
   font-size: 16px;
 }
+/*Travel */
+.travelheading h2{
+  font-size: 70px;
+  padding-bottom: 10px;
+ 
+  margin-top: 10%;
+}
+.travelheading a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 3%;
+  font-size: 16px;
+}
+/*special */
+.specialheading h2{
+  font-size: 70px;
+  padding-bottom: 10px;
+  margin-left: -52%;
+  margin-top: 28%;
+}
+.specialheading a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: -50%;
+  font-size: 16px;
+}
+/* Flight */
+.flightsheading h2{
+  font-size: 70px;
+  padding-bottom: 10px;
+  margin-left: -140%;
+  margin-top: 68%;
+}
+.flightsheading a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: -140%;
+  font-size: 16px;
+}
 /* Standard css*/
 .standardheading h2 {
   font-size: 70px;

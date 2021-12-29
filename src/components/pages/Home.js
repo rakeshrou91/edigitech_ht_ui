@@ -506,8 +506,7 @@ export default function Home() {
         </Grid>
       </Paper>
       <br />
-      <br />
-      <br />
+   
       <Paper
         style={{
           boxShadow: "none",
@@ -654,6 +653,7 @@ export default function Home() {
           boxShadow: "none",
           justifyContent: "center",
           textAlign: "center",
+          marginBottom: "40px",
         }}
       >
         <Grid>
@@ -669,9 +669,7 @@ export default function Home() {
         </Grid>
       </Paper>
       <br />
-      <br />
-      <br />
-      <br />
+  
       <Paper
         style={{
           boxShadow: "none",
