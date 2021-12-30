@@ -7,8 +7,10 @@ import { ReactVideo } from "reactjs-media";
 import Image from "react-bootstrap/Image";
 import Currency from "./UI/Currency";
 import { Department, Destination } from "../select/Select";
-
 import Container from "@material-ui/core/Container";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+
 // const Background = React.lazy(()=>import("./UI/background"));
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar = React.lazy(() => import("../Navbar"));
@@ -33,15 +35,10 @@ export default function Home() {
     justifyContent: "center",
     textAlign: "center",
   };
-  
-  const [mumbai, setMumbai] = useState(false);
-  const [delhi, setDelhi] = useState(false);
-  const [kolkata, setKolkata] = useState(false);
-  const [pune, setPune] = useState(false);
-  const [bangalore, setBangalore] = useState(false);
-  const [hyderabad, setHyderabad] = useState(false);
-  const [getdiagnosed, setGetdiagnosed] = useState(false);
- 
+  const [active, setActive] = useState("Mumbai");
+
+  const [getdiagnosedactive, setActivegetdiagnosed] = useState("already");
+
   const mumbaiImage = (
     <div>
       <div class="row1" style={{ marginLeft: "1%" }}>
@@ -49,45 +46,63 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/11.jpg"}
             alt="Deteminology"
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
           />
+          <Typography variant="h6" gutterBottom component="div">
+          Deteminology
+          </Typography>
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Ophthalmologists"
           />
+          <Typography variant="h6" gutterBottom component="div">
+          Ophthalmologists
+          </Typography>
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/13.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Cardiologists"
           />
+          <Typography variant="h6" gutterBottom component="div">
+          Cardiologists
+          </Typography>
         </div>
       </div>
       <div class="row1" style={{ marginLeft: "1%" }}>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Endocrinologists"
           />
+          <Typography variant="h6" gutterBottom component="div">
+          Endocrinologists
+          </Typography>
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/15.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Gastroenterologists"
           />
+          <Typography variant="h6" gutterBottom component="div">
+          Gastroenterologists
+          </Typography>
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/16.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Nephrologists"
           />
+          <Typography variant="h6" gutterBottom component="div">
+          Nephrologists
+          </Typography>
         </div>
       </div>
     </div>
@@ -99,22 +114,31 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/11.jpg"}
             alt="Deteminology"
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
           />
+           <Typography variant="h6" gutterBottom component="div">
+           Deteminology
+          </Typography>
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Cardiologists"
           />
+           <Typography variant="h6" gutterBottom component="div">
+           Cardiologists
+          </Typography>
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/13.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Gastroenterologists"
           />
+           <Typography variant="h6" gutterBottom component="div">
+           Gastroenterologists
+          </Typography>
         </div>
       </div>
     </div>
@@ -128,6 +152,9 @@ export default function Home() {
             style={{ height: "80%", width: "40%" }}
             alt="Ophthalmologists"
           />
+           <Typography variant="h6" gutterBottom component="div">
+           Ophthalmologists
+          </Typography>
         </div>
       </div>
     </div>
@@ -139,22 +166,31 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
             alt="Ophthalmologists"
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
           />
+           <Typography variant="h6" gutterBottom component="div">
+           Ophthalmologists
+          </Typography>
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Endocrinologists"
           />
+           <Typography variant="h6" gutterBottom component="div">
+           Endocrinologists
+          </Typography>
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/16.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Nephrologists"
           />
+           <Typography variant="h6" gutterBottom component="div">
+          Nephrologists
+          </Typography>
         </div>
       </div>
     </div>
@@ -166,22 +202,31 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/11.jpg"}
             alt="Deteminology"
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
           />
+           <Typography variant="h6" gutterBottom component="div">
+           Deteminology
+          </Typography>
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/13.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Cardiologists"
           />
+           <Typography variant="h6" gutterBottom component="div">
+           Cardiologists
+          </Typography>
         </div>
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Endocrinologists"
           />
+           <Typography variant="h6" gutterBottom component="div">
+           Endocrinologists
+          </Typography>
         </div>
       </div>
     </div>
@@ -313,6 +358,35 @@ export default function Home() {
         <br />
         <br />
       </Card>
+    </div>
+  );
+  const alreadydiagnosedContent = (
+    <div>
+       <Container maxWidth="md">
+        <Card
+          style={{
+            display: "center",
+            justifyContent: "center",
+            tableLayout: "center",
+            paddingRight: "40px",
+            paddingLeft: "40px",
+          }}
+        >
+          <br />
+          <br />
+          <Department></Department> &nbsp; &nbsp; &nbsp; &nbsp;
+          <Destination></Destination>
+          <button class="link-button1">
+            <b>Search Facility </b>
+          </button>
+          &nbsp;&nbsp;
+          <button class="link-button1">
+            <b>Search Doctor</b>
+          </button>
+          <br />
+          <br />
+        </Card>
+      </Container>
     </div>
   );
   return (
@@ -506,7 +580,7 @@ export default function Home() {
         </Grid>
       </Paper>
       <br />
-   
+
       <Paper
         style={{
           boxShadow: "none",
@@ -533,10 +607,8 @@ export default function Home() {
               </p>
               <br /> <br />
               <button
-                onClick={() => {
-                  setMumbai(!mumbai);
-                }}
-                class="button-hover"
+                onClick={() => {setActive("Mumbai");  }}
+                class={active==="Mumbai"? "button-hover clickactive" :" button-hover "}
               >
                 Mumbai
               </button>
@@ -544,9 +616,9 @@ export default function Home() {
               <space />
               <button
                 onClick={() => {
-                  setDelhi(!delhi);
+                  setActive("Delhi");
                 }}
-                class="button-hover"
+                class={active=== "Delhi"? "button-hover clickactive" :" button-hover"}
               >
                 Delhi
               </button>
@@ -554,9 +626,9 @@ export default function Home() {
               <space />
               <button
                 onClick={() => {
-                  setKolkata(!kolkata);
+                  setActive("Kolkata");
                 }}
-                class="button-hover"
+                class={active=== "Kolkata"? "button-hover clickactive" :" button-hover"}
               >
                 Kolkata
               </button>
@@ -564,9 +636,9 @@ export default function Home() {
               <space />
               <button
                 onClick={() => {
-                  setPune(!pune);
+                  setActive("Pune");
                 }}
-                class="button-hover"
+                class={active=== "Pune"? "button-hover clickactive" :" button-hover"}
               >
                 Pune
               </button>
@@ -574,9 +646,9 @@ export default function Home() {
               <space />
               <button
                 onClick={() => {
-                  setBangalore(!bangalore);
+                  setActive("Bangalore");
                 }}
-                class="button-hover"
+                class={active=== "Bangalore"? "button-hover clickactive" :" button-hover"}
               >
                 Bangalore
               </button>
@@ -584,9 +656,9 @@ export default function Home() {
               <space />
               <button
                 onClick={() => {
-                  setHyderabad(!hyderabad);
+                  setActive("Hyderabad");
                 }}
-                class="button-hover"
+                class={active=== "Hyderabad"? "button-hover clickactive" :" button-hover"}
               >
                 Hyderabad
               </button>
@@ -594,21 +666,22 @@ export default function Home() {
               <space />
               <button
                 onClick={() => {
-                  setHyderabad(!hyderabad);
+                  setActive("Ahmedabad");
                 }}
-                class="button-hover"
+                class={active=== "Ahmedabad"? "button-hover clickactive" :" button-hover"}
               >
                 Ahmedabad
               </button>
               <space />
               <space />
               <br />
-              {mumbai && mumbaiImage}
-              {delhi && delhiImage}
-              {kolkata && kolkataImage}
-              {pune && puneImage}
-              {bangalore && bangaloreImage}
-              {hyderabad && hyderabadImage}
+              {active === "Mumbai" && mumbaiImage}
+              {active === "Delhi" && delhiImage}
+              {active === "Kolkata" && kolkataImage}
+              {active === "Pune" && puneImage}
+              {active === "Bangalore" && bangaloreImage}
+              {active === "Hyderabad" && hyderabadImage}
+              {active === "Ahmedabad" && hyderabadImage}
               <a class="link-button1" href="#">
                 <b>SIGN IN FOR MORE OPTIONS</b>
               </a>
@@ -639,6 +712,55 @@ export default function Home() {
               the best support for medical tourists.
             </p>
           </Card>
+
+          <Container maxWidth="md">
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                "& > :not(style)": {
+                  m: 1,
+                  width: 428,
+                  height: 228,
+                },
+              }}
+            >
+              <Paper
+                elevation={3}
+                style={{ background: "linear-gradient(#e66465, #9198e5)" }}
+              >
+                <h1 style={{ marginTop: 59 }}>
+                  <a
+                    href="/standard"
+                    style={{
+                      textDecoration: "none",
+                      color: "#fff",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Standard
+                  </a>
+                </h1>
+              </Paper>
+              <Paper
+                elevation={3}
+                style={{ background: "linear-gradient(#e66465, #9198e5)" }}
+              >
+                <h1 style={{ marginTop: 59 }}>
+                  <a
+                    href="/premium"
+                    style={{
+                      textDecoration: "none",
+                      color: "#fff",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Premium
+                  </a>
+                </h1>
+              </Paper>
+            </Box>
+          </Container>
         </Grid>
       </Paper>
       <br />
@@ -669,7 +791,7 @@ export default function Home() {
         </Grid>
       </Paper>
       <br />
-  
+
       <Paper
         style={{
           boxShadow: "none",
@@ -689,14 +811,16 @@ export default function Home() {
             </div>
             <br />
             <br />
-            <button class="button111">Already Diagnosed </button> <space />
+            <button  onClick={() => {
+                setActivegetdiagnosed("already");
+              }}class={getdiagnosedactive=== "already"? "button111 activeevent" :"button111"}>Already Diagnosed </button> <space />
             <space />
             <button
-              onClick={() => {
-                setGetdiagnosed(!getdiagnosed);
+               onClick={() => {
+                setActivegetdiagnosed("get");
               }}
-              style={{ backgroundColor: "#5BD1D7", borderColor: "#5BD1D7" }}
-              class="button111"
+              
+              className={getdiagnosedactive=== "get"? "button111 activeevent" :" button111"}
             >
               Get Diagnosed
             </button>
@@ -704,81 +828,12 @@ export default function Home() {
             <space />
             <br />
           </Card>
+          {getdiagnosedactive === "already" && alreadydiagnosedContent}
+          {getdiagnosedactive === "get" && getdiagnosedContent}
         </Grid>
       </Paper>
       <br />
       <br />
-      <Container maxWidth="md">
-        <Card
-          style={{
-            display: "center",
-            justifyContent: "center",
-            tableLayout: "center",
-            paddingRight: "40px",
-            paddingLeft: "40px",
-           
-          }}
-        >
-          <br />
-          <br />
-          <Department></Department> &nbsp; &nbsp; &nbsp; &nbsp;
-          <Destination></Destination>
-          <button class="link-button1">
-            <b>Search Facility </b>
-          </button>
-          &nbsp;&nbsp;
-          <button class="link-button1">
-            <b>Search Doctor</b>
-          </button>
-         <br/><br/>
-        </Card>
-      </Container>
-      <Paper
-        style={{
-          boxShadow: "none",
-          justifyContent: "center",
-          textAlign: "center",
-          marginTop: "4%",
-        }}
-      >
-        <Grid>
-          {/* <Card className="card" style={cardstyle}>
-            <Card
-              className="Card1"
-              style={{
-                textAlign: "center",
-                justifyContent: "center",
-                boxShadow: "5px 10px 8px #888888 ",
-              }}
-            >
-              <br />
-              <br /> <Department></Department> &nbsp; &nbsp; &nbsp; &nbsp;
-              <Destination></Destination>
-              <br />
-              <br />
-              <div className="deptbutton">
-                <button
-                  class="link-button1"
-                  style={{ textAlign: "center", justifyContent: "center" }}
-                >
-                  <b>Search Facility </b>
-                </button>
-                &nbsp;&nbsp;
-                <button
-                  class="link-button1"
-                  style={{ textAlign: "center", justifyContent: "center" }}
-                >
-                  <b>Search Doctor</b>
-                </button>
-              </div>
-              <br />
-            </Card>
-            <br />
-            <br />
-          </Card> */}
-          {getdiagnosed && getdiagnosedContent}
-        </Grid>
-      </Paper>
       <Suspense fallback={<div>Loading...</div>}>
         <Footer />
       </Suspense>

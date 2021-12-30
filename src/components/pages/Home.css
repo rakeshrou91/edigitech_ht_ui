@@ -162,6 +162,10 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+.button-hover.clickactive{
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  border: "none";
+}
 .button-hover:hover{
   background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
   border: "none";
@@ -226,6 +230,7 @@
   flex-direction: column;
   margin-top: -6%;
   box-shadow: none;
+  margin-bottom: 20px;
 }
 .card {
   color: "skyblue";
@@ -273,6 +278,33 @@
   border-radius: 56px;
   box-sizing: border-box;
   border: 1px solid none;
+  background-color: #5BD1D7;
+  color: #fff;
+
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: column;
+  font-family: "Codec cold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  height: 58px;
+  justify-content: center;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  padding: 16px 21px;
+  text-decoration: none;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button111.activeevent{
+  align-items: center;
+  border: 0;
+  border-radius: 56px;
+  box-sizing: border-box;
+  border: 1px solid none;
   background-color: #004d61;
   color: #fff;
 
@@ -294,6 +326,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 .button111:hover {
   background-color: red;
   color: white;
@@ -562,7 +595,7 @@ div h1 {
 
   .column1 {
     display: column;
-    margin-left: 800px;
+    margin-left: 500px;
     width: 600px;
     height: 400px;
   }
@@ -607,7 +640,10 @@ div h1 {
     opacity: 1;
     transition: all 0.5s ease;
   }
-
+  .hidedata{ 
+      visibility: hidden;
+  }
+  
   .link-button1 {
     flex-direction: row;
     text-align: center;

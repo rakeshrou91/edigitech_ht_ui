@@ -30,11 +30,11 @@ const Footer = () => {
                   <div class="footer-link-items">
                     <h2>Company Info</h2>
 
-                    <Link to="/sign-up" className="link">
+                    <a href="https://boi.gov.in/content/registration-requirements-foreign-national" className="link">
                      
                       <i class="fas fa-angle-double-right"></i> Compliance for
                       international users
-                    </Link>
+                    </a>
                     <Link to="/customerreview" className="link">
                       <i class="fas fa-angle-double-right"></i> Customer Reviews
                     </Link>
