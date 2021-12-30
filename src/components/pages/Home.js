@@ -240,6 +240,9 @@ export default function Home() {
             alt="Deteminology"
             style={{ height: "100%", width: "100%" }}
           />
+          <Typography variant="h6" gutterBottom component="div">
+          Deteminology
+          </Typography>
         </div>
         <div class="column1">
           <img
@@ -247,6 +250,9 @@ export default function Home() {
             style={{ height: "100%", width: "100%" }}
             alt="Ophthalmologists"
           />
+          <Typography variant="h6" gutterBottom component="div">
+          Ophthalmologists
+          </Typography>
         </div>
         <div class="column1">
           <img
@@ -254,6 +260,9 @@ export default function Home() {
             style={{ height: "100%", width: "100%" }}
             alt="Endocrinologists"
           />
+          <Typography variant="h6" gutterBottom component="div">
+          Endocrinologists
+          </Typography>
         </div>
       </div>
       <div class="row1" style={{ marginLeft: "1%" }}>
@@ -263,6 +272,9 @@ export default function Home() {
             style={{ height: "100%", width: "60%" }}
             alt="Gastroenterologists"
           />
+          <Typography variant="h6" gutterBottom component="div">
+          Gastroenterologists
+          </Typography>
         </div>
         <div class="column1">
           <img
@@ -270,6 +282,9 @@ export default function Home() {
             style={{ height: "100%", width: "60%" }}
             alt="Nephrologists"
           />
+          <Typography variant="h6" gutterBottom component="div">
+          Nephrologists
+          </Typography>
         </div>
       </div>
     </div>
