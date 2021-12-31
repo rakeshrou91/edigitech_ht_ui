@@ -122,7 +122,7 @@ export default function Home() {
         </div>
         <div class="column1">
           <img
-            src={process.env.PUBLIC_URL + "/12.jpg"}
+            src={process.env.PUBLIC_URL + "/13.jpg"}
             style={{ height: "90%", width: "90%" }}
             alt="Cardiologists"
           />
@@ -132,7 +132,7 @@ export default function Home() {
         </div>
         <div class="column1">
           <img
-            src={process.env.PUBLIC_URL + "/13.jpg"}
+            src={process.env.PUBLIC_URL + "/15.jpg"}
             style={{ height: "90%", width: "90%" }}
             alt="Gastroenterologists"
           />
@@ -149,7 +149,7 @@ export default function Home() {
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/12.jpg"}
-            style={{ height: "80%", width: "40%" }}
+            style={{ height: "90%", width: "30%" }}
             alt="Ophthalmologists"
           />
            <Typography variant="h6" gutterBottom component="div">
@@ -238,7 +238,7 @@ export default function Home() {
           <img
             src={process.env.PUBLIC_URL + "/11.jpg"}
             alt="Deteminology"
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
           />
           <Typography variant="h6" gutterBottom component="div">
           Deteminology
@@ -246,8 +246,8 @@ export default function Home() {
         </div>
         <div class="column1">
           <img
-            src={process.env.PUBLIC_URL + "/13.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            src={process.env.PUBLIC_URL + "/12.jpg"}
+            style={{ height: "90%", width: "90%" }}
             alt="Ophthalmologists"
           />
           <Typography variant="h6" gutterBottom component="div">
@@ -257,7 +257,7 @@ export default function Home() {
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/14.jpg"}
-            style={{ height: "100%", width: "100%" }}
+            style={{ height: "90%", width: "90%" }}
             alt="Endocrinologists"
           />
           <Typography variant="h6" gutterBottom component="div">
@@ -269,7 +269,7 @@ export default function Home() {
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/15.jpg"}
-            style={{ height: "100%", width: "60%" }}
+            style={{ height: "90%", width: "60%" }}
             alt="Gastroenterologists"
           />
           <Typography variant="h6" gutterBottom component="div">
@@ -279,7 +279,7 @@ export default function Home() {
         <div class="column1">
           <img
             src={process.env.PUBLIC_URL + "/16.jpg"}
-            style={{ height: "100%", width: "60%" }}
+            style={{ height: "90%", width: "60%" }}
             alt="Nephrologists"
           />
           <Typography variant="h6" gutterBottom component="div">
@@ -357,7 +357,7 @@ export default function Home() {
                 <Upload style={{ height: "100px" }} />
               </Suspense>
             </div>
-          </form>
+         
           <br />
           <br />
           <div className="deptbutton">
@@ -369,6 +369,7 @@ export default function Home() {
             </button>
           </div>
           <br />
+          </form>
         </Card>
         <br />
         <br />
@@ -726,7 +727,8 @@ export default function Home() {
               <br /> medical treatment according to your requirements. We offer
               the best support for medical tourists.
             </p>
-          </Card>
+            </Card>
+          {<br/>}
 
           <Container maxWidth="md">
             <Box
@@ -776,6 +778,7 @@ export default function Home() {
               </Paper>
             </Box>
           </Container>
+         
         </Grid>
       </Paper>
       <br />

@@ -137,7 +137,7 @@ function Navbar() {
               >
                 About us <i className="fas fa-caret-down" />
               </Link>
-             {dropdown && <Dropdown />}
+             {dropdown && <Dropdown className={colorChange1 ? "nav-links colorChange1" : "nav-links" }/>}
             </li>
             <li
               className="nav-item"
