@@ -14,7 +14,7 @@ function Navbar1() {
   const [colorChange1, setColorchange1] = useState(false);
   const [imgchange,setimgchange]=useState(false);
   const [buttonchange , setButtonchange] = useState(false);
-  const [button, setButton] = useState(true);
+  const [button] = useState(true);
   const changeNavbarButton= () => {
     if (window.scrollY >= 80) {
       setButtonchange(true);
@@ -111,7 +111,7 @@ function Navbar1() {
       <nav className={colorChange ? "navbar  colorChange" : "navbar"}>
         <div className="navbar-container"  >
          <Link to="/"  onClick={closeMobileMenu} className={imgchange ? "navbar-logo1  navbar-logoshow" :"navbar-logo1"} >
-            <img src={process.env.PUBLIC_URL + "/logo.jpg"} />
+            <img src={process.env.PUBLIC_URL + "/logo.jpg"} alt="logo" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />

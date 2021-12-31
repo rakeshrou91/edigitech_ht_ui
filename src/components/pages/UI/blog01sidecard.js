@@ -17,31 +17,31 @@ const Blog01sidecard = () => {
         <h3>Categories</h3>
         <tr>
           <td>
-            <a href="#" className="atag">Travelling</a>{" "}
+            <a href="/" className="atag">Travelling</a>{" "}
           </td>
           <td>(33)</td>
         </tr>
         <tr>
           <td>
-            <a href="#" className="atag">World Tour </a>
+            <a href="/" className="atag">World Tour </a>
           </td>
           <td>(77)</td>
         </tr>
         <tr>
           <td>
-            <a href="#" className="atag">Guide</a>{" "}
+            <a href="/" className="atag">Guide</a>{" "}
           </td>
           <td>(49)</td>
         </tr>
         <tr>
           <td>
-            <a href="#" className="atag">Explore</a>{" "}
+            <a href="/" className="atag">Explore</a>{" "}
           </td>
           <td>(70)</td>
         </tr>
         <tr>
           <td>
-            <a href="#" className="atag">Design</a>{" "}
+            <a href="/" className="atag">Design</a>{" "}
           </td>
           <td>(89)</td>
         </tr>
@@ -103,11 +103,11 @@ const Blog01sidecard = () => {
       <Card className="sideblog01card1">
         <h3>Tags</h3>
         <div className="alink">
-          <a href="#">Travellor</a>
-          <a href="#">Adventures</a>
-          <a href="#">Beach</a>
-          <a href="#">Dream</a>
-          <a href="#">Wach</a>
+          <a href="/">Travellor</a>
+          <a href="/">Adventures</a>
+          <a href="/">Beach</a>
+          <a href="/">Dream</a>
+          <a href="/">Wach</a>
         </div>
       </Card>
     </>

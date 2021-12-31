@@ -9,21 +9,21 @@ const Blogprevnext = () => {
       <Paper style={{ boxShadow: "none" }} className="nextprevrow">
         <Grid>
           <Card className="nextprev">
-            <a href="#" style={{ textDecoration:'none'}}>
+            <a href="/" style={{ textDecoration:'none'}}>
               <i class="fas fa-angle-double-left"></i>
             </a>
           </Card>
           <Card className="nextprev1" style={{ backgroundColor: "#004D61" }}>
-            <a href="#" style={{ textDecoration:'none'}}>01</a>
+            <a href="/" style={{ textDecoration:'none'}}>01</a>
           </Card>
           <Card className="nextprev">
-            <a href="#" style={{ textDecoration:'none'}}>02</a>
+            <a href="/" style={{ textDecoration:'none'}}>02</a>
           </Card>
           <Card className="nextprev">
-            <a href="#" style={{ textDecoration:'none'}}>03</a>
+            <a href="/" style={{ textDecoration:'none'}}>03</a>
           </Card>
           <Card className="nextprev">
-            <a href="#" style={{ textDecoration:'none'}}>
+            <a href="/" style={{ textDecoration:'none'}}>
               <i class="fas fa-angle-double-right"></i>
             </a>
           </Card>

@@ -1,8 +1,6 @@
 import React, { Suspense } from "react";
 import "./comman.css";
-import { Grid, Paper, Avatar } from "@material-ui/core";
-import { Card } from "@material-ui/core";
-import Image from "react-bootstrap/Image";
+import {Avatar } from "@material-ui/core";
 import Typography from "@mui/material/Typography";
 import Container from "@material-ui/core/Container";
 const Footer = React.lazy(() => import("./UI/footer"));

@@ -6,7 +6,7 @@ import Input from "@mui/material/Input";
 import { Grid, Paper, Avatar } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 import { SiIndeed } from "react-icons/si";
-const Mapcontainer = React.lazy(() => import("./UI/map"));
+// const Mapcontainer = React.lazy(() => import("./UI/map"));
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
 

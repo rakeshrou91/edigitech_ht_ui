@@ -19,10 +19,10 @@ const Blog01card = () => {
         </span>
         <br />
         <br />
-        <a href="#" style={{ textDecoration:'none'}}>
+        <a href="/" style={{ textDecoration:'none'}}>
           <i class="fas fa-comments"></i> 20 Comments
         </a>
-        <a href="#" style={{ textDecoration:'none'}} >
+        <a href="/" style={{ textDecoration:'none'}} >
           <i class="fas fa-eye-slash"></i> 466 View
         </a>
         <p>
@@ -50,10 +50,10 @@ const Blog01card = () => {
         </span>
         <br />
         <br />
-        <a href="#" style={{ textDecoration:'none'}}>
+        <a href="/" style={{ textDecoration:'none'}}>
           <i class="fas fa-comments"></i> 20 Comments
         </a>
-        <a href="#" style={{ textDecoration:'none'}}>
+        <a href="/" style={{ textDecoration:'none'}}>
           <i class="fas fa-eye-slash"></i> 466 View
         </a>
         <p>
@@ -79,10 +79,10 @@ const Blog01card = () => {
         </span>
         <br />
         <br />
-        <a href="#" style={{ textDecoration:'none'}}>
+        <a href="/" style={{ textDecoration:'none'}}>
           <i class="fas fa-comments"></i> 20 Comments
         </a>
-        <a href="#" style={{ textDecoration:'none'}}>
+        <a href="/" style={{ textDecoration:'none'}}>
           <i class="fas fa-eye-slash"></i> 466 View
         </a>
         <p>

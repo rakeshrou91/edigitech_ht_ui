@@ -23,7 +23,7 @@ const Blog02comment = () => {
                 fermentum.
               </p>
             </tr>
-            <a href="#">
+            <a href="/">
               REPLY <i class="fas fa-reply-all"></i>
             </a>
           </Card>
@@ -43,7 +43,7 @@ const Blog02comment = () => {
               </p>
             </tr>
 
-            <a href="#">
+            <a href="/">
               REPLY <i class="fas fa-reply-all"></i>
             </a>
           </Card>
@@ -63,7 +63,7 @@ const Blog02comment = () => {
               </p>
             </tr>
 
-            <a href="#">
+            <a href="/">
               REPLY <i class="fas fa-reply-all"></i>
             </a>
           </Card>

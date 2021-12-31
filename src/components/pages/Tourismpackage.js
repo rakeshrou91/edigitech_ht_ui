@@ -72,7 +72,7 @@ export default function TourismPackage() {
                       Banking Assistant
                     </li>
                     <div>
-                      <a href="#" style={{ textDecoration:'none',color:'#fff' }} >CLICK HERE FOR MORE DETAILS</a>
+                      <a href="/" style={{ textDecoration:'none',color:'#fff' }} >CLICK HERE FOR MORE DETAILS</a>
                     </div>
                   </ul>
                 </Card>
@@ -112,7 +112,7 @@ export default function TourismPackage() {
                       Banking Assistant
                     </li>
                     <div>
-                      <a href="#" style={{ textDecoration:'none',color:'#fff' }}>CLICK HERE FOR MORE DETAILS</a>
+                      <a href="/" style={{ textDecoration:'none',color:'#fff' }}>CLICK HERE FOR MORE DETAILS</a>
                     </div>
                   </ul>
                 </Card>

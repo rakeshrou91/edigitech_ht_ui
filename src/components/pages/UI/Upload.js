@@ -12,11 +12,7 @@ export default function Upload() {
     })
   );
   const classes = useStyles();
-  const dropzoneStyle = {
-    width  : "100%",
-    height : "20%",
-    border : "1px solid black"
-};
+  
   return (
     <>
       <DropzoneArea

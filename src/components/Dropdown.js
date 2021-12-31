@@ -5,17 +5,9 @@ import { Link } from "react-router-dom";
 
 function Dropdown() {
   const [click, setClick] = useState(false);
-  const [colorChange, setColorchange] = useState(false);
-
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
-      setColorchange(true);
-    } else {
-      setColorchange(false);
-    }
-  };
+  
   const handleClick = () => setClick(!click);
-  window.addEventListener("scroll", changeNavbarColor);
+
 
   return (
     <>

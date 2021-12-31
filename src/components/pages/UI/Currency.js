@@ -7,7 +7,7 @@ import 'react-dropdown/style.css';
 import './currency.css';
 import Button from '@mui/material/Button';
 const Currency = () => {
-    const [info, setInfo] = useState([]);
+  const [info, setInfo] = useState([]);
   const [input, setInput] = useState("");
   const [from, setFrom] = useState("usd");
   const [to, setTo] = useState("inr");
@@ -24,6 +24,7 @@ const Currency = () => {
     setOptions(Object.keys(info));
     convert();
   }, [info])
+
   function convert() {
     var rate = info[to];
     setOutput(input * rate);

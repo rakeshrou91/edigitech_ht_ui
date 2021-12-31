@@ -1,63 +1,15 @@
-import React, { Suspense, useState } from "react";
+import React, { Suspense } from "react";
 import "./comman.css";
 import "./Affiliateprogram.css";
-import { Grid, Paper, Avatar} from "@material-ui/core";
+import { Grid, Paper} from "@material-ui/core";
 import { Card } from "@material-ui/core";
 import Questionhelp from "./UI/Questionhelp";
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
 
 export default function HelpCenter() {
-  const [question1, setQuestion1] = useState(false);
-  const [question2, setQuestion2] = useState(false);
-  const [question3, setQuestion3] = useState(false);
-  const [question4, setQuestion4] = useState(false);
 
-  const question1Content = (
-    <div>
-      <Card className="helpanswer1card" style={{ borderRadius: "20px" }}>
-        <p>
-          You are welcome to make deposits or partial payments for your
-          reservation, but until eHealthFlex receives full payment for your
-          reservation, your seats will not be secured. Please make your complete
-          payment as soon as possible.
-        </p>
-      </Card>
-    </div>
-  );
-  const question2Content = (
-    <div>
-      <Card className="helpanswer2card" style={{ borderRadius: "20px" }}>
-        <p>
-          Landing Page Builder is a hosted platform powered by the Brizy builder
-          aiming to connect you with p otential clients, collect leads, and
-          close sales through a more streamlined experience.
-        </p>
-      </Card>
-    </div>
-  );
-  const question3Content = (
-    <div>
-      <Card className="helpanswer1card" style={{ borderRadius: "20px" }}>
-        <p>
-          Landing Page Builder is a hosted platform powered by the Brizy builder
-          aiming to connect you with p otential clients, collect leads, and
-          close sales through a more streamlined experience.
-        </p>
-      </Card>
-    </div>
-  );
-  const question4Content = (
-    <div>
-      <Card className="helpanswer1card" style={{ borderRadius: "20px" }}>
-        <p>
-          Landing Page Builder is a hosted platform powered by the Brizy builder
-          aiming to connect you with p otential clients, collect leads, and
-          close sales through a more streamlined experience.
-        </p>
-      </Card>
-    </div>
-  );
+  
 
   return (
     <>

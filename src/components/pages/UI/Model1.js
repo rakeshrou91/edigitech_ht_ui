@@ -2,6 +2,8 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
 import "../../Navbar.css";
 const style = {
   position: 'absolute',
@@ -9,7 +11,7 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 600,
-  height:160,
+  height:180,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -23,18 +25,19 @@ export default function BasicModal1() {
 
   return (
     <div>
-       <a  className= "upnavitemsupport1 " onClick={handleOpen}>
+     
+       <Link  className= "upnavitemsupport1" onClick={handleOpen}>
             <i class="fas fa-headset"></i> Support
-          </a>
+         </Link>
           &nbsp;&nbsp;
-          <a href="#" className="upnavitememail1" >
+          <a href="/" className="upnavitememail1" >
             <i class="fas fa-envelope"></i> info@ehealthflex.com
           </a>
-          <a href="#" className="upnavitemsignin">
+          <a href="/" className="upnavitemsignin">
             <i class="fas fa-user-circle"></i> Sign in
           </a>
           &nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="#" className="upnavitemregister">
+          <a href="/" className="upnavitemregister">
             <i class="fas fa-user-plus"></i> Register
           </a>
       <Modal
@@ -51,9 +54,9 @@ export default function BasicModal1() {
           Our customer care number is +91 9175040052
           </Typography>
           {<br/>}
-          <a  style={{ textDecoration:'none',fontSize:"20px",cursor:"pointer",marginLeft:"46%",color:"#004d61"}} onClick={handleClose}>
+          <Button  style={{ textDecoration:'none',fontSize:"20px",cursor:"pointer",marginLeft:"46%",color:"#004d61"}} onClick={handleClose}>
               Close
-         </a>
+         </Button>
         </Box>
       </Modal>
     </div>

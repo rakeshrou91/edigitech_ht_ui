@@ -412,7 +412,7 @@ export default function Home() {
         <Navbar />
       </Suspense>
 
-      <h1 className="services"></h1>
+      <div className="services"></div>
 
       {/* <Image className="img" src={process.env.PUBLIC_URL + "/banner1.png"} /> */}
       <div className="mtimg">
@@ -698,7 +698,7 @@ export default function Home() {
               {active === "Bangalore" && bangaloreImage}
               {active === "Hyderabad" && hyderabadImage}
               {active === "Ahmedabad" && hyderabadImage}
-              <a class="link-button1" href="#">
+              <a class="link-button1" href="/">
                 <b>SIGN IN FOR MORE OPTIONS</b>
               </a>
             </div>

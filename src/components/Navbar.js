@@ -14,7 +14,7 @@ function Navbar() {
   const [colorChange, setColorchange] = useState(false);
   const [colorChange1, setColorchange1] = useState(false);
   const [buttonchange , setButtonchange] = useState(false);
-  const [button, setButton] = useState(true);
+  const [button] = useState(true);
 
   const changeNavbarButton= () => {
     if (window.scrollY >= 80) {
@@ -106,7 +106,7 @@ function Navbar() {
       <nav className={colorChange ? "navbar  colorChange" : "navbar"}>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <img src={process.env.PUBLIC_URL + "/logo.jpg"} />
+            <img src={process.env.PUBLIC_URL + "/logo.jpg"} alt="navbar-logo"/>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -137,7 +137,7 @@ function Navbar() {
               >
                 About us <i className="fas fa-caret-down" />
               </Link>
-             {dropdown && <Dropdown className={colorChange1 ? "nav-links colorChange1" : "nav-links" }/>}
+              {dropdown && <Dropdown />}
             </li>
             <li
               className="nav-item"
@@ -145,11 +145,12 @@ function Navbar() {
               onMouseLeave={onMouseLeave1}
             >
               <Link
-                to="/services"
+                to=""
                 className={
                   colorChange1 ? "nav-links colorChange1" : "nav-links"
                 }
                 onClick={closeMobileMenu}
+             
               >
                 Tourism Package <i className="fas fa-caret-down" />
               </Link>
