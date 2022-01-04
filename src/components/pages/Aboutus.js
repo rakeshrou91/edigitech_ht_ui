@@ -4,6 +4,7 @@ import "./Home.css";
 import { Grid, Paper } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 import Image from "react-bootstrap/Image";
+import Container from "@material-ui/core/Container";
 const Aboutussignup = React.lazy(() => import("./UI/aboutussignup"));
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
@@ -14,15 +15,22 @@ export default function Aboutus () {
     <Suspense fallback={<div>Loading...</div>}>
       <Navbar1/>
       </Suspense>
+     
       <div className="aboutus">
-        <div className="aboutusheading">
-          <h2> About us</h2>
-          <a href="/">
+      <Container maxWidth="xs">
+      <h2 style={{fontSize:'70px'}}> About us</h2>
+      {<br/>}
+      <a href="/"  style={{ textDecoration:'none',color:'#fff',marginLeft:'1em'}}>
             <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;About us
-          </a>
+      </a>
+      </Container>
+      
+        {/* <div className="aboutusheading">
+          <h2> About us</h2>
+         
           &nbsp;&nbsp;
-        </div>
+        </div> */}
       </div>
       <Paper className="paper" style={{ boxShadow: "none" }}>
         <Grid>

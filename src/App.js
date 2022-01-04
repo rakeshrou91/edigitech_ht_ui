@@ -23,12 +23,15 @@ import Careers from "./components/pages/Careers";
 import Travel from "./components/pages/Travel";
 import Specialoffer from "./components/pages/Specialoffer";
 import Flight from "./components/pages/Flight";
+import Sorting from "./components/pages/UI/Sorting";
+import DoctorInfo from "./components/pages/UI/DoctorInfo";
 function App() {
   return (
     <Router>
       {/* <Navbar /> */}
       <Switch>
-        <Route path="/" exact component={Home} />
+
+        <Route path="/" exact component={DoctorInfo} />
 
         <Route path="/aboutus" component={Aboutus} />
         <Route path="/affiliateprogram" component={AffiliateProgram} />

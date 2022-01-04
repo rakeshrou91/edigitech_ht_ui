@@ -3,7 +3,7 @@ import "./Affiliateprogram.css";
 import Image from "react-bootstrap/Image";
 import { Grid, Paper} from "@material-ui/core";
 import { Card } from "@material-ui/core";
-
+import Container from "@material-ui/core/Container";
 const Aboutussignup = React.lazy(() => import("./UI/aboutussignup"));
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
@@ -14,14 +14,21 @@ export default function AffiliateProgram() {
       <Navbar1/>
       </Suspense>
       <div className="affiliateprogram">
-        <div className="heading">
+      <Container maxWidth="md">
+      <h2 style={{fontSize:'70px'}}> Affiliate Program</h2>
+      <a href="/"  style={{ textDecoration:'none',color:'#fff',marginLeft:'1em'}}>
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
+            <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Affiliate Program
+      </a>
+      </Container>
+        {/* <div className="heading">
           <h2> Affiliate Program</h2>
           <a href="/">
             <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Affiliate Program
           </a>
           &nbsp;&nbsp;
-        </div>
+        </div> */}
       </div>
       <Paper className="paper" style={{ boxShadow: "none" }}>
         <Grid>

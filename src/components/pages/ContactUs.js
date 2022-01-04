@@ -6,6 +6,7 @@ import Input from "@mui/material/Input";
 import { Grid, Paper, Avatar } from "@material-ui/core";
 import { Card } from "@material-ui/core";
 import { SiIndeed } from "react-icons/si";
+import Container from "@material-ui/core/Container";
 // const Mapcontainer = React.lazy(() => import("./UI/map"));
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
@@ -17,14 +18,22 @@ export default function ContactUs() {
       <Navbar1/>
       </Suspense>
       <div className="contact-us">
-        <div className="contactusheading">
+      <Container maxWidth="sm">
+      <h2 style={{fontSize:'70px'}}> Contact Us</h2>
+      {<br/>}
+      <a href="/"  style={{ textDecoration:'none',color:'#fff',marginLeft:'1em'}}>
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
+            <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Contact Us
+      </a>
+      </Container>
+        {/* <div className="contactusheading">
           <h2> Contact Us</h2>
           <a href="/">
             <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Contact Us
           </a>
           &nbsp;&nbsp;
-        </div>
+        </div> */}
       </div>
       <Paper style={{ boxShadow: "none" }}>
         <Grid>

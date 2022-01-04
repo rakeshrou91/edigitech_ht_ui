@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import "./comman.css";
 import { Grid, Paper} from "@material-ui/core";
 import { Card } from "@material-ui/core";
+import Container from "@material-ui/core/Container";
 // import Progress from "react-progressbar";
 // const Mapcontainer = React.lazy(() => import("./UI/map"));
 const Footer = React.lazy(() => import("./UI/footer"));
@@ -1021,14 +1022,22 @@ export default function Premiumpackage() {
       <Navbar1/>
       </Suspense>
       <div className="premium">
-        <div className="standardheading">
+      <Container maxWidth="md">
+      <h2 style={{fontSize:'70px'}}> Premium Package</h2>
+      {<br/>}
+      <a href="/"  style={{ textDecoration:'none',color:'#fff',marginLeft:'1em'}}>
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
+            <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Premium Package
+      </a>
+      </Container>
+        {/* <div className="standardheading">
           <h2> Premium Package</h2>
           <a href="/">
             <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Premium Package
           </a>
           &nbsp;&nbsp;
-        </div>
+        </div> */}
       </div>
       <Paper style={{ boxShadow: "none" }}>
         <Grid>

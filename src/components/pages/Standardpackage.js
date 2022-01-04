@@ -4,6 +4,7 @@ import "./UI/footer.css";
 // import Progress from "react-progressbar";
 import { Grid, Paper} from "@material-ui/core";
 import { Card } from "@material-ui/core";
+import Container from "@material-ui/core/Container";
 // const Mapcontainer = React.lazy(() => import("./UI/map"));
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
@@ -981,14 +982,22 @@ export default function StandardPackage() {
       <Navbar1/>
       </Suspense>
       <div className="standard">
-        <div className="standardheading">
+      <Container maxWidth="md">
+      <h2 style={{fontSize:'70px'}}> Standard Package</h2>
+      {<br/>}
+      <a href="/"  style={{ textDecoration:'none',color:'#fff',marginLeft:'1em'}}>
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
+            <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Standard Package
+      </a>
+      </Container>
+        {/* <div className="standardheading">
           <h2> Standard Package</h2>
           <a href="/">
             <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Standard Package
           </a>
           &nbsp;&nbsp;
-        </div>
+        </div> */}
       </div>
       <Paper style={{ boxShadow: "none" }}>
         <Grid>

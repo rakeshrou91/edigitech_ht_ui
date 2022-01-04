@@ -4,6 +4,7 @@ import "./Affiliateprogram.css";
 import { Grid, Paper} from "@material-ui/core";
 import { Card } from "@material-ui/core";
 import Questionhelp from "./UI/Questionhelp";
+import Container from "@material-ui/core/Container";
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
 
@@ -17,14 +18,22 @@ export default function HelpCenter() {
       <Navbar1/>
       </Suspense>
       <div className="help">
-        <div className="helpheading">
+      <Container maxWidth="xs">
+      <h2 style={{fontSize:'70px'}}>  Help Center</h2>
+      {<br/>}
+      <a href="/"  style={{ textDecoration:'none',color:'#fff',marginLeft:'1em'}}>
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
+            <i class="fas fa-angle-right"></i> &nbsp;&nbsp; Help Center
+      </a>
+      </Container>
+        {/* <div className="helpheading">
           <h2> Help Center</h2>
           <a href="/">
             <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Help Center
           </a>
           &nbsp;&nbsp;
-        </div>
+        </div> */}
       </div>
       <Paper className="paper" style={{ boxShadow: "none" }}>
         <Grid>

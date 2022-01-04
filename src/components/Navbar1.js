@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
 import Dropdown1 from "./Dropdown1";
-import Dropdown2 from "./Dropdown2";
+// import Dropdown2 from "./Dropdown2";
 import BasicModal1 from "../components/pages/UI/Model1";
 function Navbar1() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdown1, setDropdown1] = useState(false);
-  const [dropdown2, setDropdown2] = useState(false);
+  // const [dropdown2, setDropdown2] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const [colorChange1, setColorchange1] = useState(false);
   const [imgchange,setimgchange]=useState(false);
@@ -83,21 +83,21 @@ function Navbar1() {
       setDropdown1(false);
     }
   };
-  const onMouseEnter2 = () => {
-    if (window.innerWidth < 960) {
-      setDropdown2(false);
-    } else {
-      setDropdown2(true);
-    }
-  };
+  // const onMouseEnter2 = () => {
+  //   if (window.innerWidth < 960) {
+  //     setDropdown2(false);
+  //   } else {
+  //     setDropdown2(true);
+  //   }
+  // };
   
-  const onMouseLeave2 = () => {
-    if (window.innerWidth < 960) {
-      setDropdown2(false);
-    } else {
-      setDropdown2(false);
-    }
-  };
+  // const onMouseLeave2 = () => {
+  //   if (window.innerWidth < 960) {
+  //     setDropdown2(false);
+  //   } else {
+  //     setDropdown2(false);
+  //   }
+  // };
 
   return (
     <>
@@ -172,7 +172,19 @@ function Navbar1() {
                 Find a Medic
               </Link>
             </li>
-            <li
+            <li className="nav-item">
+              <a
+               href="https://ehealthflex.com/healthcareblog.php"
+                
+                className={
+                  colorChange1 ? "nav-links colorChange1" : "nav-links"
+                }
+                onClick={closeMobileMenu}
+              >
+                Blogs
+              </a>
+            </li>
+            {/* <li
               className="nav-item"
               onMouseEnter={onMouseEnter2}
               onMouseLeave={onMouseLeave2}
@@ -187,7 +199,7 @@ function Navbar1() {
                 Blog <i className="fas fa-caret-down" />
               </Link>
               {dropdown2 && <Dropdown2 />}
-            </li>
+            </li> */}
 
             <li>
               <Link

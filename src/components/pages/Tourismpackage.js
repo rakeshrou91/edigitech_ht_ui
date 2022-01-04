@@ -3,7 +3,7 @@ import "./comman.css";
 import Image from "react-bootstrap/Image";
 import { Grid, Paper} from "@material-ui/core";
 import { Card } from "@material-ui/core";
-
+import Container from "@material-ui/core/Container";
 const Footer = React.lazy(() => import("./UI/footer"));
 const Navbar1= React.lazy(()=> import("../Navbar1"));
 
@@ -14,14 +14,22 @@ export default function TourismPackage() {
       <Navbar1/>
       </Suspense>
       <div className="compare">
-        <div className="compareheading">
+      <Container maxWidth="md">
+      <h2 style={{fontSize:'70px'}}> Tourism Package</h2>
+      {<br/>}
+      <a href="/"  style={{ textDecoration:'none',color:'#fff',marginLeft:'1em'}}>
+            <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
+            <i class="fas fa-angle-right"></i> &nbsp;&nbsp; Tourism Package
+      </a>
+      </Container>
+        {/* <div className="compareheading">
           <h2> Tourism Package</h2>
           <a href="/">
             <i class="fas fa-home"></i>&nbsp;&nbsp;Home&nbsp;&nbsp;
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;Tourism Package
           </a>
           &nbsp;&nbsp;
-        </div>
+        </div> */}
       </div>
       <Paper style={{ boxShadow: "none" }}>
         <Grid>

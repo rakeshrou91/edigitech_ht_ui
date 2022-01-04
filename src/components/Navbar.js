@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
 import Dropdown1 from "./Dropdown1";
-import Dropdown2 from "./Dropdown2";
+/* import Dropdown2 from "./Dropdown2"; */
 import BasicModal from "../components/pages/UI/Model";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [dropdown1, setDropdown1] = useState(false);
-  const [dropdown2, setDropdown2] = useState(false);
+  // const [dropdown2, setDropdown2] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const [colorChange1, setColorchange1] = useState(false);
   const [buttonchange , setButtonchange] = useState(false);
@@ -138,7 +138,7 @@ function Navbar() {
                 About us <i className="fas fa-caret-down" />
               </Link>
               {dropdown && <Dropdown />}
-            </li>
+             </li>
             <li
               className="nav-item"
               onMouseEnter={onMouseEnter1}
@@ -168,22 +168,33 @@ function Navbar() {
                 Find a Medic
               </Link>
             </li>
-            <li
-              className="nav-item"
-              onMouseEnter={onMouseEnter2}
-              onMouseLeave={onMouseLeave2}
-            >
-              <Link
-                to="/services"
+            <li className="nav-item">
+              <a
+                href="https://ehealthflex.com/healthcareblog.php"
                 className={
                   colorChange1 ? "nav-links colorChange1" : "nav-links"
                 }
                 onClick={closeMobileMenu}
               >
-                Blog <i className="fas fa-caret-down" />
+                Blogs
+              </a>
+            </li>
+            {/* <li
+              className="nav-item"
+              onMouseEnter={onMouseEnter2}
+              onMouseLeave={onMouseLeave2}
+            >
+              <Link
+                href="https://ehealthflex.com/healthcareblog.php"
+                className={
+                  colorChange1 ? "nav-links colorChange1" : "nav-links"
+                }
+                onClick={closeMobileMenu}
+              >
+                Blogs <i className="fas fa-caret-down" />
               </Link>
               {dropdown2 && <Dropdown2 />}
-            </li>
+            </li> */}
             <li>
               <Link
                 to='/contact-us'
