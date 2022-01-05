@@ -25,13 +25,14 @@ import Specialoffer from "./components/pages/Specialoffer";
 import Flight from "./components/pages/Flight";
 import Sorting from "./components/pages/UI/Sorting";
 import DoctorInfo from "./components/pages/UI/DoctorInfo";
+import Schedule from "./components/pages/UI/Schedule";
 function App() {
   return (
     <Router>
       {/* <Navbar /> */}
       <Switch>
 
-        <Route path="/" exact component={DoctorInfo} />
+        <Route path="/" exact component={Schedule} />
 
         <Route path="/aboutus" component={Aboutus} />
         <Route path="/affiliateprogram" component={AffiliateProgram} />

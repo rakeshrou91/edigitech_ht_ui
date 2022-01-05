@@ -4,7 +4,6 @@ import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import Container from '@material-ui/core/Container';
 import ButtonUnstyled, {
   buttonUnstyledClasses,
 } from "@mui/base/ButtonUnstyled";
@@ -98,6 +97,8 @@ class DoctorInfo extends React.Component {
             likes,
             story,
             availablestatus,
+            appointment,
+            appointmentfee,
           } = user;
           return (
             <div key={drname}>
@@ -183,9 +184,9 @@ class DoctorInfo extends React.Component {
                   </Typography>
                   <CustomButton >
                     <Typography variant="h6" gutterBottom component="div">
-                      Book Appointment
+                     {appointment}
                       <Typography variant="body2" gutterBottom component="div">
-                        No Booking Fee
+                       {appointmentfee}
                       </Typography>
                     </Typography>
                   </CustomButton>
