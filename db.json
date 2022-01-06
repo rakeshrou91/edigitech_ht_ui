@@ -1,0 +1,87 @@
+{
+    "DrInfo": [
+      {
+        "id": 1,
+        "src":"../doctor-thumb-08.jpg",
+        "drname":"Dr. Harmindar Singh",
+        "type":"Dentist",
+        "experience":"22 year experience overall",
+        "address": "Guru Amar Dasa Nagar,Jalhandar",
+        "clinicname": "Singh Dental Clinic",
+        "fees":"200 Consultation Fee at Clinic",
+        "likes":"85%",
+        "story":"6 Patient Story",
+        "availablestatus":"Available Today",
+        "appointment":"Book Appointment",
+        "appointmentfee":"No Booking Fees"
+      },
+      {
+        "id": 2,
+        "src": "../doctor-thumb-05.jpg",
+        "drname":"Dr. Sunil Malhan",
+        "type":"Dentist",
+        "experience":"22 year experience overall",
+        "address": "Guru Amar Dasa Nagar,Jalhandar",
+        "clinicname": "Singh Dental Clinic",
+        "fees":"200 Consultation Fee at Clinic",
+        "likes":"96%",
+        "story":"37 Patient Story",
+        "availablestatus":"Available Today",
+        "appointment":"Book Appointment",
+        "appointmentfee":"No Booking Fees"
+      
+      }
+    ],
+    "MorningTime" :[
+      {
+        "id": 1,
+         "Mtime1":"09.00 AM",
+         "Mtime2":"09.15 AM",
+         "Mtime3":"09.15 AM",
+         "Mtime4":"09.30 AM",
+         "Mtime5":"09.45 AM",
+         "Mtime6":"10.00 AM",
+         "Mtime7":"10.15 AM",
+         "Mtime8":"10.30 AM",
+         "Mtime9":"10.45 AM",
+         "Mtime10":"11.00 AM",
+         "Mtime11":"11.15 AM",
+         "Mtime12":"11.30 AM",
+         "Mtime13":"11.45 AM",
+
+         "Atime1":"12.00 PM",
+         "Atime2":"12.15 PM",
+         "Atime3":"12.30 PM",
+         "Atime4":"12.45 PM",
+         "Atime5":"01.00 PM",
+         "Atime6":"01.15 PM",
+         "Atime7":"01.30 PM",
+         "Atime8":"01.45 PM",
+         
+         "Etime1":"04.00 PM",
+         "Etime2":"04.15 PM",
+         "Etime3":"04.30 PM",
+         "Etime4":"04.45 PM",
+         "Etime5":"05.00 PM",
+         "Etime6":"05.15 PM",
+         "Etime7":"05.30 PM",
+         "Etime8":"05.45 PM",
+         "Etime9":"06.00 PM",
+         "Etime10":"06.15 PM",
+         "Etime11":"06.30 PM",
+         "Etime12":"06.45 PM",
+         "Etime13":"07.00 PM",
+         "Etime14":"07.15 PM",
+         "Etime15":"07.30 PM",
+         "Etime16":"07.45 PM",
+
+         "Ntime1":"08.00 PM",
+         "Ntime2":"08.15 PM",
+         "Ntime3":"08.30 PM",
+         "Ntime4":"08.45 PM"
+
+
+      }
+
+    ]
+  }
