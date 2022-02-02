@@ -26,13 +26,29 @@ import Flight from "./components/pages/Flight";
 import Sorting from "./components/pages/UI/Sorting";
 import DoctorInfo from "./components/pages/UI/DoctorInfo";
 import Schedule from "./components/pages/UI/Schedule";
+import BasicDatePicker from "./components/pages/UI/DatePicker";
+import Appointment from "./containers/Appointment/index";
+import AppointmentDetails from "./containers/AppointmentDetails/index";
+import { Provider } from 'react-redux';
+
+import store from './store.js';
 function App() {
   return (
     <Router>
+       {/* <Provider store={store}>
+       <Switch>
+          <Route path="/:date/:month/:year/:timeFrom/details" component={AppointmentDetails}/>
+          <Route path="/:date?/:month?/:year?/" component={Appointment}/>
+        </Switch>
+       </Provider> */}
       {/* <Navbar /> */}
       <Switch>
 
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={DoctorInfo} />
+        <Route path="/sorting" component={Sorting}/>
+        <Route path="/schedule" component={Schedule}/>
+        <Route path="/book" component={BasicDatePicker}/>
+
 
         <Route path="/aboutus" component={Aboutus} />
         <Route path="/affiliateprogram" component={AffiliateProgram} />
@@ -57,6 +73,8 @@ function App() {
         <Route path="/travel" component={Travel}/>
         <Route path="/special" component={Specialoffer} />
         <Route path="/flights" component={Flight} />
+
+
         {/* <Route path='/services' component={Services} />
         <Route path='/products' component={Products} />
         <Route path='/contact-us' component={ContactUs} />

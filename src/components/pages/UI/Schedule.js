@@ -1,15 +1,43 @@
-import React from "react";
+import React, { useMemo, useCallback,useHistory,useParams } from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { BsMoon, BsMoonStars, BsSun, BsSunrise } from "react-icons/bs";
+
 class Schedule extends React.Component {
   state = {
     isLoading: true,
     users: [],
     error: null,
+    
   };
+  params={
+    fullDate:new Date(),
+    date:"",
+    month:"",
+    year:"",
+  }
+  history={
+    history:null
+  }
+  bookingData(){
+    this.useMemo(()=>((appointments && appointments[currentDate]) || {}),
+    [appointments, currentDate]);
+  }
+  gotoDate(){
+    this.useCallback((day) => (
+      moment(`${this.date}/${this.month}/${this.year}`, "D/M/YYYY").add(day, "days").format('D-M-YYYY').split('-')
+    ), [date, month, year]);
+  }
+  changeDate(){
+    this.useCallback( (newDate) => ( 
+      history.push(
+        `/${parseInt(newDate[0])}/${parseInt(newDate[1])}/${parseInt(newDate[2])}/`
+      )
+    ), [history]);
+  }
+  
   getFetchUsers() {
     this.setState(
       {
@@ -31,9 +59,25 @@ class Schedule extends React.Component {
   componentDidMount() {
     this.getFetchUsers();
   }
+  
   render() {
     const { users, error } = this.state;
+    const {date , month, year,fullDate}=this.params;
+    this.fullDate=new Date();
+    this.date=fullDate.getDate();
+    this.month=fullDate.getMonth()+1;
+    this.year=fullDate.getFullYear();
+    const currentdate=`${this.date}/${this.month}/${this.year}`;
+    //const currentDate = `${date}/${month}/${year}`;
 
+    const getPreviousDate = () => {
+     var date = new Date();
+     date.setDate(date.getDate() + 1);
+     
+     alert(date);
+     
+     
+    }
     return (
       <>
         {error ? <p>{error.message} </p> : null}{" "}
@@ -83,7 +127,7 @@ class Schedule extends React.Component {
           } = user;
           return (
             <div key={Mtime1}>
-            <Box
+              <Box
                 sx={{
                   display: "flex",
                   flexWrap: "wrap",
@@ -94,34 +138,62 @@ class Schedule extends React.Component {
                   },
                 }}
               >
-                <Paper elevation={0} style={{ width: "auto",justifyContent: "center",alignContent:'center',display:'flex'}}>
-                <Button
-                style={{
-                  border: "1px solid #5BD1D7",
-                  color: "#5BD1D7",
-                  borderRadius: "60px",
-                  height: "70px",
-                  width: "70px",
-                }}
-              >
-                <i class="fas fa-chevron-left fa-2x"></i>
-              </Button>
+                <Paper
+                  elevation={0}
+                  style={{
+                    width: "auto",
+                    justifyContent: "center",
+                    alignContent: "center",
+                    display: "flex",
+                  }}
+                >
+                  <Button
+                    style={{
+                      border: "1px solid #5BD1D7",
+                      color: "#5BD1D7",
+                      borderRadius: "60px",
+                      height: "70px",
+                      width: "70px",
+                    }}
+                    onClick={getPreviousDate}
+                  >
+                    <i class="fas fa-chevron-left fa-2x"></i>
+                  </Button>
+                  <Paper>
+                    <Typography
+                      variant="h5"
+                      gutterBottom
+                      component="div"
+                      style={{ color: "#808080" }}
+                    >
+                    {currentdate}
+                    </Typography>
+                  </Paper>
                 </Paper>
-                <Paper elevation={0} style={{ width: "auto",justifyContent: "center",alignContent:'center',display:'flex' }}>
-                <Button
-                style={{
-                  border: "1px solid #5BD1D7",
-                  color: "#5BD1D7",
-                  borderRadius: "60px",
-                  height: "70px",
-                  width: "70px",
-                }}
-              >
-                <i class="fas fa-chevron-right fa-2x"></i>
-              </Button>
+                <Paper
+                  elevation={0}
+                  style={{
+                    width: "auto",
+                    justifyContent: "center",
+                    alignContent: "center",
+                    display: "flex",
+                  }}
+                >
+                  <Button
+                    style={{
+                      border: "1px solid #5BD1D7",
+                      color: "#5BD1D7",
+                      borderRadius: "60px",
+                      height: "70px",
+                      width: "70px",
+                    }}
+                    
+                  >
+                    <i class="fas fa-chevron-right fa-2x"></i>
+                  </Button>
                 </Paper>
-            </Box>
-             
+              </Box>
+
               <Box
                 sx={{
                   display: "flex",
@@ -134,7 +206,12 @@ class Schedule extends React.Component {
                 }}
               >
                 <Paper elevation={0} style={{ width: "200px" }}>
-                  <Typography variant="h5" gutterBottom component="div" style={{color:"#808080"}}>
+                  <Typography
+                    variant="h5"
+                    gutterBottom
+                    component="div"
+                    style={{ color: "#808080" }}
+                  >
                     <BsSunrise></BsSunrise> Morning
                   </Typography>
                 </Paper>
@@ -336,7 +413,12 @@ class Schedule extends React.Component {
                 }}
               >
                 <Paper elevation={0} style={{ width: "200px" }}>
-                  <Typography variant="h5" gutterBottom component="div" style={{color:"#808080"}}>
+                  <Typography
+                    variant="h5"
+                    gutterBottom
+                    component="div"
+                    style={{ color: "#808080" }}
+                  >
                     <BsSun></BsSun> Afternoon
                   </Typography>
                 </Paper>
@@ -474,7 +556,12 @@ class Schedule extends React.Component {
                 }}
               >
                 <Paper elevation={0} style={{ width: "200px" }}>
-                  <Typography variant="h5" gutterBottom component="div" style={{color:"#808080"}}>
+                  <Typography
+                    variant="h5"
+                    gutterBottom
+                    component="div"
+                    style={{ color: "#808080" }}
+                  >
                     <BsMoon></BsMoon> Evening
                   </Typography>
                 </Paper>
@@ -715,7 +802,12 @@ class Schedule extends React.Component {
                 }}
               >
                 <Paper elevation={0} style={{ width: "200px" }}>
-                  <Typography variant="h5" gutterBottom component="div" style={{color:"#808080"}}>
+                  <Typography
+                    variant="h5"
+                    gutterBottom
+                    component="div"
+                    style={{ color: "#808080" }}
+                  >
                     <BsMoonStars></BsMoonStars> Night
                   </Typography>
                 </Paper>
@@ -795,9 +887,9 @@ export default Schedule;
 // import Box from "@mui/material/Box";
 // import Paper from "@mui/material/Paper";
 
-// class Schedule extends React.Component{
+// function Schedule() {
 
-//   render (
+//   return (
 //     <>
 //       <Box
 //         sx={{
