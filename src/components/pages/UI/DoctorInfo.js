@@ -358,7 +358,7 @@ function DoctorInfo (){
       {/* <BootstrapTable keyField="id" columns={columns} data={userList}>
 
       </BootstrapTable> */}
-      <Sorting  />
+      <Sorting/>
       
  
    

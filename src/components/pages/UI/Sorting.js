@@ -29,6 +29,7 @@ function Sorting() {
     { value: "recommendation", label: "Recommendation" },
   ];
   let string='';
+  let string1='';
   const [active, setActive] = useState(false);
   const [checked, setChecked] = useState(false);
   const [checked1, setChecked1] = useState(false);
@@ -36,6 +37,7 @@ function Sorting() {
   const [searchterm,setSearchterm]= useState("");
   const [sort,setSort]= useState("select");
   const [searchtermfee,setSearchtermfee]= useState("");
+  const [searchtermexp,setSearchtermexp]= useState("");
   const [showlist, setShowlist]=useState([]);
   const [gender, setGender] = useState('');
   const [consultationfee, setConsultationfee] = useState('');
@@ -90,8 +92,14 @@ function Sorting() {
     setSort(event.target.value);
    
     if(event.target.value==="yearsofExperience"){
-      return  setSearchterm(event.target.value);
+      return  setSearchtermexp(event.target.value);
     }
+    else if(event.target.value==="priceLowToHigh"){
+      return  setSearchtermexp(event.target.value);
+    }
+    // if(event.target.value==="yearsofExperience"){
+    //   return  setSearchtermexp(event.target.value);
+    // }
 
     
   }
@@ -118,6 +126,8 @@ function Sorting() {
      setConsultationfee('');
      setSearchterm("");
      setSearchtermfee("");
+     setSearchtermexp("");
+     setSort("Select");
    }
  
   function CustomButton(props) {
@@ -244,7 +254,7 @@ function Sorting() {
               to="/schedule"
             >
               {" "}
-              Availability &nbsp; <i class="fas fa-chevron-down"></i>
+              Availability &nbsp; <i className="fas fa-chevron-down"></i>
             </Link>
           </Paper>
           <Paper
@@ -263,7 +273,7 @@ function Sorting() {
             >
               All Filters &nbsp;
               <i
-                class={
+                className={
                   active === true ? "fas fa-chevron-down" : "fas fa-chevron-up"
                 }
               ></i>
@@ -305,7 +315,7 @@ function Sorting() {
                   <option style={{paddingBottom:'2px'}} value="select">Select</option>
                   <option style={{paddingBottom:'2px'}}value="relevance">Relevance</option>
                   <option style={{paddingBottom:'2px'}}value="earliestAvailable">Earliest Available</option>
-                  <option style={{paddingBottom:'2px'}} value="priceLowToHigh">Price - Low To High</option>
+                  <option style={{paddingBottom:'2px'}} value="priceLowToHigh">Fees - Low To High</option>
                   <option style={{paddingBottom:'2px'}}value="yearsofExperience">Years of Experience</option>
                   <option style={{paddingBottom:'2px'}}value="recommendation">Recommendation</option>
             </select>
@@ -332,21 +342,22 @@ function Sorting() {
       
     </div>
     <div>
-    <input type ="text" value={searchterm} style={{marginTop:'50px',marginBottom:'30px'}} placeholder="select" onChange={(e)=>{setSearchterm(e.target.value);}}></input>
+    {/* <input type ="text" value={searchterm} style={{marginTop:'50px',marginBottom:'30px'}} placeholder="select" onChange={(e)=>{setSearchterm(e.target.value);}}></input>
     <input type="text " placeholder="select" value={searchtermfee} onChange={(event)=>{setSearchtermfee(event.target.value);}} />
+    <input type="text " placeholder="select" value={searchtermexp} onChange={(event)=>{setSearchtermexp(event.target.value);}} /> */}
     {userList.filter((val)=>{
         if(searchterm ==="" ){
           if(searchtermfee===""){
             return val;
           }
           if(searchtermfee==="free"){
-            if(val.fees==="free"){
+            if(val.fees==="0"){
               return val;
           
             }
           }
           if(searchtermfee==="free"){
-            if(val.fees==="free"){
+            if(val.fees==="0"){
               return val;
           
             }
@@ -378,7 +389,7 @@ function Sorting() {
           //return val;
         }
         else if(searchterm ==="male" && searchtermfee ==="free"){
-          if(val.gender === "male" && val.fees==="free"){
+          if(val.gender === "male" && val.fees==="0"){
             return val;
           }
         }
@@ -408,7 +419,7 @@ function Sorting() {
           }
         }
         else if(searchterm ==="female" && searchtermfee ==="free"){
-          if(val.gender === "female" && val.fees==="free"){
+          if(val.gender === "female" && val.fees==="0"){
             return val;
           }
         }
@@ -442,26 +453,31 @@ function Sorting() {
         }
         else if(searchtermfee ==="free"){
          
-            if(val.fees==="free"){
+            if(val.fees==="0"){
               return val;
             }
         }
         else if(searchterm==="yearsofExperience"){
-          let length1=userList.length;
-          string=val.experience;
-          let length=string.length;
-          console.log(length); 
-          console.log(length1);   
-     
-          // userList.sort((a, b) => (a.fees - b.fees) )
-          //  return userList;
-        
+          for(let i=10;i>0;i--){
+            console.log(i);
+            if(val.experience===i.toString()){
+              return val;
+            }
+          }
         }
         else if(val.drname.toLowerCase().includes(searchterm.toLowerCase())){
           return val;
         }
         else if(val.type.toLowerCase().includes(searchterm.toLowerCase())){
           return val;
+        }
+      }).sort((a,b)=>{
+        
+        if(searchtermexp==="yearsofExperience"){
+          return a.experience - b.experience;
+        }
+        else if(searchtermexp==="priceLowToHigh"){
+          return a.fees - b.fees;
         }
       }).map((val,key)=>{
         return(
@@ -486,8 +502,8 @@ function Sorting() {
                   </Typography>
             </Typography>
             <Typography variant="subtitle1" gutterBottom component="div">
-                    <i class="fas fa-map-marker-alt fa-sm"></i> {val.address}
-                    &nbsp;&nbsp;<i class="fas fa-circle fa-xs"></i>&nbsp;
+                    <i className="fas fa-map-marker-alt fa-sm"></i> {val.address}
+                    &nbsp;&nbsp;<i className="fas fa-circle fa-xs"></i>&nbsp;
                     {val.clinicname}
            </Typography>
           <Typography
@@ -506,7 +522,7 @@ function Sorting() {
                     color="success"
                     style={{ fontWeight: "bold" }}
                   >
-                    <i class="fas fa-thumbs-up"></i> &nbsp;{val.likes}
+                    <i className="fas fa-thumbs-up"></i> &nbsp;{val.likes}
                   </Button>
                   &nbsp;&nbsp;&nbsp;&nbsp;
                   <a href="" style={{ color: "#413E3E", fontWeight: "bold" }}>
@@ -519,7 +535,7 @@ function Sorting() {
                   style={{ alignItems: "end",height:'100px' ,marginLeft:'10%'}}
                 >
                    <Typography variant="subtitle1" gutterBottom component="div"  style={{color:'#5cb85c',fontWeight:'bold'}}>
-                  <i class="fas fa-calendar-check"></i>&nbsp;{val.availablestatus}
+                  <i className="fas fa-calendar-check"></i>&nbsp;{val.availablestatus}
                   </Typography>
                   <CustomButton >
                     <Typography variant="subtitle1" gutterBottom component="div" style={{ textDecoration:'none',color:'#fff'}}>
