@@ -16,6 +16,7 @@ import Blog02 from "./components/pages/Blog02";
 import Blog03 from "./components/pages/Blog03";
 import ContactUs from "./components/pages/ContactUs";
 import SignUp from "./components/pages/SignUp";
+import Profile from "./components/Profile"
 import Customerreview from "./components/pages/Customerreview";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import Advertise from './components/pages/Advertise';
@@ -25,6 +26,9 @@ import Specialoffer from "./components/pages/Specialoffer";
 import Flight from "./components/pages/Flight";
 import Sorting from "./components/pages/UI/Sorting";
 import DoctorInfo from "./components/pages/UI/DoctorInfo";
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import OtpVerify from "./components/OtpVerify";
 
 import Schedule from "./components/pages/UI/Schedule";
 import BasicDatePicker from "./components/pages/UI/DatePicker";
@@ -82,8 +86,12 @@ function App() {
         <Route path='/sign-up' component={SignUp} />
         <Route path='/marketing' component={Marketing} />
         <Route path='/consulting' component={Consulting} /> */}
+        <Route path="/profile" component={Profile}/>
+        <Route path="/verify" component={OtpVerify}/>
+
       </Switch>
       <ScrollButton />
+      <ToastContainer autoClose={3000} />
     </Router>
   );
 }

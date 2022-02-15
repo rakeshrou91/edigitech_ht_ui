@@ -15,7 +15,7 @@ export default function Aboutus () {
     <Suspense fallback={<div>Loading...</div>}>
       <Navbar1/>
       </Suspense>
-     
+
       <div className="aboutus">
       <Container maxWidth="xs">
       <h2 style={{fontSize:'70px'}}> About us</h2>
@@ -25,10 +25,10 @@ export default function Aboutus () {
             <i class="fas fa-angle-right"></i> &nbsp;&nbsp;About us
       </a>
       </Container>
-      
+
         {/* <div className="aboutusheading">
           <h2> About us</h2>
-         
+
           &nbsp;&nbsp;
         </div> */}
       </div>
@@ -81,7 +81,7 @@ export default function Aboutus () {
             </span>
             <div className="style1">
               Why Book {<br />}
-              
+
               With Us?
             </div>
             <div>
@@ -142,7 +142,7 @@ export default function Aboutus () {
             />
             <h3>Access To 1000+ Hospitals</h3>
             <p>
-              
+
               Giving you access to the world's most prestigious and efficient
               Healthcare delivery centers.
             </p>
