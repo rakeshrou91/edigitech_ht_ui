@@ -359,10 +359,6 @@ function DoctorInfo (){
 
       </BootstrapTable> */}
       <Sorting/>
-      
- 
-   
-     
     </div>
   )
 }

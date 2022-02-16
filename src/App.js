@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Home from "./components/pages/Home";
 import ScrollButton from "./components/angleup/ScrollButton";
+import Mydata from "./components/SideBar/Mydata";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Services from "./components/pages/Services";
 import Aboutus from "./components/pages/Aboutus";
@@ -25,7 +26,9 @@ import Specialoffer from "./components/pages/Specialoffer";
 import Flight from "./components/pages/Flight";
 import Sorting from "./components/pages/UI/Sorting";
 import DoctorInfo from "./components/pages/UI/DoctorInfo";
-
+import Myappointment from "./components/AppointmentForm/Myappointment";
+import Bookappointment from "./components/pages/UI/Bookappointment";
+import Component1 from "./components/Demo/Component1";
 import Schedule from "./components/pages/UI/Schedule";
 import BasicDatePicker from "./components/pages/UI/DatePicker";
 import Appointment from "./containers/Appointment/index";
@@ -48,7 +51,7 @@ function App() {
         <Route path="/" exact component={DoctorInfo} />
         <Route path="/sorting" component={Sorting}/>
         <Route path="/schedule" component={Schedule}/>
-        <Route path="/book" component={BasicDatePicker}/>
+        <Route path="/book" component={Bookappointment}/>
 
 
         <Route path="/aboutus" component={Aboutus} />
@@ -75,7 +78,7 @@ function App() {
         <Route path="/special" component={Specialoffer} />
         <Route path="/flights" component={Flight} />
 
-
+       
         {/* <Route path='/services' component={Services} />
         <Route path='/products' component={Products} />
         <Route path='/contact-us' component={ContactUs} />
