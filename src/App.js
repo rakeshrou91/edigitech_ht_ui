@@ -26,9 +26,6 @@ import Specialoffer from "./components/pages/Specialoffer";
 import Flight from "./components/pages/Flight";
 import Sorting from "./components/pages/UI/Sorting";
 import DoctorInfo from "./components/pages/UI/DoctorInfo";
-import Myappointment from "./components/AppointmentForm/Myappointment";
-import Bookappointment from "./components/pages/UI/Bookappointment";
-import Component1 from "./components/Demo/Component1";
 import Schedule from "./components/pages/UI/Schedule";
 import BasicDatePicker from "./components/pages/UI/DatePicker";
 import Appointment from "./containers/Appointment/index";
@@ -51,7 +48,7 @@ function App() {
         <Route path="/" exact component={DoctorInfo} />
         <Route path="/sorting" component={Sorting}/>
         <Route path="/schedule" component={Schedule}/>
-        <Route path="/book" component={Bookappointment}/>
+       
 
 
         <Route path="/aboutus" component={Aboutus} />
