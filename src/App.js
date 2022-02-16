@@ -35,7 +35,7 @@ import Appointment from "./containers/Appointment/index";
 import AppointmentDetails from "./containers/AppointmentDetails/index";
 import { Provider } from 'react-redux';
 
-import store from './store.js';
+
 function App() {
   return (
     <Router>

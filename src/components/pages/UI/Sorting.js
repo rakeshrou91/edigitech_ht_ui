@@ -65,6 +65,7 @@ function Sorting() {
     200: "#5BD1D7",
   };
   
+
   const CustomButtonRoot = styled("button")`
     font-family: IBM Plex Sans, sans-serif;
     font-weight: bold;
