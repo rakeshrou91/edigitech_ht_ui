@@ -1,15 +1,107 @@
-.MenuItem{
-    flex-direction: column;
-    background-color: #fff;
-    text-align: center;
-    justify-content: center;
-    padding:12px;
-    color:#413E3E;
+.MenuItem {
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+  padding: 12px;
+  padding-top: 20px;
+  color: #413e3e;
+  margin-top: 900px;
+  background-size: cover;
 
 }
-.MenuItem:hover{
-    background-color: #ddd;
+
+.MenuItem:hover {
+  background-color: #ddd;
 }
-.formcontrol{
-   width:14%;
+.formcontrol {
+  width: 16%;
+
+}
+.form-controldesti{
+  display: block;
+    width: 100%;
+    height:50px;
+    padding: 12px 21px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    
+}
+.selectdept{ 
+  display: block;
+  width: 100%;
+  height:50px;
+  padding: 12px 21px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.formcontrol1 {
+  width: 40%;
+  
+}
+.convertbutton{
+  background-color:rgb(89, 189, 184);
+  border-radius:10px;
+  height:56px;
+  font-size:16px;
+  font-weight: 600;
+  width:106px;
+  color:#fff;
+  border: none;
+  cursor: pointer;
+}
+.convertbutton:hover{
+  color:#fff;
+  background-color:red;
+}
+.form-controlcurrency{
+  display: block;
+  width: 100%;
+  height:56px;
+  padding: 12px 21px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.buttonclass{
+  align-items: center;
+  border: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid none;
+  background: rgb(89, 189, 184);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: column;
+  font-family: "Codec cold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 56px;
+  margin-top: 0px;
+  justify-content: center;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  padding: 16px 21px;
+  text-decoration: none;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
